@@ -1,0 +1,31 @@
+body{
+    font-family: 'Muli',sans-serif;
+    color:rgb(34, 19, 86);
+}
+menu{
+    display: flex;
+    justify-content:center;
+}
+#title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.lt{
+
+    text-align: center;
+    margin: 20px;
+}
+
+.image{
+    box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.061);
+    border-radius: 20px;
+}
+.lt h3 a{
+    text-decoration: none;
+    color:rgb(34, 19, 86)
+}
+
+.lt h3:hover a{
+    color: rgb(17, 42, 180);
+}
