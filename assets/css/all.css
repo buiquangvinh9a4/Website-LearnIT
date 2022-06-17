@@ -18,3 +18,12 @@ body {
 .clear {
     clear: both;
 }
+
+/* Frame */
+.frame {
+    width: 100%;
+}
+
+.bgcolor-gray {
+    background-color: var(--background-color);
+}

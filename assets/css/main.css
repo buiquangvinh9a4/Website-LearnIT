@@ -1,14 +1,16 @@
 #main {
-    max-width: 1300px;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
-    margin-top: 50px;
 }
+
+
 
 /* Main-Box ----------------------------------*/
 .main-box {
-    width: 1300px;
+    max-width: 1300px;
     height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 /* Main-Box First - Giới thiệu tầm quan trọng của Tin học */
@@ -63,3 +65,5 @@
     margin-top: 20px;
     text-align: justify;
 }
+
+/* Main-Box Second - Các lĩnh vực của tin học */
