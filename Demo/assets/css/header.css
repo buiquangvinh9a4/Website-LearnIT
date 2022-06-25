@@ -222,3 +222,94 @@
     background-color: #fff;
     color:var(--main-color);
 }
+
+/* Lộ trình trở thành lập trình viên */
+menu{
+    display: flex;
+    justify-content:center;
+}
+#title{
+    text-align: center;
+    font-size: 40px;
+    color:rgb(34, 19, 86);
+}
+
+.lt{
+
+    text-align: center;
+    margin: 20px;
+}
+
+.image{
+    box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.061);
+    border-radius: 20px;
+    width: 250px;
+    height: 260px;
+}
+.lt h3 a{
+    text-decoration: none;
+    color:rgb(34, 19, 86)
+}
+
+.lt h3:hover a{
+    color: rgb(17, 42, 180);
+}
+/* Menu cuối trang */
+footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    float:left;
+    width: 500px;
+    margin-right: 100px;
+}
+
+#logo p {
+    line-height: 1.6;
+}
+#img {
+    width: 200px;
+}
+
+img{
+    width:50px;
+
+}
+
+.menu{
+    float: left;
+    margin-right: 50px;
+}
+
+.menu ul {
+    padding-inline-start: 0px;
+
+}
+
+.menu h3 {
+    color: rgb(89, 7, 242);
+    text-transform: uppercase;
+    
+}
+
+.menu ul li{
+    list-style: none;
+    padding: 10px 0;
+    margin-left: -10px;
+
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(69, 69, 69);
+    padding: 10px;
+}
+
+.menu ul li:hover a {
+    color: rgb(17, 42, 180);
+    text-decoration: underline;
+}
