@@ -195,7 +195,7 @@ ul.sub-nav li {
     border-radius: 5px;
 }
 
-#form-signup table .input-submit {
+.input-submit {
     width: 100%;
     background-color: #4c1dda;
     color: #fff;
