@@ -17,8 +17,9 @@
 
 .title-box {
     color: var(--main-color);
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
+    padding-top: 50px;
 }
 
 .content-box {
@@ -66,4 +67,166 @@
     text-align: justify;
 }
 
-/* Main-Box Second - Các lĩnh vực của tin học */
+/* Main-Box - Khóa học */
+.list-item {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    width: 25%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgb(196, 196, 196);
+    margin-right: 100px;
+    transition: transform .2s;  /*  Hiệu ứng transform 0.2s  */
+    cursor: pointer;
+}
+
+.list-item .item:last-child {
+    margin-right: 0;
+}
+
+.item img {
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.item p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.item a {
+    font-size: 20px;
+    text-decoration: none;
+    background-color:  var(--main-color);
+    padding: 10px 20px;
+    margin-left: 25%;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+/* Main-Box - Hoạt động của CLB */
+#slide {
+    margin-bottom: 100px;
+}
+
+.slide-img {
+    width: 55%;
+    height: 500px;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px gray;
+    position: relative;
+}
+
+.slide-img img {
+    position: absolute;
+    width: 650px;
+    top: 35px;
+    left: 30px;
+    transition: transform 2.5s;
+}
+
+.img-show {
+    z-index: 100000;
+    transform: scale(1.05);
+}
+
+.li-show-back{
+    background-color: rgb(255, 227, 227);
+    transform: translateX(20px);
+}
+
+
+#slide-sub {
+    margin-top: 0;
+}
+
+#slide-sub li {
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px gray;
+    margin-bottom: 10px;
+    transition:  background-color .5s, transform .5s;
+}
+
+#slide-sub .reset-span {
+    font-size: 20px;
+    padding-left: 0;
+    
+}
+
+#slide-sub p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Main - Box - Thống kê con số */
+#data-number {
+    max-width: 100%;
+    height: 300px;
+    background-image: linear-gradient(90deg, rgba(14, 0, 204), rgb(38, 233, 255));
+}
+
+#data-number .title-box {
+    color: #fff;
+}
+
+#data-number .content-box {
+    display: flex;
+    justify-content: center;
+}
+
+#data-number .content-box .box-data {
+    margin-top: 30px;
+    margin-right: 200px;
+}
+
+#data-number .content-box .box-data:last-child {
+    margin-right: 0;
+}
+
+.box-data h2 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.box-data span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ti-star {
+    font-size: 40px;
+    color: yellow;
+}
+
+
+
+
+/* Hover Effect */
+.item:hover {
+    transform: scale(1.05);    /* Hiệu ứng zoom tỉ lệ 1.05 */
+}
+
+.box-btn:hover {
+    background-color: rgb(255, 196, 0);
+}
+
+
+/* Active Effect */
+.para-key:link {
+    color: yellow;
+}

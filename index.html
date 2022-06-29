@@ -34,7 +34,14 @@
                                     <li><a href="">PowerPoint</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Lập trình cơ bản</a></li>
+                            <li>
+                                <a href="">Lập trình cơ bản</a>
+                                <ul class="sub-nav">
+                                    <li><a href="">C++</a></li>
+                                    <li><a href="">Python</a></li>
+                                    <li><a href="">Lập trình Web</a></li>
+                                </ul>
+                            </li>
                             <li><a href="">Kỹ thuật máy tính</a></li>
                         </ul>
                     </li>
@@ -156,18 +163,158 @@
         </div>
         <div class="clear"></div>
 
-        <!-- Main - Box - Các lĩnh vực của tin học -->
+        <!-- Main - Box - Khóa học -->
         <div class="frame bgcolor-gray">
             <div class="main-box">
-    
+                <!-- Title -->
+                <h1 class="title-box">
+                    Các khóa học của ITCLUB 
+                </h1>
+                <!-- Box -->
+                <div class="content-box">
+                    <div class="content-box list-item">
+                        <div class="item">
+                            <img src="assets/images/main/main-list/office.png" alt="">
+                            <p>Tin học văn phòng</p>
+                            <a href="" class="box-btn">Vào học ngay</a>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/main/main-list/code.png" alt="">
+                            <p>Lập trình cơ bản</p>
+                            <a href="" class="box-btn">Vào học ngay</a>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/main/main-list/pc.png" alt="">
+                            <p>Kỹ thuật máy tính</p>
+                            <a href="" class="box-btn">Vào học ngay</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- Hoạt động của CLB -->
+        <div class="frame">
+            <div class="main-box" id="slide">
+                <!-- Title -->
+                <h1 class="title-box">
+                    Hoạt động nổi bật
+                </h1>
+                <div class="content-box">
+                    <div class="slide-img">
+                        <img src="assets/images/main/main-slide/training.jpg" id="js-102" alt="">
+                        <img src="assets/images/main/main-slide/giaoluu.png"  id="js-103" alt="">
+                        <img src="assets/images/main/main-slide/truyenthong.png" id="js-104" alt="">
+                        <img src="assets/images/main/main-slide/onthi.jpg" id="js-101" alt="">
+
+                    </div>
+                    <div id="slide-sub" class ="list-key">
+                        <ul>
+                            <li onclick="showPicture1()" id="js-li1" class="li-show-back">
+                                <span class="reset-span">Luyện thi học sinh giỏi</span>
+                                <p class="para-key">Thông qua quá trình học tập, thầy cô sẽ phát hiện các em học sinh tiềm năng để bồi dưỡng, ôn luyện cho kì thi HSG các cấp, đem lại nhiều thành tích cao.</p>
+                            </li>
+                            <li onclick="showPicture2()" id="js-li2">
+                                <span class="reset-span">Training kỹ năng CNTT cho các thành viên CLB</span>
+                                <p class="para-key">Mang tên ITCLUB, mọi thành viên trong CLB đều được đào tạo kĩ năng CNTT cơ bản để ứng dụng vào học tập, cuộc sống.</p>                            
+                            </li>
+                            <li onclick="showPicture3()" id="js-li3">
+                                <span class="reset-span">Giao lưu giữa thầy cô, thành viên và học sinh</span>
+                                <p class="para-key">Vào 14h chiều chủ nhật mỗi tuần, CLB sẽ tổ chức offline để giao lưu giữa thầy cô, các anh chị thành viên và các bạn học sinh.</p>
+                            </li>
+                            <li onclick="showPicture4()" id="js-li4">
+                                <span class="reset-span">Truyền thông cho các sự kiện của trường</span>
+                                <p class="para-key">Thông tin về những sự kiện hàng tuần mới nhất đều được CLB thiết kế và đăng tải lên trang web, cũng như các nền tảng mạng xã hội liên quan.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+
+        <!-- Main - Box - Thống kê con số -->
+        <div class="frame">
+            <div class="main-box" id="data-number">
+                <!-- Title -->
+                <h1 class="title-box">
+                    Những con số nổi bật về ITCLUB
+                </h1>
+                <!-- Box -->
+                <div class="content-box">
+                    <div class="box-data">
+                        <h2>300+</h2>
+                        <span>Thành viên CLB</span>
+                    </div>
+                    <div class="box-data">
+                        <h2>5000+</h2>
+                        <span>Lượt xem trong tuần</span> 
+                    </div>
+                    <div class="box-data">
+                        <h2>
+                            4.8 <i class="ti-star"></i>
+                        </h2>
+                        <span>Đánh giá tích cực</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer ------------------------------- -->
     <div id="footer">
-
+        
     </div>
 </body>
+
+<!-- Xử lý phần slide hoạt động -->
+<script>
+    var x1 = document.getElementById("js-101");
+    var x2 = document.getElementById("js-102");
+    var x3 = document.getElementById("js-103");
+    var x4 = document.getElementById("js-104");
+
+    var li1 = document.getElementById("js-li1");
+    var li2 = document.getElementById("js-li2");
+    var li3 = document.getElementById("js-li3");
+    var li4 = document.getElementById("js-li4");
+
+    var img = "img-show";
+    var content = "li-show-back";
+
+    function hiddenImg(a, b, c, name) {
+        a.classList.remove(name);
+        b.classList.remove(name);
+        c.classList.remove(name);
+    }
+    function showPicture1() {
+        hiddenImg(x2, x3, x4, img);
+        hiddenImg(li2, li3, li4, content);
+        x1.classList.add(img);
+        li1.classList.add(content);
+    }
+    function showPicture2() {
+        hiddenImg(x1, x3, x4, img);
+        hiddenImg(li1, li3, li4, content);
+        x2.classList.add(img);
+        li2.classList.add(content);
+
+    }
+    function showPicture3() {
+        hiddenImg(x1, x2, x4, img);
+        hiddenImg(li1, li2, li4, content);
+        x3.classList.add(img);
+        li3.classList.add(content);
+
+    }
+    function showPicture4() {
+        hiddenImg(x1, x2, x3, img);
+        hiddenImg(li1, li2, li3, content);
+        x4.classList.add(img);
+        li4.classList.add(content);
+
+    }
+</script>
+
 </html>

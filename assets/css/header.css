@@ -15,7 +15,7 @@
     justify-content: center;
     position: fixed;
     top: 0;
-    z-index: 100000; /*Hiển thị lớp trên cùng*/
+    z-index: 100000000; 
 }
 
 /* Header-logo */
@@ -71,6 +71,16 @@
     color: var(--main-color);  
 }
 
+ul.sub-nav ul.sub-nav {
+    position: absolute;
+    top: -10px;
+    left: 230px;
+}
+
+ul.sub-nav li {
+    position: relative;
+}
+
 
 /* Header-User Account */
 .user {
@@ -90,8 +100,8 @@
     border-radius: 5px;
     color: #fff;
     line-height: 40px;
-
 }
+
 
 #signIn {
 }
@@ -108,6 +118,7 @@
     height: 600px;
     margin: 0 auto;
     padding-top: 150px;
+    /* position: relative; */
 }
 
 /* Form-left */
@@ -136,7 +147,7 @@
 
 #title-form h1 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     padding-bottom: 10px;
 }
