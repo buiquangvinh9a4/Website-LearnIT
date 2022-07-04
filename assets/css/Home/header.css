@@ -55,6 +55,7 @@
     position: absolute;
     background-color: #fff;
     box-shadow: 0 5px 5px 0 rgba(93, 93, 93, 0.549);
+    animation: navFadeIn ease .2s;
 }
 
 .sub-nav li {
@@ -75,6 +76,7 @@ ul.sub-nav ul.sub-nav {
     position: absolute;
     top: -10px;
     left: 230px;
+    animation: subnavFadeIn ease .2s;
 }
 
 ul.sub-nav li {
@@ -232,4 +234,26 @@ ul.sub-nav li {
 #signIn:hover, #signUp:hover {
     background-color: #fff;
     color:var(--main-color);
+}
+
+@keyframes navFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+
+    } to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes subnavFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+
+    } to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
