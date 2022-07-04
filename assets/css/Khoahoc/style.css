@@ -1,0 +1,542 @@
+*{
+    font-family: 'Muli',sans-serif;
+    
+}
+#header {
+    width: 100%;
+    height: 700px;
+    /* margin: 0 auto; */
+    background-color: var(--background-color);
+}
+
+/* Header-First---------------------------- */
+
+#header-first {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(90deg, rgba(14, 0, 204), rgb(38, 233, 255));
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 100000000; 
+}
+
+/* Header-logo */
+.logo {
+    margin: 20px;
+    float: left;
+}
+
+.logo-img {
+    width: 150px;
+}
+
+/* Header-Navigation */
+.nav {
+    float: left;
+}
+
+.nav > ul > li {
+    display: inline-block;
+    margin: 40px 0;
+    position: relative;
+}
+
+.nav > ul > li > a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.sub-nav {
+    display: none;
+    width: 230px;
+    height: auto;
+    margin-top: 37px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 0 rgba(93, 93, 93, 0.549);
+}
+
+.sub-nav li {
+    width: 230px;
+    list-style: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.185);
+    padding: 20px 0 20px 10px;
+}
+
+.sub-nav li a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 0;
+    color: var(--main-color);  
+}
+
+ul.sub-nav ul.sub-nav {
+    position: absolute;
+    top: -10px;
+    left: 230px;
+}
+
+ul.sub-nav li {
+    position: relative;
+}
+
+
+/* Header-User Account */
+.user {
+    float: right;
+    margin: 20px 35px;
+    padding: 10px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(62, 62, 62, 0.519);
+}
+
+.user .user-btn {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 40px;
+}
+
+
+#signIn {
+}
+
+#signUp {
+    background-color: #e8505b;
+}
+
+
+/* Header-Form ---------------------------- */
+
+#header-form {
+    width: 1300px;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 150px;
+    /* position: relative; */
+}
+
+/* Form-left */
+#form-left {
+    width: 50%;
+    margin-left: 50px;
+    float: left;
+}
+
+#img-form {
+    position: absolute;
+}
+
+#img-form img {
+    width: 600px;
+}
+
+#title-form {
+    display: inline-block;
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 300px;
+    position: relative;
+}
+
+#title-form h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+#title-form p {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Form-right */
+#form-right {
+    width: 40%;
+    float: right;
+    margin-right: -20px;
+
+}
+
+#form-signup {
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow:  0 10px 10px 2px rgba(24, 26, 74, 0.212);
+    background-color: #fff;
+
+}
+
+/* Table Form Signup */
+#form-signup table {
+    width: 300px;
+    height: 405px;
+    padding: 20px;
+}
+
+#form-signup table tr:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+#form-signup table .input-typing {
+    width: 350px;
+    height: 25px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+#form-signup table .input-submit {
+    width: 100%;
+    background-color: #4c1dda;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.link-btn {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+
+
+/* Hover Effect ---------------------------------*/
+.nav li:hover {
+    border-bottom: 2px solid yellow;
+    padding-bottom: 20px;
+}
+
+.nav li:hover > .sub-nav {
+    display: block;
+}
+
+.sub-nav li:hover {
+    border-bottom: 2px solid var(--main-color);
+    cursor: pointer;
+    color: #fff;
+}
+
+#signIn:hover, #signUp:hover {
+    background-color: #fff;
+    color:var(--main-color);
+}
+/* -----------------------------------main----------------------------------- */
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* +++++++++++++ Head course++++++++++++++*/
+.head-course{
+    width: 100%;
+    height: 170px;
+    background: rgba(2, 11, 70, 0.801);
+    margin-top: 100px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.course-box {
+    width: 1100px;
+    height: 100%;
+}
+
+.course-box p.title-search {
+    font-size: 25px;
+}
+
+.input-group{
+    margin-top: 30px;
+    background:#fff;
+    width: 450px;
+    display:flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.icon-search{
+    margin-top: 8px;
+}
+#text-input{
+    width: 380px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+/* +++++++++++++ Container ++++++++++++++*/
+.container{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background:rgba(234, 232, 232, 0.489);
+}
+.title-block{
+    font-size: 28px;
+}
+.list-course{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+}
+.course_and_tabhidden{
+    display: inline-flex;
+    justify-content: flex-start;
+    position:relative;
+}
+/* Phần ảnh và mô tả môn học */
+.main {
+    width: 250px;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+    margin:15px 12px ;
+    box-shadow: 0px 0px 20px rgba(106, 106, 106, 0.22);
+
+}
+.rate-online{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.rate-online .online{
+    background: #FFAB00;
+    width: 42px;
+    height: 20px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 13px;
+}
+/* phần ảnh */
+.main img{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    box-shadow: 0px 0px 20px rgba(106, 106, 106, 0.22);
+
+}
+/* phần mô tả môn học */
+a{
+    color: black;
+    text-decoration: none;
+}
+h3{
+    margin-bottom: 0;
+}
+.content{
+    box-sizing: border-box;
+    background-color: aliceblue;
+    margin-top: -50px;
+    position:relative;
+    padding: 20px;
+    border-radius: 5px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 0;
+    min-height: 250px;
+}
+.free{
+    position: absolute;
+    bottom:0;
+    padding: 20px 0;
+    padding-right: 60%;
+    border-top: 1px solid gray;
+    color: #4c5eff;
+    font-size: 16px;
+}
+.author,.about{
+    color: #42526e;
+    /* margin: 0; */
+}
+.author{
+    font-size: 13px;
+    height: 10px;
+}
+.about{
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+    margin-top: 10px;
+}
+.main .content h3:hover a {
+    color:#4c5eff;
+}
+.main .content span:hover a {
+    text-decoration: underline;
+}
+/* Tab ẩn */
+
+.tabhidden{
+    width: 300px;
+    height: 379px;
+    background:#fff;
+    position: absolute;
+    left: 280px;
+    top:15px;
+    display:none;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0px 0px 20px rgba(106, 106, 106, 0.22);
+    animation: FadeIn ease .2s ;
+}
+.author-rate{
+    display:flex;
+    justify-content: space-between;
+    line-height: 32px;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid black;
+}
+.avatar-name_author .avatar-author{
+    float: left;
+    border: 1px solid black;
+    padding:0 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.avatar-name_author .name-author>a{
+    color: #4c5eff;
+    font-size: 13px;
+}
+
+.course_and_tabhidden:hover .tabhidden{
+    display:block;
+}
+.tabhidden > h3:hover > a, .tabhidden  .name-author:hover > a{
+    text-decoration: underline;
+}
+/* Phần thông tin học viên, giờ học,.... */
+.list-course-detail{
+    padding-top: 20px;
+    font-size: 13px;
+}
+.course-detail{
+    padding-top: 10px;
+}
+.course-detail > i{
+    color: #4c5eff;
+    padding-right: 10px;
+
+}
+
+/* -----------------------------------footer----------------------------------- */
+footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+footer p, footer li {
+    font-size: 15px;
+    color: #3B3C54;
+}
+#logo-footer{
+    float:left;
+    width: 500px;
+    margin-right: 100px;
+}
+
+#logo-footer p {
+    line-height: 1.6;
+}
+#img-footer {
+    width: 200px;
+}
+
+/* mạng xã hội */
+.lienhe{
+    margin-top: 10px;
+    display:inline-flex;
+    justify-content: flex-start;
+}
+
+.logo-lienhe{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+.logo-lienhe > a > i{
+    color: white;
+}
+.fb{
+    background: #3B5998;
+}
+.yt{
+    background: rgb(233, 27, 27);
+}
+.tw{
+    background: #1DA1F2;
+}
+.ins{
+    background: #8A3AB9;
+}
+/*  */
+
+.menu-footer{
+    float: left;
+    margin-right: 50px;
+}
+
+.menu-footer ul {
+    padding-inline-start: 0px;
+
+}
+
+.menu-footer h3 {
+    color: rgb(89, 7, 242);
+    text-transform: uppercase;
+    
+}
+
+.menu-footer ul li{
+    list-style: none;
+    padding: 10px 0;
+    margin-left: -10px;
+
+}
+
+.menu-footer ul li a{
+    text-decoration: none;
+    color: rgb(69, 69, 69);
+    padding: 10px;
+}
+
+.menu-footer ul li:hover a {
+    color: rgb(17, 42, 180);
+    text-decoration: underline;
+}
