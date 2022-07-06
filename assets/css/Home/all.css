@@ -11,6 +11,7 @@ body {
 
 :root {
     --main-color: rgb(0, 90, 156);
+    --btn-color: #ff4d43;
     --border-color: #b3b4c9;
     --background-color:  rgb(244, 244, 244);
 }

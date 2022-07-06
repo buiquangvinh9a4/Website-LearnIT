@@ -49,7 +49,7 @@
 
 .sub-nav {
     display: none;
-    width: 230px;
+    width: 250px;
     height: auto;
     margin-top: 37px;
     position: absolute;
@@ -59,7 +59,7 @@
 }
 
 .sub-nav li {
-    width: 230px;
+    width: 250px;
     list-style: none;
     border-bottom: 1px solid rgba(128, 128, 128, 0.185);
     padding: 20px 0 20px 10px;
@@ -75,7 +75,7 @@
 ul.sub-nav ul.sub-nav {
     position: absolute;
     top: -10px;
-    left: 230px;
+    left: 250px;
     animation: subnavFadeIn ease .2s;
 }
 
@@ -109,7 +109,7 @@ ul.sub-nav li {
 }
 
 #signUp {
-    background-color: #e8505b;
+    background-color: var(--btn-color);
 }
 
 
