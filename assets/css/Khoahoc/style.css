@@ -3,11 +3,11 @@
 @keyframes FadeIn {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateX(-30px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 /* +++++++++++++ Head course++++++++++++++*/
@@ -43,6 +43,16 @@
 .icon-search{
     margin-top: 8px;
 }
+
+i.ti-search {
+    color: rgb(0, 47, 255);
+    font-size: 25px;
+}
+
+.icon-search .ti-search:hover {
+    color: red;
+}
+
 #text-input{
     width: 380px;
     height: 40px;
@@ -101,6 +111,13 @@
     color: #fff;
     border-radius: 13px;
 }
+
+i.fa-star {
+    color: rgb(255, 204, 0);
+    font-size: 12px;
+}
+
+
 /* phần ảnh */
 .main img{
     width: 250px;
