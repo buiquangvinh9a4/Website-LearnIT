@@ -1,0 +1,99 @@
+body {
+    height: 100vh;
+    background-image: url(../../images/signin/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 500px;
+    min-height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgb(45, 45, 45);
+    padding: 30px 50px;
+}
+
+.main .logo {
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.main .header-logo {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form .select {
+    margin-bottom: 30px;
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.443);
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.form i {
+    padding-right: 5px;
+    font-size: 20px;
+    align-items: center;
+    line-height: 1.7;
+    color: var(--main-color);
+}
+
+
+.form input {
+    width: 350px;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+}
+
+.form input:focus {
+    /* Tắt đường viền mặc định khi bấm vào input */
+    outline: 0;     
+}
+
+.sub-form {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.sub-form-pass span {
+    color:rgba(31, 31, 31, 0.684);
+}
+
+
+.sub-form-nopass a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.submit-form {
+    width: 400px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+#signIn-btn {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    width: 400px;
+    text-align: center;
+    padding: 15px 0;
+}
