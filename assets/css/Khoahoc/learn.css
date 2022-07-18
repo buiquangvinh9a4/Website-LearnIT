@@ -280,7 +280,6 @@ body {
 
 .focus-li {
     background-color: rgb(229, 229, 229);
-    color: var(--main-color);
 }
 
 .fa-flag {
