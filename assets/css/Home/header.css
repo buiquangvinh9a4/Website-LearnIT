@@ -88,14 +88,14 @@ ul.sub-nav li {
 .user {
     float: right;
     margin: 10px 35px;
-    padding: 5px;
+    padding: 0;
     background-color: var(--main-color);
     border-radius: 10px;
     box-shadow: 0 2px 5px 0 rgba(62, 62, 62, 0.519);
 }
 
 .user .user-btn {
-    padding: 5px 15px;
+    padding: 5px;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -110,6 +110,96 @@ ul.sub-nav li {
 
 #signUp {
     background-color: var(--btn-color);
+}
+
+#js-user {
+    width: 200px;
+    height: 50px;   
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+}
+.user-show {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.name-account {
+    color: #fff;
+    font-weight: bold;
+    line-height: 40px;
+    margin-right: 15px;
+}
+
+
+.user img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.user-hidden {
+    display: none;
+    width: 200px;
+    height: auto;   
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px gray;
+}
+
+
+.account-info {
+    height: 50px;
+    margin: 20px 0;
+}
+
+.account-info p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.account-info p:last-child{
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(84, 84, 84);
+}
+
+.nav-account {
+    width: 190px;
+    padding-left: 10px;
+}
+
+.nav-account li {
+    list-style: none;
+    padding: 15px;
+    border-top: 1px solid rgba(128, 128, 128, 0.275);
+    cursor: pointer;
+}
+
+.nav-account li a {
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-size: 15px;
+    
+}
+
+.nav-account li i {
+    padding-right: 10px;
+    color: gray;
+    font-size: 15px;
+}
+
+.nav-account li a:hover {
+    color: var(--main-color);
 }
 
 

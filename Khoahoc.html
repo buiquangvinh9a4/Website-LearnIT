@@ -19,32 +19,31 @@
     <div id="header-first">
         <!-- Header - Logo -->
         <div class="logo">
-            <a href="index.html"><img class="logo-img" src="assets/images/logo/logo_IT_white.png" alt="Itclub"></a>
+            <a href="Khoahoc.html"><img class="logo-img" src="assets/images/logo/logo_IT_white.png" alt="Itclub"></a>
         </div>
         <!-- Header - Navigation -->
         <div class="nav">
             <ul>
-                <li><a href="index.html">Giới thiệu</a></li>
                 <li>
                     <a href="Khoahoc.html">Khóa học</a>
                     <ul class="sub-nav">
                         <li>
                             <a href="Khoahoc.html#tinhocvanphong">Tin học văn phòng</a>
                             <ul class="sub-nav">
-                                <li><a href="">Word</a></li>
-                                <li><a href="">Excel</a></li>
-                                <li><a href="">PowerPoint</a></li>
+                                <li><a href="html/word/b1.html">Word</a></li>
+                                <li><a href="html/excel/b1.html">Excel</a></li>
+                                <li><a href="html/powerpoint/b1.html">PowerPoint</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="">Lập trình cơ bản</a>
+                            <a href="Khoahoc.html#laptrinhcoban">Lập trình cơ bản</a>
                             <ul class="sub-nav">
-                                <li><a href="">C++</a></li>
-                                <li><a href="">Python</a></li>
-                                <li><a href="">Lập trình Web</a></li>
+                                <li><a href="html/c++/b1.html">C++</a></li>
+                                <li><a href="html/python/b1.html">Python</a></li>
+                                <li><a href="html/html_css/b1.html">Lập trình Web</a></li>
                             </ul>
                         </li>
-                        <li><a href="">Kỹ năng sử dụng máy tính</a></li>
+                        <li><a href="Khoahoc.html#kythuatmaytinh">Kỹ năng sử dụng máy tính</a></li>
                     </ul>
                 </li>
                 <li>
@@ -55,14 +54,32 @@
                         <li><a href="">300 bài code thiếu nhi</a></li>
                     </ul>
                 </li>
-                <li><a href="">Thông báo</a></li>
+                <li><a href="">Thông tin</a></li>
                 <li><a href="">Liên hệ</a></li>
             </ul>
         </div>
         <!-- Header - User Account--> 
-        <div class="user">
-            <a class="user-btn" id="signIn" href="signIn.html">Đăng nhập</a>
-            <a class="user-btn" id="signUp" href="">Đăng ký</a>
+
+        <div class="user" id="js-user">
+            <div class="user-show">
+                <p class="name-account" id="js-user-name">vinhbq2001</p>
+                <img src="assets/images/avatar/vinh.png" alt="">
+            </div>
+            <div class="user-hidden" id="js-user-hidden">
+                <div class="account-info">
+                    <p>Bùi Quang Vinh</p>
+                    <p>Học sinh</p>
+                </div>
+                <ul class="nav-account">
+                    <li>
+                        <a href=""><i class="fa-regular fa-user"></i>Tài khoản</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-regular fa-circle-question"></i>Trợ giúp</a>
+                    </li>
+                    <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="clear"></div>
@@ -113,7 +130,7 @@
                                 <p class = "about">
                                     Nắm được các bước xây dựng, soạn thảo văn bản và chỉnh sửa hợp lý và nhanh chóng, đúng quy trình.
                                 </p>
-                                <div class="free"><a href="html/word/b1.html">Học ngay</a></div>
+                                <div class="free"><a href="html/word/b1.html" class="js-btn-learn">Học ngay</a></div>
                             </div>
                         </div>
                         <div class="tabhidden">
@@ -180,7 +197,7 @@
                                 <p class = "about">
                                     Trang bị cho học viên đầy đủ các kiến thức từ cơ bản đến nâng cao về bảng tính Excel 2016
                                 </p>
-                                <div class="free"><a href="">Học ngay</a></div>
+                                <div class="free"><a href="" class="js-btn-learn">Học ngay</a></div>
                             </div>
                         </div>
                         <div class="tabhidden">
@@ -251,7 +268,7 @@
                                 <p class = "about">
                                     Nắm được các bước cụ thể về quá trình tạo ra bài thuyết trình, bài giảng điện tử, có đủ kỹ năng về thiết kế, trình chiếu thông qua các bài thực hành
                                 </p>
-                                <div class="free"><a href="">Học ngay</a></div>
+                                <div class="free"><a href="" class="js-btn-learn">Học ngay</a></div>
                             </div>
                         </div>
                         <div class="tabhidden">
@@ -327,7 +344,7 @@
                                 <p class = "about">
                                     Khóa học C++ cơ bản sẽ giúp các bạn học sinh có một cái nhìn tổng quan về ngôn ngữ C++, các câu lệnh, hàm cơ bản liên quan đến ngôn ngữ này.
                                 </p>
-                                <div class="free"><a href="html/c++/b1.html">Học ngay</a></div>
+                                <div class="free"><a href="html/c++/b1.html" class="js-btn-learn">Học ngay</a></div>
                             </div>
                         </div>
                         <div class="tabhidden">
@@ -398,7 +415,7 @@
                                 <p class = "about">
                                     Khóa học này sẽ giúp các bạn hiểu về Python và cách sử dụng các câu lệnh cơ bản để giải quyết một số bài tập liên quan đến ngôn ngữ này.
                                 </p>
-                                <div class="free"><a href="html/python/b1.html">Học ngay</a></div>
+                                <div class="free"><a href="html/python/b1.html" class="js-btn-learn">Học ngay</a></div>
                             </div>
                         </div>
                         <div class="tabhidden">
@@ -469,7 +486,7 @@
                                 <p class = "about">
                                     Khóa học sẽ cung cấp cho các bạn kiến thức cơ bản về ngôn ngữ thiết kế giao diện WEB bằng 2 ngôn ngữ chính: HTML/CSS.
                                 </p>
-                                <div class="free"><a href="html/html_css/b1.html">Học ngay</a></div>
+                                <div class="free"><a href="html/html_css/b1.html" class="js-btn-learn">Học ngay</a></div>
                             </div>
                         </div>
                         <div class="tabhidden">
@@ -540,7 +557,7 @@
                                 <p class = "about">
                                     Khóa học Javascript cung cấp cho các bạn các câu lệnh cơ bản trong điều khiển Web, DOM, ...
                                 </p>
-                                <div class="free"><a href="">Học ngay</a></div>
+                                <div class="free"><a href="" class="js-btn-learn">Học ngay</a></div>
                             </div>
                         </div>
                         <div class="tabhidden tablehidden_last">
@@ -612,7 +629,7 @@
                                 <p class = "about">
                                     Với khóa học, bạn sẽ phân biệt được phần mềm hệ thống, phần mềm ứng dụng và ứng dụng vào thực tế.
                                 </p>
-                                <div class="free"><a href="">Học ngay</a></div>
+                                <div class="free"><a href="" class="js-btn-learn">Học ngay</a></div>
                             </div>
                         </div>
                         <div class="tabhidden">
@@ -679,7 +696,7 @@
                                 <p class = "about">
                                     Thư mục (hay folder) là một phần không thể thiếu khi người dùng sử dụng máy tính, việc trang bị kỹ năng tương tác và quản lý thư mục sẽ giúp bạn tiết kiệm thời gian và thao tác đúng cách với máy tính.
                                 </p>
-                                <div class="free"><a href="">Học ngay</a></div>
+                                <div class="free"><a href="" class="js-btn-learn">Học ngay</a></div>
                             </div>
                         </div>
                         <div class="tabhidden">
@@ -755,4 +772,6 @@
         </div>
     </div>
 </body>
+<script src="js/js-login.js"></script>
+<script src="js/js-open-user.js"></script>
 </html>

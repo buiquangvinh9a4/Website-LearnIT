@@ -1,0 +1,83 @@
+body {
+    height: 95vh;
+    background-image: url(../../images/khoahoc/error.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-left {
+    width: 30%;
+    height: 550px; 
+    margin-top: 75px;
+}
+
+#main-right {
+    width: 50%;
+    height: 550px;
+    margin-top: 100px;
+}
+
+#margin-right h2 {
+
+}
+
+#main-right input {
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    margin-top: 50px;
+}
+
+#main-right textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+    margin: 20px 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-right a {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#js-error-1, #js-error-2 {
+    color: red;
+}
+
+.menu {
+
+}
+
+.menu-hidden {
+    display: none;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.menu-hidden h1 {
+    margin-bottom: 50px;
+}

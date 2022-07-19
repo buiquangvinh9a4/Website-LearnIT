@@ -22,15 +22,17 @@
                 <h3>Đăng nhập vào IT CLUB</h3>
             </div>
 
-            <form action="" class="form">
+            <form action="" class="form" autocomplete="on">
                 <div class="select">
                     <div class="icon">
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <div class="input-text">
-                        <input type="text" placeholder="Tên đăng nhập">
+                        <input type="text" placeholder="Tên đăng nhập" autocomplete="username">
                     </div>
                 </div>
+                <p id="tb1"></p>
+                
                 <div class="select">
                     <div class="icon">
                         <i class="fa-solid fa-key"></i>
@@ -39,8 +41,9 @@
                         <input type="password" placeholder="Mật khẩu">
                     </div>
                 </div>
+                <p id="tb2"></p>
             </form>
-            <div class="sub-form">
+            <!-- <div class="sub-form">
                 <div class="sub-form-pass">
                     <input type="checkbox" name="note-pass">
                     <span>Nhớ mật khẩu</span>
@@ -48,12 +51,13 @@
                 <div class="sub-form-nopass">
                     <a href="">Quên mật khẩu</a>
                 </div>
-            </div>
+            </div> -->
             <div class="submit-form">
-                <a href="" id="signIn-btn">Đăng nhập</a>
+                <a href="#" id="signIn-btn">Đăng nhập</a>
             </div>
         </div>
         
         <script src="" async defer></script>
     </body>
+    <script src="js/js-login.js"></script>
 </html>
