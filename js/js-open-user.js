@@ -9,6 +9,7 @@ var btn_user = document.getElementById("js-user");
             } else {
                 user_hidden.style.display = "none";
                 btn_user.style.backgroundColor = "";
-                user_name.style.color = "#fff";
+                user_name.style.color = "#fff"; 
             }
         });
+
