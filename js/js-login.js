@@ -50,7 +50,6 @@ btn_submit.onclick = function() {
             }
         }
         if (check_account) {
-            alert('Đăng nhập thành công');
             btn_submit.attributes[0].value = 'Khoahoc.html';
         } else {
             error2.innerText = '*Tên tài khoản hoặc mật khẩu chưa chính xác.';
