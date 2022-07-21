@@ -58,7 +58,7 @@ body {
     font-size: 20px;
     align-items: center;
     line-height: 1.7;
-    color: var(--main-color);
+    color: rgb(0, 90, 156);
 }
 
 
@@ -88,7 +88,7 @@ body {
 
 .sub-form-nopass a{
     text-decoration: none;
-    color: var(--main-color);
+    color: rgb(0, 90, 156);
 }
 
 .submit-form {
