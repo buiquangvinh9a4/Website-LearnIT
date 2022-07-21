@@ -1,3 +1,5 @@
+
+
 #main {
     width: 100%;
     height: auto;
@@ -292,7 +294,7 @@
 }
 
 
-input.input-submit:hover, .box-btn:hover {
+input.input-submit:hover, .box-btn:hover, a.input-submit:hover {
     background-color: rgba(255, 196, 0, 0.821) !important;
     transition: all linear 0.25s ;
 }
