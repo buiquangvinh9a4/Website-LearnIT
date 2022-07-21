@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khoá học</title>
-    <link rel="stylesheet" href="assets/css/Home/all.css">
-    <link rel="stylesheet" href="assets/css/Home/header.css">
-    <link rel="stylesheet" href="assets/css/Account/info_account.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
-    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../../assets/css/Home/all.css">
+    <link rel="stylesheet" href="../../assets/css/Home/header.css">
+    <link rel="stylesheet" href="../../assets/css/Account/info_account.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="../../assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
 <!-- Header -->
@@ -18,7 +18,7 @@
     <div id="header-first">
         <!-- Header - Logo -->
         <div class="logo">
-            <a href="Khoahoc.html"><img class="logo-img" src="assets/images/logo/logo_IT_white.png" alt="Itclub"></a>
+            <a href="Khoahoc.html"><img class="logo-img" src="../../assets/images/logo/logo_IT_white.png" alt="Itclub"></a>
         </div>
         <!-- Header - Navigation -->
         <div class="nav">
@@ -29,17 +29,17 @@
                         <li>
                             <a href="Khoahoc.html#tinhocvanphong">Tin học văn phòng</a>
                             <ul class="sub-nav">
-                                <li><a href="html/word/b1.html">Word</a></li>
-                                <li><a href="html/excel/b1.html">Excel</a></li>
-                                <li><a href="html/powerpoint/b1.html">PowerPoint</a></li>
+                                <li><a href="../word/b1.html">Word</a></li>
+                                <li><a href="../excel/b1.html">Excel</a></li>
+                                <li><a href="../powerpoint/b1.html">PowerPoint</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="Khoahoc.html#laptrinhcoban">Lập trình cơ bản</a>
                             <ul class="sub-nav">
-                                <li><a href="html/c++/b1.html">C++</a></li>
-                                <li><a href="html/python/b1.html">Python</a></li>
-                                <li><a href="html/html_css/b1.html">Lập trình Web</a></li>
+                                <li><a href="../c++/b1.html">C++</a></li>
+                                <li><a href="../python/b1.html">Python</a></li>
+                                <li><a href="../html_css/b1.html">Lập trình Web</a></li>
                             </ul>
                         </li>
                         <li><a href="Khoahoc.html#kythuatmaytinh">Kỹ năng sử dụng máy tính</a></li>
@@ -54,7 +54,7 @@
                     </ul>
                 </li>
                 <li><a href="">Thông tin</a></li>
-                <li><a href="">Liên hệ</a></li>
+                <li><a href="info_help.html">Liên hệ</a></li>
             </ul>
         </div>
         <!-- Header - User Account--> 
@@ -62,56 +62,55 @@
         <div class="user" id="js-user">
             <div class="user-show">
                 <p class="name-account" id="js-user-name">username</p>
-                <img src="assets/images/avatar/vinh.png" alt="">
+                <img src="" id="js-user-avatar" alt="">
             </div>
             <div class="user-hidden" id="js-user-hidden">
                 <div class="account-info">
-                    <p id="js-user-fullname">Bùi Quang Vinh</p>
+                    <p id="js-user-fullname"></p>
                     <p>Học sinh</p>
                 </div>
                 <ul class="nav-account">
                     <li>
-                        <a href=""><i class="fa-regular fa-user"></i>Tài khoản</a>
+                        <a href="info_account.html"><i class="fa-regular fa-user"></i>Tài khoản</a>
                     </li>
                     <li>
-                        <a href=""><i class="fa-regular fa-circle-question"></i>Trợ giúp</a>
+                        <a href="info_help.html"><i class="fa-regular fa-circle-question"></i>Trợ giúp</a>
                     </li>
-                    <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
+                    <li><a href="../../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="clear"></div>
 
     <!-- /* -----------------------------------main----------------------------------- */ -->
     <main>
         <div id="body-info">
             <div id="body-left">
-                <img src="assets/images/avatar/vinh.png" alt="">
+                <img src="" id="js-info-avatar" alt="">
                 <h1>Avatar</h1>
             </div>
             <div id="body-right">
-                <img src="assets/images/logo/logo_IT_blue.png" alt="">
+                <img src="../../assets/images/logo/logo_IT_blue.png" alt="">
                 <ul>
                     <li>
                         <h3>Tên đăng nhập</h3>
-                        <span>buiquangvinh9a4</span>
+                        <span id="js-info-username">buiquangvinh9a4</span>
                     </li>
                     <li>
                         <h3>Họ và tên</h3>
-                        <span>Bùi Quang Vinh</span>
+                        <span id="js-info-fullname">Bùi Quang Vinh</span>
                     </li>
                     <li>
                         <h3>Địa chỉ email</h3>
-                        <span>boydeptray18042001@gmail.com</span>
+                        <span id="js-info-mail">boydeptray18042001@gmail.com</span>
                     </li>
                     <li>
                         <h3>Lớp</h3>
-                        <span>12A4</span>
+                        <span id="js-info-class">12A4</span>
                     </li>
                     <li>
                         <h3>Trường</h3>
-                        <span>THPT Uông Bí - Quảng Ninh</span>
+                        <span id="js-info-school">THPT Uông Bí - Quảng Ninh</span>
                     </li>
                 </ul>
             </div>
@@ -119,6 +118,6 @@
     </main>
     
 </body>
-<script src="js/js-login.js"></script>
-<script src="js/js-open-user.js"></script>
+<script src="../../js/js-rename-user.js"></script>
+<script src="../../js/js-open-user.js"></script>
 </html>

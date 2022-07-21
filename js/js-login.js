@@ -11,10 +11,10 @@ class Account {
 
 var list_users = new Array();
 
-var user1 = new Account('vinhbq2001', '18042001', 'Bùi Quang Vinh', 'boydeptray18042001@gmail.com', 'vinh.png');
-var user2 = new Account('dangtrang2k1', '11032001', 'Đặng Thị Thu Trang', 'trangyeol2001@gmail.com', 'default.png');
-var user3 = new Account('ducdung18cm', '12345678', 'Mạc Đức Dũng', 'ducdung18cmok@gmail.com', 'dung.png');
-var user4 = new Account('1', '1', 'Test', 'test@gmail.com', 'default.png');
+var user1 = new Account('vinhbq2001', '18042001', 'Bùi Quang Vinh', 'boydeptray18042001@gmail.com', 'vinh.png', '12A4', 'THPT Uông Bí');
+var user2 = new Account('dangtrang2k1', '11032001', 'Đặng Thị Thu Trang', 'trangyeol2001@gmail.com', 'default.png', '11B3', 'THPT Hồng Đức');
+var user3 = new Account('ducdung18cm', '12345678', 'Mạc Đức Dũng', 'ducdung18cmok@gmail.com', 'dung.png', '10C6', 'THPT Hòn Gai');
+var user4 = new Account('1', '1', 'Test', 'test@gmail.com', 'default.png', 'Hiệu trưởng', 'Trùm');
 
 list_users.push(user1);
 list_users.push(user2);

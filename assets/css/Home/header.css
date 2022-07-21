@@ -12,7 +12,7 @@
     height: 60px;
     background-image: linear-gradient(90deg, rgba(14, 0, 204), #29ABE2);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 100000000; 
@@ -21,7 +21,6 @@
 /* Header-logo */
 .logo {
     margin: 10px;
-    float: left;
 }
 
 .logo-img {
@@ -86,7 +85,6 @@ ul.sub-nav li {
 
 /* Header-User Account */
 .user {
-    float: right;
     margin: 10px 35px;
     padding: 0;
     background-color: var(--main-color);
@@ -101,7 +99,7 @@ ul.sub-nav li {
     font-weight: bold;
     border-radius: 5px;
     color: #fff;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 
