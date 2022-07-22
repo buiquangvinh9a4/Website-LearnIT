@@ -56,7 +56,7 @@
                     <div class="video-title">
                         <h1 style="margin-left: 10px;">Bài 3: Các thao tác Soạn thảo văn bản</h1>
                     </div>
-                    <div class="video-comment">
+                    <div class="video-comment" id="js-back-opacity">
                        <div class="comment-list height-bottom">
                             <h3>Nội dung bài học</h3>
                             <ul>
@@ -79,6 +79,50 @@
                                 
                             </ul>
                         </div>
+                    </div>
+                    <!-- Quiz câu hỏi trắc nghiệm -->
+                    <div class="lesson-left">
+                        <form action="" name="question">
+                            <!-- Nội dung câu hỏi -->
+                            <h3 style="margin-top: 10px;"><strong>Câu hỏi:</strong></h3>  
+                            <p><span>Chức năng của tổ hợp phím "Ctrl + V" là gì?</span></p>
+        
+                            <!-- Nội dung câu trả lời -->
+                            <div class="frame_input"><input type="radio" name="answer" value="A"> A. Đưa nội dung đã chọn vào bộ nhớ tạm <br></div>
+                            <div class="frame_input"><input type="radio" name="answer" value="B"> B. Xóa nội dung đã chọn <br></div>
+                            <div class="frame_input"><input type="radio" name="answer" value="C"> C. Đưa nội dung gần nhất trong bộ nhớ tạm ra vị trí chỉ định <br></div>
+                            <div class="frame_input"><input type="radio" name="answer" value="D"> D. Xóa nội dung gần nhất trong bộ nhớ tạm ra khỏi bộ nhớ tạm <br></div>
+                            <input type="button" value="Trả lời" onclick="check()">
+                        </form>
+                        <!-- Thông báo đáp án trắc nghiệm - Mặc định đang ẩn - Chỉ hiện khi bấm trả lời -->
+                        <div class="result" id="js-result">
+                            <div class="result-title">
+                                <h1 id="js-result-title"></h1>
+                            </div>
+                            <div class="result-btn">
+                                <a href="#" id="js-back" onclick="back()"><i class="fa-solid fa-arrow-rotate-left"></i>Quay lại</a>
+                                <a href="b2.html" ><i class="fa-solid fa-forward"></i>Bài tiếp theo</a>
+                            </div>
+                        </div> 
+                        <!-- Xử lý đáp án và hiển thị kết quả -->
+                        <script>
+                            var result = document.getElementById('js-result');
+                            var back_opacity = document.getElementById('js-back-opacity');
+                            function check() {
+                                var question1 = document.question.answer.value;
+                                var result_tt = document.getElementById('js-result-title');
+                                result.style.display = 'block';
+                                back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
+                                
+                                if (question1 == "C") {  // Đáp án đúng
+                                    result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
+                                } else {
+                                    result_tt.innerText = 'Câu trả lời chưa chính xác!';
+    
+                                }
+                            }
+                        </script>
+
                     </div>
                 </div>
             </div>
@@ -132,6 +176,7 @@
     </body>
     <script src="../../js/js-open-user.js"></script>
     <script src="../../js/js-rename-user.js"></script>
+    <script src="../../js/js-answer.js"></script>
 
 
 </html>     
