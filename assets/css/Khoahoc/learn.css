@@ -227,7 +227,7 @@ body {
 }
 
 
-/* Main - Left Riêng khóa học phần mềm máy tính */
+/* Main - Left Riêng khóa học có lý thuyết là slide */
 
 #main-left {
     position: relative;
@@ -240,6 +240,10 @@ body {
 
 .lesson-left h3 {
     padding: 10px 0;
+}
+
+.lesson-left h4 {
+    padding: 10px 0 0 20px;
 }
 
 .lesson-left p {
@@ -259,6 +263,29 @@ body {
     margin-left: 20px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.lesson-left ol li {
+    margin: 10px 0 10px 60px;
+}
+
+.lesson-left ul li {
+    margin: 10px 0 10px 20px;
+}
+
+.text-code {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #2d2d2d;
+    margin: 10px 0;
+}
+
+.text-code p {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 

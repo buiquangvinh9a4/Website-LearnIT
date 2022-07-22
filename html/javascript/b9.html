@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Khóa học: Microsoft Word 2016</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/css/Home/all.css">
+        <link rel="stylesheet" href="../../assets/css/Home/footer.css">
+        <link rel="stylesheet" href="../../assets/css/Khoahoc/learn.css">
+        <link rel="stylesheet" href="../../assets/fonts/font-awesome/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="header-box">
+                <!-- Header - Logo -->
+                <div class="logo">
+                    <a href="../main/Khoahoc.html"><img class="logo-img" src="../../assets/images/logo/logo_IT_white.png" alt="Itclub"></a>
+                    <h2>Javascript cơ bản</h2>
+                </div>
+
+                <!-- Header - User Account--> 
+                <div class="user" id="js-user">
+                    <div class="user-show">
+                        <p class="name-account" id="js-user-name">vinhbq2001</p>
+                        <img src="" id="js-user-avatar" alt="">
+                    </div>
+                    <div class="user-hidden" id="js-user-hidden">
+                        <div class="account-info">
+                            <p id="js-user-fullname">Bùi Quang Vinh</p>
+                            <p>Học sinh</p>
+                        </div>
+                        <ul class="nav-account">
+                            <li>
+                                <a href="../main/info_account.html"><i class="fa-regular fa-user"></i>Tài khoản</a>
+                            </li>
+                            <li>
+                                <a href="../main/info_help.html"><i class="fa-regular fa-circle-question"></i>Trợ giúp</a>
+                            </li>
+                            <li><a href="../../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="main"  class="bgcl-opacity">
+            <div id="main-left">
+                <!-- Thông báo đáp án trắc nghiệm - Mặc định đang ẩn - Chỉ hiện khi bấm trả lời -->
+                <div class="result" id="js-result">
+                    <div class="result-title">
+                        <h1 id="js-result-title"></h1>
+                    </div>
+                    <div class="result-btn">
+                        <a href="#" id="js-back" onclick="back()"><i class="fa-solid fa-arrow-rotate-left"></i>Quay lại</a>
+                        <a href="b10.html" ><i class="fa-solid fa-forward"></i>Bài tiếp theo</a>
+                    </div>
+                </div>
+
+                <!-- Giao diện thông tin bài -->
+                <div class="lesson-left" id="js-back-opacity">
+
+                    <h3 style="font-size: 25px;">Bài 9: Toán tử logic</h3>
+
+                    <ul class="list-inline"><li>Mục tiêu</li></ul>
+                    <p>Học viên có thể hiểu về khái niệm ngôn ngữ Javascript.</p>
+                    <ul class="list-inline"><li>Lý thuyết</li></ul>
+                    <h4><strong>JavaScript là gì</strong></h4>
+                    <p>JavaScript là ngôn ngữ kịch bản phía máy khách phổ biến nhất và được sử dụng rộng rãi. Kịch bản phía máy khách đề cập đến các tập lệnh chạy trong trình duyệt web của bạn. JavaScript được thiết kế để thêm hiệu ứng tương tác và động cho các trang web bằng cách thao tác nội dung được trả về từ máy chủ web.</p>
+                    <p>JavaScript là một ngôn ngữ hướng đối tượng và nó cũng có một số điểm tương đồng về cú pháp với ngôn ngữ lập trình Java. Nhưng, JavaScript không liên quan đến Java theo bất kỳ cách nào.</p>
+                    <h4><strong>Tại sao cần học JS</strong></h4>
+                    <p>JavaScript là 1 trong 3 ngôn ngữ mà tất cả các nhà phát triển website phải học:</p>
+                    <ol>
+                        <li><strong>HTML </strong>để xây dựng nội dung của website</li>
+                        <li><strong>CSS </strong>để chỉ định bố cục của các trang web</li>
+                        <li><strong>JavaScript </strong>để lập trình hành vi của các trang web </li>
+                    </ol>
+                    <p>Các trang web không phải là nơi duy nhất sử dụng JavaScript. Nhiều chương trình máy tính để bàn và máy chủ sử dụng JavaScript. Node.js là nổi tiếng nhất. Một số cơ sở dữ liệu, như MongoDB và CouchDB, cũng sử dụng JavaScript làm ngôn ngữ lập trình của họ.</p>
+                    <h4><strong>Bạn có thể làm gì với javascript</strong></h4>
+                    <p>Có rất nhiều điều bạn có thể làm với JavaScript.</p>
+                    <ul style="padding-left: 30px">
+                        <li>Bạn có thể sửa đổi nội dung của một trang web bằng cách thêm hoặc xóa các yếu tố.</li>
+                        <li>Bạn có thể thay đổi kiểu dáng và vị trí của các thành phần trên trang web.</li>
+                        <li>Bạn có thể theo dõi các sự kiện như nhấp chuột, di chuột, v.v. và phản ứng với nó.</li>
+                        <li>Bạn có thể thực hiện và kiểm soát chuyển tiếp và hình ảnh động.</li>
+                        <li>Bạn có thể tạo cửa sổ bật lên cảnh báo để hiển thị thông tin hoặc thông báo cảnh báo cho người dùng.</li>
+                        <li>Bạn có thể xác nhận đầu vào của người dùng trước khi gửi nó đến máy chủ.</li>
+                    </ul>
+                    <p>Danh sách không kết thúc ở đây, có nhiều điều thú vị khác mà bạn có thể làm với JavaScript. Bạn sẽ tìm hiểu về tất cả chúng một cách chi tiết trong các chương sắp tới.</p>
+                    
+                    <!-- Câu hỏi trắc nghiệm cuối bài học -->
+                    <form action="" name="question">
+                        <ul class="list-inline"><li>Câu hỏi</li></ul>
+                        <p><span>Javascript là ngôn ngữ dùng để lập trình các sự kiện trên website?</span></p>
+
+                        <div class="frame_input"><input type="radio" name="answer" value="A"> Đúng <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="B"> Sai <br></div>
+                        <input type="button" value="Trả lời" onclick="check()">
+
+                        <script>
+                            var result = document.getElementById('js-result');
+                            var back_opacity = document.getElementById('js-back-opacity');
+                            function check() {
+                                var question1 = document.question.answer.value;
+                                var result_tt = document.getElementById('js-result-title');
+                                result.style.display = 'block';
+                                back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
+                                if (question1 == "A") {
+                                    result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
+                                } else {
+                                    result_tt.innerText = 'Câu trả lời chưa chính xác!';
+
+                                }
+                            }
+                        </script>
+                    </form>
+
+                </div>
+                        
+            
+            </div>
+            <!-- Menu hiển thị danh sách bài học trong khóa học -->
+            <div id="main-right">
+                <ul class="nav-menu">
+                    <li>
+                        <a href=""><i class="fa-solid fa-desktop"></i>Phần 1: Giới thiệu về Javascript</a>
+                        <ul class="sub-menu">
+                            <li><a href="b1.html" class="lesson">Bài 1: Javascript là gì?</a></li>
+                            <li><a href="b2.html" class="lesson">Bài 2: CONSOLE.LOG()</a></li>
+                            <li><a href="b3.html" class="lesson">Bài 3: COMMENT trong Javascript</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-desktop"></i>Phần 2: Biến trong Javascript</a>
+                        <ul class="sub-menu">
+                            <li><a href="b4.html" class="lesson">Bài 4: Khái niệm về biến</a></li>
+                            <li><a href="b5.html" class="lesson">Bài 5: Kiểu dữ liệu của biến</a></li>
+                            <li><a href="b6.html" class="lesson">Bài 6: Quy tắc đặt tên biến trong Javascript</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-desktop"></i>Phần 3: Các toán tử trong Javascript</a>
+                        <ul class="sub-menu">
+                            <li><a href="b7.html" class="lesson">Bài 7: Toán tử số học</a></li>
+                            <li><a href="b8.html" class="lesson">Bài 8: Toán tử so sánh</a></li>
+                            <li class="focus-li"><a href="b9.html" class="lesson"><i class="fa-solid fa-flag"></i>Bài 9: Toán tử logic</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-desktop"></i>Phần 4: Các hàm trong Javascript</a>
+                        <ul class="sub-menu">
+                            <li><a href="b10.html" class="lesson">Bài 10: Function (Hàm) là gì?</a></li>
+                            <li><a href="b11.html" class="lesson">Bài 11: Tham số của hàm</a></li>
+                            <li><a href="b12.html" class="lesson">Bài 12: Giá trị trả về của một hàm</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-desktop"></i>Phần 5: Cú pháp rẽ nhánh trong Javascript</a>
+                        <ul class="sub-menu">
+                            <li><a href="b13.html" class="lesson">Bài 13: Câu lệnh IF</a></li>
+                            <li><a href="b14.html" class="lesson">Bài 14: Câu lệnh IF...ELSE</a></li>
+                            <li><a href="b15.html" class="lesson">Bài 15: Câu lệnh SWITCH...CASE</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+    <script src="../../js/js-open-user.js"></script>
+    <script src="../../js/js-rename-user.js"></script>
+    <script src="../../js/js-answer.js"></script>
+
+
+
+</html>     
