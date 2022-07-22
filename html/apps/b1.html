@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Khóa học: Microsoft Word 2016</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/css/Home/all.css">
+        <link rel="stylesheet" href="../../assets/css/Home/footer.css">
+        <link rel="stylesheet" href="../../assets/css/Khoahoc/learn.css">
+        <link rel="stylesheet" href="../../assets/fonts/font-awesome/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="header-box">
+                <!-- Header - Logo -->
+                <div class="logo">
+                    <a href="../main/Khoahoc.html"><img class="logo-img" src="../../assets/images/logo/logo_IT_white.png" alt="Itclub"></a>
+                    <h2>Phần mềm máy tính</h2>
+                </div>
+
+                <!-- Header - User Account--> 
+                <div class="user" id="js-user">
+                    <div class="user-show">
+                        <p class="name-account" id="js-user-name">vinhbq2001</p>
+                        <img src="" id="js-user-avatar" alt="">
+                    </div>
+                    <div class="user-hidden" id="js-user-hidden">
+                        <div class="account-info">
+                            <p id="js-user-fullname">Bùi Quang Vinh</p>
+                            <p>Học sinh</p>
+                        </div>
+                        <ul class="nav-account">
+                            <li>
+                                <a href="../main/info_account.html"><i class="fa-regular fa-user"></i>Tài khoản</a>
+                            </li>
+                            <li>
+                                <a href="../main/info_help.html"><i class="fa-regular fa-circle-question"></i>Trợ giúp</a>
+                            </li>
+                            <li><a href="../../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="main"  class="bgcl-opacity">
+            <div id="main-left">
+                <!-- Thông báo đáp án trắc nghiệm - Mặc định đang ẩn - Chỉ hiện khi bấm trả lời -->
+                <div class="result" id="js-result">
+                    <div class="result-title">
+                        <h1 id="js-result-title"></h1>
+                    </div>
+                    <div class="result-btn">
+                        <a href="#" id="js-back" onclick="back()"><i class="fa-solid fa-arrow-rotate-left"></i>Quay lại</a>
+                        <a href="b2.html" ><i class="fa-solid fa-forward"></i>Bài tiếp theo</a>
+                    </div>
+                </div>
+
+                <!-- Giao diện thông tin bài -->
+                <div class="lesson-left" id="js-back-opacity">
+
+                    <h3 style="font-size: 25px;">Bài 1: Khái niệm về phần mềm</h3>
+
+                    <ul class="list-inline"><li>Mục tiêu</li></ul>
+                    <p>Học viên có thể hiểu về khái niệm về phần mềm máy tính.</p>
+                    <ul class="list-inline"><li>Tổng quan</li></ul>
+                    <p>Trong thời đại công nghệ số, không ai trong chúng ta là chưa được nghe tới hai chữ <code>"phần mềm"</code>, thực tế mỗi ngày khi sử dụng máy tính chúng ta đều đã, đang và sẽ sử dụng các phần mềm trên máy tính. Vậy phần mềm là gì ?</p>
+                    <p><span><code>Phần mềm máy tính (Computer Software)</code> hay gọi tắt là <code>Phần mềm (Software)</code> là một tập hợp những câu lệnh hoặc chỉ thị (Instruction) được viết bằng một hoặc nhiều ngôn ngữ lập trình theo một trật tự xác định, và các dữ liệu hay tài liệu liên quan nhằm tự động thực hiện một số nhiệm vụ hay chức năng hoặc giải quyết một vấn đề cụ thể nào đó.</span><br class="kix-line-break"><br class="kix-line-break"><span>Phần mềm thực hiện các chức năng của nó bằng cách gửi các chỉ thị trực tiếp đến phần cứng hoặc bằng cách cung cấp dữ liệu để phục vụ các chương trình hay phần mềm khác.</span></p>
+                    <p><span>Phần mềm là một khái niệm trừu tượng, nó khác với phần cứng ở chỗ là “phần mềm không thể sờ hay đụng vào”, và nó cần phải có phần cứng máy tính mới có thể thực thi được.</span></p>
+                    <p><span> <img width="545" height="327" alt="" src="../../assets/images/khoahoc/phanmem/phanmem1.jpg"></span></p>
+                    <h3><b>Tìm hiểu về phần mềm máy tính</b></h3>
+                    <p>Trước đây, để tạo ra chương trình máy tính người ta phải làm việc trực tiếp với các con số 0 hoặc 1 (sử dụng hệ số nhị phân), hay còn gọi là ngôn ngữ máy. Công việc này vô cùng khó khăn, chiếm nhiều thời gian, công sức và đặc biệt dễ gây ra lỗi. Để khắc phục nhược điểm này, người ta đề xuất ra hợp ngữ, một ngôn ngữ cho phép thay thế dãy 0 hoặc 1 này bởi các từ gợi nhớ tiếng Anh.</p>
+                    <p>Tuy nhiên, cải tiến này vẫn còn chưa thật thích hợp với đa số người dùng máy tính, những người luôn mong muốn các lệnh chính là ý nghĩa của các thao tác mà nó mô tả. Vì vậy, ngay từ những năm 1950, người ta đã xây dựng những ngôn ngữ lập trình mà câu lệnh của nó gần với ngôn ngữ tự nhiên. Các ngôn ngữ này được gọi là ngôn ngữ lập trình bậc cao.<br><br>Chương trình máy tính thường được tạo ra bởi con người, những người này được gọi là lập trình viên, tuy nhiên cũng tồn tại những chương trình được sinh ra bởi các chương trình khác.</p>
+                    
+                    <!-- Câu hỏi trắc nghiệm cuối bài học -->
+                    <form action="" name="question">
+                        <h3 style="margin-top: 10px;"><strong>Câu hỏi:</strong></h3>
+                        <p><span>Máy tính có cần phần mềm để có thể hoạt động không?</span></p>
+
+                        <div class="frame_input"><input type="radio" name="answer" value="A"> Có <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="B"> Không <br></div>
+                        <input type="button" value="Trả lời" onclick="check()">
+
+                        <script>
+                            var result = document.getElementById('js-result');
+                            var back_opacity = document.getElementById('js-back-opacity');
+                            function check() {
+                                var question1 = document.question.answer.value;
+                                var result_tt = document.getElementById('js-result-title');
+                                result.style.display = 'block';
+                                back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
+                                if (question1 == "A") {
+                                    result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
+                                } else {
+                                    result_tt.innerText = 'Câu trả lời chưa chính xác!';
+
+                                }
+                            }
+                        </script>
+                    </form>
+
+                </div>
+                        
+            
+            </div>
+            <!-- Menu hiển thị danh sách bài học trong khóa học -->
+            <div id="main-right">
+                <ul class="nav-menu">
+                    <li>
+                        <a href=""><i class="fa-solid fa-desktop"></i>Phần 1: Giới thiệu về phần mềm</a>
+                        <ul class="sub-menu">
+                            <li class="focus-li"><a href="b1.html" class="lesson"><i class="fa-solid fa-flag"></i>Bài 1: Khái niệm về phần mềm</a></li>
+                            <li><a href="b2.html" class="lesson">Bài 2: Phân loại phần mềm</a></li>
+                            <li><a href="b3.html" class="lesson">Bài 3: Giới thiệu về phần mềm hệ thống</a></li>
+                            <li><a href="b4.html" class="lesson">Bài 4: Giới thiệu về phần mềm ứng dụng</a></li>
+                            <li><a href="b5.html" class="lesson">Bài 5: Giới thiệu về quy trình phát triển phần mềm</a></li>
+                            <li><a href="b6.html" class="lesson">Bài 6: Phần mềm mã nguồn đóng</a></li>
+                            <li><a href="b7.html" class="lesson">Bài 7: Phần mềm mã nguồn mở</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-desktop"></i>Phần 2: Hệ điều hành</a>
+                        <ul class="sub-menu">
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 8: Hệ điều hành là gì?</a></li>
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 9: Một số hệ điều hành phổ biến</a></li>
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 10: Giới thiệu về hệ điều hành Windows</a></li>
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 11: Giới thiệu về hệ điều hành MacOS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-desktop"></i>Phần 3: Phần mềm ứng dụng: Trình duyệt WEB</a>
+                        <ul class="sub-menu">
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 12: Giới thiệu về trình duyệt Web</a></li>
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 13: Trình duyệt Google Chrome</a></li>
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 14: Trình duyệt Internet Explorer</a></li>
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 15: Trình duyệt Safari</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-desktop"></i>Phần 4: Phần mềm văn phòng</a>
+                        <ul class="sub-menu">
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 16: Ứng dụng văn phòng Microsoft Office</a></li>
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 17: Microsoft Word</a></li>
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 18: Microsoft Excel</a></li>
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 19: Microsoft PowerPoint</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-desktop"></i>Phần 5: Trình soạn thảo và lập trình</a>
+                        <ul class="sub-menu">
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 20: Giới thiệu các phần mềm lập trình</a></li>
+                            <li><a href="#" class="lesson" onclick="alert('Bài học đang được nâng cấp, vui lòng quay lại sau!')">Bài 21: Các trình soạn thảo mã nguồn</a></li>
+                        </ul>
+                    </li>
+                    
+
+                </ul>
+            </div>
+        </div>
+
+    </body>
+    <script src="../../js/js-open-user.js"></script>
+    <script src="../../js/js-rename-user.js"></script>
+    <script src="../../js/js-answer.js"></script>
+
+
+
+</html>     
