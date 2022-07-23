@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Khóa học: Microsoft Word 2016</title>
+        <title>Khóa học: Javascript cơ bản</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../assets/css/Home/all.css">
@@ -63,30 +63,113 @@
                     <h3 style="font-size: 25px;">Bài 6: Quy tắc đặt tên biến trong Javascript</h3>
 
                     <ul class="list-inline"><li>Mục tiêu</li></ul>
-                    <p>Học viên có thể hiểu về khái niệm ngôn ngữ Javascript.</p>
-                    <ul class="list-inline"><li>Lý thuyết</li></ul>
-                    <h4><strong>JavaScript là gì</strong></h4>
-                    <p>JavaScript là ngôn ngữ kịch bản phía máy khách phổ biến nhất và được sử dụng rộng rãi. Kịch bản phía máy khách đề cập đến các tập lệnh chạy trong trình duyệt web của bạn. JavaScript được thiết kế để thêm hiệu ứng tương tác và động cho các trang web bằng cách thao tác nội dung được trả về từ máy chủ web.</p>
-                    <p>JavaScript là một ngôn ngữ hướng đối tượng và nó cũng có một số điểm tương đồng về cú pháp với ngôn ngữ lập trình Java. Nhưng, JavaScript không liên quan đến Java theo bất kỳ cách nào.</p>
-                    <h4><strong>Tại sao cần học JS</strong></h4>
-                    <p>JavaScript là 1 trong 3 ngôn ngữ mà tất cả các nhà phát triển website phải học:</p>
-                    <ol>
-                        <li><strong>HTML </strong>để xây dựng nội dung của website</li>
-                        <li><strong>CSS </strong>để chỉ định bố cục của các trang web</li>
-                        <li><strong>JavaScript </strong>để lập trình hành vi của các trang web </li>
-                    </ol>
-                    <p>Các trang web không phải là nơi duy nhất sử dụng JavaScript. Nhiều chương trình máy tính để bàn và máy chủ sử dụng JavaScript. Node.js là nổi tiếng nhất. Một số cơ sở dữ liệu, như MongoDB và CouchDB, cũng sử dụng JavaScript làm ngôn ngữ lập trình của họ.</p>
-                    <h4><strong>Bạn có thể làm gì với javascript</strong></h4>
-                    <p>Có rất nhiều điều bạn có thể làm với JavaScript.</p>
-                    <ul style="padding-left: 30px">
-                        <li>Bạn có thể sửa đổi nội dung của một trang web bằng cách thêm hoặc xóa các yếu tố.</li>
-                        <li>Bạn có thể thay đổi kiểu dáng và vị trí của các thành phần trên trang web.</li>
-                        <li>Bạn có thể theo dõi các sự kiện như nhấp chuột, di chuột, v.v. và phản ứng với nó.</li>
-                        <li>Bạn có thể thực hiện và kiểm soát chuyển tiếp và hình ảnh động.</li>
-                        <li>Bạn có thể tạo cửa sổ bật lên cảnh báo để hiển thị thông tin hoặc thông báo cảnh báo cho người dùng.</li>
-                        <li>Bạn có thể xác nhận đầu vào của người dùng trước khi gửi nó đến máy chủ.</li>
+                    <p>Hiểu về quy tắc đặt tên cho biến. <br>
+                        Biết những từ khóa riêng cái mà không thể sử dùng làm biến, function, phương thức hay tên đối tượng.</p>
+                    <ul class="list-inline"><li>Tổng quan</li></ul>
+                    <h4>Các quy ước đặt tên cho các biến JavaScript</h4>
+                    <p>Khi đặt tên cho các biến của bạn trong JavaScript, hãy ghi nhớ các quy tắc sau.</p>
+                    <ul type="circle" style="padding-left: 20px;">
+                        <li>Tên biến phải bắt đầu bằng một chữ cái, gạch dưới (_), hay ký tự dollar ($).</li>
+                        <li>Tên biến không thể bắt đầu bằng 1 chữ số.</li>
+                        <li>Tên biến chỉ có thể chưa ký tự alpha-numeric (A-z, 0-9) và gạch dưới.</li>
+                        <li>Tên biến không thể chưa ký tự cách.</li> 
+                        <li>Tên biến không thể là các từ khóa của JavaScript hay reserved word (từ khóa riêng).</li>
+                        <li>Tên biến trong JS có phân biệt hoa thường. Ví dụ, <code>Name</code> và <code>name</code> là 2 biến khác nhau.</li>
                     </ul>
-                    <p>Danh sách không kết thúc ở đây, có nhiều điều thú vị khác mà bạn có thể làm với JavaScript. Bạn sẽ tìm hiểu về tất cả chúng một cách chi tiết trong các chương sắp tới.</p>
+                    <h4>Reserved Words (từ khóa riêng)</h4>
+                    <p>Bảng sau là danh sách nhưng từ khóa riêng của JS. Chúng ko thể dc sử dụng đề đặt tên biến, hàm, phương thức, nhãn vòng lắp hay tên object.</p>
+                    <table style="margin-left: 30px; width: 452px;" cellspacing="5">
+                        <tr>
+                            <td width: 100px; width="106">abstract</td>
+                            <td width: 115px; width="120">else</td>
+                            <td width: 105px; width="115">instanceof</td>
+                            <td width: 173px; width="111">switch</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">boolean</td>
+                            <td width: 115px; width="120">enum</td>
+                            <td width: 105px; width="115">int</td>
+                            <td width: 173px; width="111">synchronized</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">break</td>
+                            <td width: 115px; width="120">export</td>
+                            <td width: 105px; width="115">interface</td>
+                            <td width: 173px; width="111">this</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">byte</td>
+                            <td width: 115px; width="120">extends</td>
+                            <td width: 105px; width="115">long</td>
+                            <td width: 173px; width="111">throw</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">case</td>
+                            <td width: 115px; width="120">FALSE</td>
+                            <td width: 105px; width="115">native</td>
+                            <td width: 173px; width="111">throws</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">catch</td>
+                            <td width: 115px; width="120">final</td>
+                            <td width: 105px; width="115">new</td>
+                            <td width: 173px; width="111">transient</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">char</td>
+                            <td width: 115px; width="120">finally</td>
+                            <td width: 105px; width="115">null</td>
+                            <td width: 173px; width="111">TRUE</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">class</td>
+                            <td width: 115px; width="120">float</td>
+                            <td width: 105px; width="115">package</td>
+                            <td width: 173px; width="111">try</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">const</td>
+                            <td width: 115px; width="120">for</td>
+                            <td width: 105px; width="115">private</td>
+                            <td width: 173px; width="111">typeof</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">continue</td>
+                            <td width: 115px; width="120">function</td>
+                            <td width: 105px; width="115">protected</td>
+                            <td width: 173px; width="111">var</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">debugger</td>
+                            <td width: 115px; width="120">goto</td>
+                            <td width: 105px; width="115">public</td>
+                            <td width: 173px; width="111">void</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">default</td>
+                            <td width: 115px; width="120">if</td>
+                            <td width: 105px; width="115">return</td>
+                            <td width: 173px; width="111">volatile</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">delete</td>
+                            <td width: 115px; width="120">implements</td>
+                            <td width: 105px; width="115">short</td>
+                            <td width: 173px; width="111">while</td>
+                        </tr>
+                        <tr >
+                            <td width: 100px; width="106">do</td>
+                            <td width: 115px; width="120">import</td>
+                            <td width: 105px; width="115">static</td>
+                            <td width: 173px; width="111">with</td>
+                        </tr>
+                        <tr>
+                            <td width: 100px; width="106">double</td>
+                            <td width: 115px; width="120">in</td>
+                            <td width: 105px; width="115">super</td>
+                            <td width: 173px; width="111"></td>
+                        </tr>
+                    </table>
                     
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">

@@ -23,6 +23,16 @@
 
 }
 
+#slide-img {
+    width: 1500px;
+    height: 140px;
+    margin: 0 auto;
+}
+
+#slide-img img {
+    width: 1500px;
+}
+
 .course-box {
     width: 1100px;
     height: 100%;

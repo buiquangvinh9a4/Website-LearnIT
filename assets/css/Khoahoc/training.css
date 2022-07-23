@@ -1,0 +1,142 @@
+#main {
+    width: 100%;
+    min-height: 1200px;
+    background-color: rgb(238, 238, 238);
+}
+
+#main-content {
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Main-left: Nav luyện tập */
+#main-left {
+    width: 20%;
+}
+
+ul.menu-training {
+    width: 250px;
+    height: auto;
+    background-color: rgb(0, 122, 235);
+    border-radius: 10px;
+    position: fixed;
+    top: 230px;
+}
+
+ul.menu-training li {
+    padding: 20px 0;
+    padding-left: 20px;
+    list-style: none;
+    border-bottom: 1px solid rgb(0, 72, 255);
+    cursor: pointer;
+}
+
+ul.menu-training li:first-child {
+    text-align: center;
+    padding-left: 0px;
+    background-color:  rgb(0, 63, 122);
+    font-weight: bold;
+
+}
+
+
+ul.menu-training li:last-child {
+    border-bottom: 0;
+
+}
+
+
+
+ul.menu-training li a{
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+
+/* Main-right: Danh sách bài luyện tập */
+#main-right {
+    width: 70%;
+}
+
+i {
+    color:rgb(0, 75, 145);
+    margin-right: 10px;
+}
+
+#office {
+    font-size: 30px;
+
+    color:rgb(0, 102, 198);
+}
+
+.line-box {
+    width: 900px;
+    min-height: 230px;
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    width: 200px;
+    height: 235px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px gray;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.box img {
+    width: 200px;
+}
+
+.box-title {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    top: 100px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.style-title, .heading-title, .button-title {
+    margin: 5px;
+}
+
+
+.style-title span {
+    color: gray;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.heading-title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(135, 134, 134, 0.464);
+}
+
+.heading-title a {
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+}
+
+.button-title {
+    margin-top: 10px;
+}
+
+.button-title a {
+    color:rgb(0, 79, 153);
+    font-weight: bold;
+    text-decoration: none;
+}

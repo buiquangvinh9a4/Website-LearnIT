@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Khóa học: Microsoft Word 2016</title>
+        <title>Khóa học: Javascript cơ bản</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../assets/css/Home/all.css">
@@ -63,38 +63,64 @@
                     <h3 style="font-size: 25px;">Bài 4: Khái niệm về biến</h3>
 
                     <ul class="list-inline"><li>Mục tiêu</li></ul>
-                    <p>Học viên có thể hiểu về khái niệm ngôn ngữ Javascript.</p>
+                    <p>Học viên có thể hiểu về cách làm việc của biến (Khai báo, Khởi tạo, gán giá trị).</p>
                     <ul class="list-inline"><li>Lý thuyết</li></ul>
-                    <h4><strong>JavaScript là gì</strong></h4>
-                    <p>JavaScript là ngôn ngữ kịch bản phía máy khách phổ biến nhất và được sử dụng rộng rãi. Kịch bản phía máy khách đề cập đến các tập lệnh chạy trong trình duyệt web của bạn. JavaScript được thiết kế để thêm hiệu ứng tương tác và động cho các trang web bằng cách thao tác nội dung được trả về từ máy chủ web.</p>
-                    <p>JavaScript là một ngôn ngữ hướng đối tượng và nó cũng có một số điểm tương đồng về cú pháp với ngôn ngữ lập trình Java. Nhưng, JavaScript không liên quan đến Java theo bất kỳ cách nào.</p>
-                    <h4><strong>Tại sao cần học JS</strong></h4>
-                    <p>JavaScript là 1 trong 3 ngôn ngữ mà tất cả các nhà phát triển website phải học:</p>
-                    <ol>
-                        <li><strong>HTML </strong>để xây dựng nội dung của website</li>
-                        <li><strong>CSS </strong>để chỉ định bố cục của các trang web</li>
-                        <li><strong>JavaScript </strong>để lập trình hành vi của các trang web </li>
-                    </ol>
-                    <p>Các trang web không phải là nơi duy nhất sử dụng JavaScript. Nhiều chương trình máy tính để bàn và máy chủ sử dụng JavaScript. Node.js là nổi tiếng nhất. Một số cơ sở dữ liệu, như MongoDB và CouchDB, cũng sử dụng JavaScript làm ngôn ngữ lập trình của họ.</p>
-                    <h4><strong>Bạn có thể làm gì với javascript</strong></h4>
-                    <p>Có rất nhiều điều bạn có thể làm với JavaScript.</p>
-                    <ul style="padding-left: 30px">
-                        <li>Bạn có thể sửa đổi nội dung của một trang web bằng cách thêm hoặc xóa các yếu tố.</li>
-                        <li>Bạn có thể thay đổi kiểu dáng và vị trí của các thành phần trên trang web.</li>
-                        <li>Bạn có thể theo dõi các sự kiện như nhấp chuột, di chuột, v.v. và phản ứng với nó.</li>
-                        <li>Bạn có thể thực hiện và kiểm soát chuyển tiếp và hình ảnh động.</li>
-                        <li>Bạn có thể tạo cửa sổ bật lên cảnh báo để hiển thị thông tin hoặc thông báo cảnh báo cho người dùng.</li>
-                        <li>Bạn có thể xác nhận đầu vào của người dùng trước khi gửi nó đến máy chủ.</li>
-                    </ul>
-                    <p>Danh sách không kết thúc ở đây, có nhiều điều thú vị khác mà bạn có thể làm với JavaScript. Bạn sẽ tìm hiểu về tất cả chúng một cách chi tiết trong các chương sắp tới.</p>
-                    
+                    <h4><strong>Biến là gì</strong></h4>
+                    <p>Các biến là cơ bản cho tất cả các ngôn ngữ lập trình. Các biến được sử dụng để lưu trữ dữ liệu, như chuỗi văn bản, số, v.v. Dữ liệu hoặc giá trị được lưu trữ trong các biến có thể được gán, thay đổi và truy xuất bất cứ khi nào cần. Nói chung, các biến là tên tượng trưng cho các giá trị.</p>
+                    <p>Bạn có thể tạo 1 biến với từ khóa <code>var</code>, toán tử gán <code>(=)</code> được sử dụng để gán giá trị cho biến, như: <code>var varName = value;</code></p>
+                    <h4>Ví dụ</h4>
+                    <div class="text-code">
+                        <p>var name = "Tuan Phong";</p>
+                        <p>var age = 10;</p> 
+                        <p>var isBoy = true;</p>
+                    </div>
+                    <p>Trong ví dụ trên, chúng ta đã tạo ba biến, biến thứ nhất được gán với giá trị chuỗi, biến thứ hai được gán với một số, trong khi biến cuối được gán với giá trị boolean. Các biến có thể chứa các loại dữ liệu khác nhau, chúng ta sẽ tìm hiểu về chúng trong chương sau.</p>
+                    <p>Trong JavaScript, các biến cũng có thể được khai báo mà không có bất kỳ giá trị ban đầu nào được gán cho chúng. Điều này hữu ích cho các biến được cho là giữ các giá trị như đầu vào của người dùng.</p>
+                    <div class="text-code">
+                        <font>// Declaring multiple Variables</font>
+                        <p>var name = "Tuan Phong", age = 10, isBoy = true;</p>
+                        <font>/* Longer declarations can be written to span</font>
+                        <font>multiple lines to improve the readability */</font>
+                        <p>var name = "Tuan Phong",</p>
+                        <p>age = 10,</p>
+                        <p>isBoy = true;</p>
+                    </div>
+                    <h4>Phạm vi của biến</h4>
+                    <p>Phạm vi của một biến là khu vực của chương trình mà nó được xác định. Các biến JavaScript chỉ có hai phạm vi.</p>
+                    <p><b>- Global Variables (Biến toàn cục)</b> − Một biến toàn cục có phạm vi toàn cầu, có nghĩa là nó có thể được định nghĩa ở bất kỳ đâu trong mã JavaScript của bạn.</p>
+                    <p><b>- Local Variables (Biến cục bộ)</b> − Một biến cục bộ sẽ chỉ hiển thị trong một hàm được định nghĩa. Các tham số chức năng luôn luôn cục bộ với chức năng đó.</p>
+                    <div class="text-code">
+                        <p>var myVar = "out of function";     <font>// Declare a global variable</font></p>
+                        <p>function do_something( ) {</p> 
+                        <p style="padding-left: 30px">var myVar = "in of function";    <font>// Declare a local variable</font></p> 
+                        <p style="padding-left: 60px">console.log(myVar)</p>;
+                        <p>}</p>
+                        <p>do_something( ); <font>// Output: "in of function"</font></p> 
+                        <font>// or</font>
+                        
+                        <p>var myVar = "out of function";     <font>// Declare a global variable</font> </p>
+                        
+                        <p>function do_something( ) {</p>
+                        <p style="padding-left: 30px">console.log(myVar);</p> 
+                        <p>}</p>
+                        <p>do_something( ); <font>// Output: "out of function"</font></p>
+                        
+                    </div>
+
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">
                         <ul class="list-inline"><li>Câu hỏi</li></ul>
-                        <p><span>Javascript là ngôn ngữ dùng để lập trình các sự kiện trên website?</span></p>
+                        <p><span>Kết quả biến <code>number2</code> khi thực hiện đoạn lệnh sau là:</span></p>
+                        <div class="text-code">
+                            <p>var number1 = 6</p>
+                            <p>var number2 = number1 + 10</p>
+                            <p>console.log(number2)</p>
+                        </div>
 
-                        <div class="frame_input"><input type="radio" name="answer" value="A"> Đúng <br></div>
-                        <div class="frame_input"><input type="radio" name="answer" value="B"> Sai <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="A"> 14 <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="B"> 15 <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="C"> 16 <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="D"> 17 <br></div>
                         <input type="button" value="Trả lời" onclick="check()">
 
                         <script>
@@ -105,7 +131,7 @@
                                 var result_tt = document.getElementById('js-result-title');
                                 result.style.display = 'block';
                                 back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
-                                if (question1 == "A") {
+                                if (question1 == "C") {
                                     result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
                                 } else {
                                     result_tt.innerText = 'Câu trả lời chưa chính xác!';

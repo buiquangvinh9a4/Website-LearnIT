@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Khóa học: Microsoft Word 2016</title>
+        <title>Khóa học: Javascript cơ bản</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../assets/css/Home/all.css">
@@ -71,14 +71,33 @@
                     <div class="text-code">
                         <p>console.log("...");</p>
                     </div>
+                    <h4>Ví dụ</h4>
+                    <div class="text-code">
+                        <p>console.log("Javascript");</p>
+                        <font color="gray">// output: Javascript</font>
+                        <p>var myObj = { firstname : "John", lastname : "Doe" };</p>
+                        <p>console.log(myObj);</p>
+                        <font color="gray">// output: { firstname: 'John', lastname: 'Doe' }</font>
+                    </div>
+                    <h4>Ví dụ với chuỗi</h4>
+                    <div class="text-code">
+                        <p>console.log("Java", "Script");</p>
+                        <font>// output: "Java Sript"</font>
+                        <p>console.log("Java", ",","Script");</p>
+                        <font>// output: "Java , Sript"</font>
+                    </div>
                     
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">
                         <ul class="list-inline"><li>Câu hỏi</li></ul>
-                        <p><span>Javascript là ngôn ngữ dùng để lập trình các sự kiện trên website?</span></p>
+                        <p><span>Kết quả của đoạn code sau hiển thị ra màn hình?</span></p>
+                        <div class="text-code">
+                            <p>console.log("Hoc sinh", "IT");</p>
+                        </div>       
 
-                        <div class="frame_input"><input type="radio" name="answer" value="A"> Đúng <br></div>
-                        <div class="frame_input"><input type="radio" name="answer" value="B"> Sai <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="A"> Hoc sinhIT <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="B"> IT Hocsinh <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="C"> Hoc sinh IT <br></div>
                         <input type="button" value="Trả lời" onclick="check()">
 
                         <script>
@@ -89,7 +108,7 @@
                                 var result_tt = document.getElementById('js-result-title');
                                 result.style.display = 'block';
                                 back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
-                                if (question1 == "A") {
+                                if (question1 == "C") {
                                     result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
                                 } else {
                                     result_tt.innerText = 'Câu trả lời chưa chính xác!';

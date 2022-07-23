@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Khóa học: Microsoft Word 2016</title>
+        <title>Khóa học: Javascript cơ bản</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../assets/css/Home/all.css">
@@ -63,38 +63,39 @@
                     <h3 style="font-size: 25px;">Bài 3: COMMENT trong Javascript</h3>
 
                     <ul class="list-inline"><li>Mục tiêu</li></ul>
-                    <p>Học viên có thể hiểu về khái niệm ngôn ngữ Javascript.</p>
+                    <p>JavaScript comments là cách hữu ích để truyền tải thông điệp. Nó được sử dụng để thêm thông tin vào code, cảnh báo hay gợi ý. Để người dùng có thể dễ dàng giải nghĩa code.</p>
+                    <p>Trong bài này, chúng tôi sẽ giúp bạn tạo nhưng comment trong source code.</p>
                     <ul class="list-inline"><li>Lý thuyết</li></ul>
-                    <h4><strong>JavaScript là gì</strong></h4>
-                    <p>JavaScript là ngôn ngữ kịch bản phía máy khách phổ biến nhất và được sử dụng rộng rãi. Kịch bản phía máy khách đề cập đến các tập lệnh chạy trong trình duyệt web của bạn. JavaScript được thiết kế để thêm hiệu ứng tương tác và động cho các trang web bằng cách thao tác nội dung được trả về từ máy chủ web.</p>
-                    <p>JavaScript là một ngôn ngữ hướng đối tượng và nó cũng có một số điểm tương đồng về cú pháp với ngôn ngữ lập trình Java. Nhưng, JavaScript không liên quan đến Java theo bất kỳ cách nào.</p>
-                    <h4><strong>Tại sao cần học JS</strong></h4>
-                    <p>JavaScript là 1 trong 3 ngôn ngữ mà tất cả các nhà phát triển website phải học:</p>
-                    <ol>
-                        <li><strong>HTML </strong>để xây dựng nội dung của website</li>
-                        <li><strong>CSS </strong>để chỉ định bố cục của các trang web</li>
-                        <li><strong>JavaScript </strong>để lập trình hành vi của các trang web </li>
-                    </ol>
-                    <p>Các trang web không phải là nơi duy nhất sử dụng JavaScript. Nhiều chương trình máy tính để bàn và máy chủ sử dụng JavaScript. Node.js là nổi tiếng nhất. Một số cơ sở dữ liệu, như MongoDB và CouchDB, cũng sử dụng JavaScript làm ngôn ngữ lập trình của họ.</p>
-                    <h4><strong>Bạn có thể làm gì với javascript</strong></h4>
-                    <p>Có rất nhiều điều bạn có thể làm với JavaScript.</p>
-                    <ul style="padding-left: 30px">
-                        <li>Bạn có thể sửa đổi nội dung của một trang web bằng cách thêm hoặc xóa các yếu tố.</li>
-                        <li>Bạn có thể thay đổi kiểu dáng và vị trí của các thành phần trên trang web.</li>
-                        <li>Bạn có thể theo dõi các sự kiện như nhấp chuột, di chuột, v.v. và phản ứng với nó.</li>
-                        <li>Bạn có thể thực hiện và kiểm soát chuyển tiếp và hình ảnh động.</li>
-                        <li>Bạn có thể tạo cửa sổ bật lên cảnh báo để hiển thị thông tin hoặc thông báo cảnh báo cho người dùng.</li>
-                        <li>Bạn có thể xác nhận đầu vào của người dùng trước khi gửi nó đến máy chủ.</li>
+                    <p>The JavaScript comment được bỏ qua JavaScript engine. Tức là không thực thi như code javascript bình thường</p>
+                    <p>Có 2 kiểu comments trong JavaScript.</p>
+                    <ul>
+                        <li><strong>Single-line Comment (Comment 1 dòng)</strong></li>
                     </ul>
-                    <p>Danh sách không kết thúc ở đây, có nhiều điều thú vị khác mà bạn có thể làm với JavaScript. Bạn sẽ tìm hiểu về tất cả chúng một cách chi tiết trong các chương sắp tới.</p>
-                    
+                    <p>Nó được thể hiện bằng dấu gạch chéo kép (//). Nó có thể được sử dụng trước hoặc sau 1 câu lệnh.</p>
+                    <div class="text-code">
+                        <font>// This is a comment for code </font>
+                        <p>var abc = ”xyz”;</p> 
+                    </div>
+                    <ul>
+                        <li><strong>Multi-line Comment (Comment nhiều dòng)</strong></li>
+                    </ul>
+                    <p>Nó có thể được sử dụng để thêm comment đơn cũng như nhiều dòng. Vì vậy, nó là thuận tiện hơn.</p>
+                    <p>Nó được thể hiện bằng dấu gạch chéo về phía trước với dấu hoa thị "/*" rồi dấu hoa thị với dấu gạch chéo về phía trước "*/"</p>
+                    <div class="text-code">
+                        <font>/* This is a comment for code </font> <br>
+                        <font>You can write something here */</font>
+                        <p>var abc = ”xyz”;</p> 
+                    </div>
+
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">
                         <ul class="list-inline"><li>Câu hỏi</li></ul>
-                        <p><span>Javascript là ngôn ngữ dùng để lập trình các sự kiện trên website?</span></p>
+                        <p><span>Có bao nhiêu cách sử dụng chú thích (Comment) trong Javascript?</span></p>
 
-                        <div class="frame_input"><input type="radio" name="answer" value="A"> Đúng <br></div>
-                        <div class="frame_input"><input type="radio" name="answer" value="B"> Sai <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="A"> 1 <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="B"> 2 <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="C"> 3 <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="D"> 4 <br></div>
                         <input type="button" value="Trả lời" onclick="check()">
 
                         <script>
@@ -105,7 +106,7 @@
                                 var result_tt = document.getElementById('js-result-title');
                                 result.style.display = 'block';
                                 back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
-                                if (question1 == "A") {
+                                if (question1 == "B") {
                                     result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
                                 } else {
                                     result_tt.innerText = 'Câu trả lời chưa chính xác!';

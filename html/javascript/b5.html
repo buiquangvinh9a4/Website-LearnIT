@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Khóa học: Microsoft Word 2016</title>
+        <title>Khóa học: Javascript cơ bản</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../assets/css/Home/all.css">
@@ -63,38 +63,125 @@
                     <h3 style="font-size: 25px;">Bài 5: Kiểu dữ liệu của biến</h3>
 
                     <ul class="list-inline"><li>Mục tiêu</li></ul>
-                    <p>Học viên có thể hiểu về khái niệm ngôn ngữ Javascript.</p>
-                    <ul class="list-inline"><li>Lý thuyết</li></ul>
-                    <h4><strong>JavaScript là gì</strong></h4>
-                    <p>JavaScript là ngôn ngữ kịch bản phía máy khách phổ biến nhất và được sử dụng rộng rãi. Kịch bản phía máy khách đề cập đến các tập lệnh chạy trong trình duyệt web của bạn. JavaScript được thiết kế để thêm hiệu ứng tương tác và động cho các trang web bằng cách thao tác nội dung được trả về từ máy chủ web.</p>
-                    <p>JavaScript là một ngôn ngữ hướng đối tượng và nó cũng có một số điểm tương đồng về cú pháp với ngôn ngữ lập trình Java. Nhưng, JavaScript không liên quan đến Java theo bất kỳ cách nào.</p>
-                    <h4><strong>Tại sao cần học JS</strong></h4>
-                    <p>JavaScript là 1 trong 3 ngôn ngữ mà tất cả các nhà phát triển website phải học:</p>
-                    <ol>
-                        <li><strong>HTML </strong>để xây dựng nội dung của website</li>
-                        <li><strong>CSS </strong>để chỉ định bố cục của các trang web</li>
-                        <li><strong>JavaScript </strong>để lập trình hành vi của các trang web </li>
-                    </ol>
-                    <p>Các trang web không phải là nơi duy nhất sử dụng JavaScript. Nhiều chương trình máy tính để bàn và máy chủ sử dụng JavaScript. Node.js là nổi tiếng nhất. Một số cơ sở dữ liệu, như MongoDB và CouchDB, cũng sử dụng JavaScript làm ngôn ngữ lập trình của họ.</p>
-                    <h4><strong>Bạn có thể làm gì với javascript</strong></h4>
-                    <p>Có rất nhiều điều bạn có thể làm với JavaScript.</p>
-                    <ul style="padding-left: 30px">
-                        <li>Bạn có thể sửa đổi nội dung của một trang web bằng cách thêm hoặc xóa các yếu tố.</li>
-                        <li>Bạn có thể thay đổi kiểu dáng và vị trí của các thành phần trên trang web.</li>
-                        <li>Bạn có thể theo dõi các sự kiện như nhấp chuột, di chuột, v.v. và phản ứng với nó.</li>
-                        <li>Bạn có thể thực hiện và kiểm soát chuyển tiếp và hình ảnh động.</li>
-                        <li>Bạn có thể tạo cửa sổ bật lên cảnh báo để hiển thị thông tin hoặc thông báo cảnh báo cho người dùng.</li>
-                        <li>Bạn có thể xác nhận đầu vào của người dùng trước khi gửi nó đến máy chủ.</li>
-                    </ul>
-                    <p>Danh sách không kết thúc ở đây, có nhiều điều thú vị khác mà bạn có thể làm với JavaScript. Bạn sẽ tìm hiểu về tất cả chúng một cách chi tiết trong các chương sắp tới.</p>
-                    
+                    <p>Học viên hiểu về các kiểu dữ liệu của biến trong Javascript</p>
+                    <ul class="list-inline"><li>Tổng quan</li></ul>
+                    <p>Các kiểu dữ liệu về cơ bản chỉ định loại dữ liệu nào có thể được lưu trữ và các sử dụng trong một chương trình.</p>
+                    <p>Có sáu loại dữ liệu cơ bản trong JavaScript có thể được chia thành ba loại chính: nguyên thủy (hoặc sở cấp), hỗn hợp (hoặc tham chiếu) và các loại dữ liệu đặc biệt. Chuỗi, Số và Boolean là các kiểu dữ liệu nguyên thủy. Object, Array và Function (là tất cả các loại đối tượng) là các kiểu dữ liệu hỗn hợp. Trong đó Undefined và Null là các loại dữ liệu đặc biệt.</p>
+                    <p>Các kiểu dữ liệu nguyên thủy chỉ có thể giữ một giá trị tại một thời điểm, trong khi các kiểu dữ liệu hỗn hợp có thể chứa các tập hợp các giá trị và các thực thể phức tạp hơn.</p>
+                    <h4>String (Kiểu chuỗi)</h4>
+                    <p>Kiểu dữ liệu chuỗi được sử dụng để thể hiện dữ liệu văn bản (nghĩa là các chuỗi ký tự). Chuỗi được tạo bằng cách sử dụng dấu ngoặc đơn hoặc kép bao quanh một hoặc nhiều ký tự, như hiển thị bên dưới:</p>
+                    <div class="text-code">
+                        <p>var a = 'Hi';  <font>// using single quotes</font> <br>
+                           var b = "Hi";  <font>// using double quotes</font>
+                        </p> 
+                    </div>
+                    <p>Bạn có thể thêm dấu ngoặc đơn hoặc kép vào trong chuỗi</p>
+                    <div class="text-code">
+                        <p>
+                            var a = "Let's have a cup of coffee."; <font>// single quote inside double quotes</font> <br>
+                            var b = 'He said "Hello" and left.';  <font>// double quotes inside single quotes</font>  <br>
+                            var c = 'We\'ll never give up.';     <font>// escaping single quote with backslash</font>
+                        </p> 
+                    </div>
+                    <h4>Number (Kiểu số)</h4>
+                    <p><span>Kiểu dữ liệu số được sử dụng để biểu thị các số dương hoặc âm có hoặc không có vị trí thập phân hoặc các số được viết bằng ký hiệu số mũ như&nbsp;1.5e-4 (tương đương 1.5x10<sup>-4</sup>).</span></p>
+                    <div class="text-code">
+                        <p>
+                            var a = 25;         <font>// integer</font> <br>
+                            var b = 80.5;       <font>// floating-point number</font> <br>
+                            var c = 4.25e+6;    <font>// exponential notation, same as 4.25e6 or 4250000</font> <br>
+                            var d = 4.25e-6;    <font>// exponential notation, same as 0.00000425</font>
+                        </p> 
+                    </div>
+                    <p>Kiểu dữ liệu Số cũng bao gồm một số giá trị đặc biệt đó là: Vô cực, âm vô cực và NaN. Vô cực đại diện cho &nbsp;<code>∞</code>, lớn hơn bất kỳ số nào. Vô cực là kết quả của việc chia một số khác không cho 0, như được minh họa dưới đây:</p>
+                    <div class="text-code">
+                        <p>
+                            console.log(16 / 0);  <font>// Output: Infinity</font> <br>
+                            console.log(-16 / 0); <font>// Output: -Infinity</font> <br>
+                            console.log(16 / -0); <font>// Output: -Infinity</font>
+                        </p> 
+                    </div>
+                    <p>Trong khi <code>NaN</code> đại diện cho giá trị đặc biệt <i>Not-a-Number</i> (Không phải là số). Đó là kết quả của một phép toán không hợp lệ hoặc không xác định, như căn bậc 2 của -1, hay chia 0 cho 0. v.v</p>
+                    <div class="text-code">
+                        <p>
+                            console.log("Some text" / 2);       <font>// Output: NaN</font> <br>
+                            console.log("Some text" / 2 + 10);  <font>// Output: NaN</font> <br>
+                            console.log(Math.sqrt(-1));         <font>// Output: NaN</font>
+                        </p> 
+                    </div>
+                    <h4>Boolean</h4>
+                    <p>Kiểu dữ liệu Boolean chỉ có thể chứa hai giá trị: true hoặc false. Nó thường được sử dụng để lưu trữ các giá trị như có (đúng) hoặc không (sai), on(đúng) hoặc off(sai), v.v. như được trình bày dưới đây:</p>
+                    <div class="text-code">
+                        <p>
+                            var isReading = true;   <font>// yes, I'm reading</font> <br>
+                            var isSleeping = false; <font>// no, I'm not sleeping</font>
+                        </p> 
+                    </div>
+                    <p>Các giá trị Boolean cũng là kết quả của sự so sánh trong một chương trình. Ví dụ sau so sánh hai biến và hiển thị kết quả:</p>
+                    <div class="text-code">
+                        <p>
+                            var a = 1, b = 4, c = 5; <br>
+                            console.log(b > a) <font>// Output: true</font> <br>
+                            console.log(b > c) <font>// Output: false</font>
+                        </p> 
+                    </div>
+                    <h4>Object (Kiểu đối tượng)</h4>
+                    <p>
+                        Object là một kiểu dữ liệu phức tạp cho phép bạn lưu trữ các tập dữ liệu. <br>
+                        Một object chứa các thuộc tính, được định nghĩa là một cặp key-value. key (tên thuộc tính) luôn là 1 chuỗi, Nhưng value (giá trị) của nó có thể là bất kỳ loại dữ liệu nào, như chuỗi, số, booleans hoặc các loại dữ liệu phức tạp như mảng, hàm và các đối tượng khác. <br>
+                        Ví dụ sau đây sẽ chỉ cho bạn cách đơn giản nhất để tạo một đối tượng trong JavaScript. <br>
+
+                    </p>
+                    <div class="text-code">
+                        <p>var emptyObject = {}; <br>
+                        var person = {"name": "Clark", "surname": "Kent", "age": "36"};
+                        </p>
+                        <font>// For better reading</font>
+                       <p>  var car = {  <br>
+                            "modal": "BMW X3",  <br>
+                            "color": "white",  <br>
+                            "doors": 5  <br>
+                        }
+                        </p>
+                    </div>
+                    <h4>Array (Kiểu mảng)</h4>
+                    <p>Mảng là một loại đối tượng được sử dụng để lưu trữ nhiều giá trị trong một biến. Mỗi giá trị (còn được gọi là một phần tử) trong một mảng có một vị trí số, được gọi là chỉ mục của nó và nó có thể chứa dữ liệu của bất kỳ loại dữ liệu nào - số, chuỗi, booleans, hàm, đối tượng và thậm chí các mảng khác. Chỉ số mảng bắt đầu từ 0, do đó phần tử mảng đầu tiên là arr[0] không phải là arr[1].</p>
+                    <p>Cách đơn giản nhất để tạo một mảng là bằng cách chỉ định các thành phần mảng dưới dạng một danh sách được phân tách bằng dấu phẩy được bao quanh bởi dấu ngoặc vuông, như trong ví dụ dưới đây:</p>
+                    <div class="text-code">
+                        <p>
+                            var colors = ["Red", "Yellow", "Green", "Orange"];  <br>
+                            var cities = ["London", "Paris", "New York"];       <br>
+                            
+                            console.log(colors[0]);   <font>// Output: Red</font> <br>
+                            console.log(cities[2]);   <font>// Output: New York</font>
+                        </p>
+                    </div>
+                    <h4>Function (Kiểu hàm)</h4>
+                    <p>Hàm này là đối tượng có thể gọi được cái mà thực thi một khối lệnh. Vì các hàm là các đối tượng, vì vậy có thể gán chúng cho các biến, như trong ví dụ dưới đây:</p>
+                    <div class="text-code">
+                        <p>
+                            var greeting = function(){   <br>
+                                return "Hello World!";   <br>
+                            }
+                             
+                            <font>// Check the type of greeting variable</font>  <br>
+                            console.log(typeof greeting) <font>// Output: function</font>  <br>
+                            console.log(greeting());     <font>// Output: Hello World!</font>
+                        </p>
+                    </div>
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">
                         <ul class="list-inline"><li>Câu hỏi</li></ul>
-                        <p><span>Javascript là ngôn ngữ dùng để lập trình các sự kiện trên website?</span></p>
+                        <p><span>Hãy cho biết kết quả (Output) của đoạn code sau:</span></p>
+                        <div class="text-code">
+                            <p>
+                                var a = 5, b = a + 3; <br>
+                                console.log(a >= b) 
+                            </p>
+                        </div>
 
-                        <div class="frame_input"><input type="radio" name="answer" value="A"> Đúng <br></div>
-                        <div class="frame_input"><input type="radio" name="answer" value="B"> Sai <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="A"> True <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="B"> False <br></div>
                         <input type="button" value="Trả lời" onclick="check()">
 
                         <script>
@@ -105,7 +192,7 @@
                                 var result_tt = document.getElementById('js-result-title');
                                 result.style.display = 'block';
                                 back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
-                                if (question1 == "A") {
+                                if (question1 == "B") {
                                     result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
                                 } else {
                                     result_tt.innerText = 'Câu trả lời chưa chính xác!';

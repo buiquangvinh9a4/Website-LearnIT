@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Khóa học: Microsoft Word 2016</title>
+        <title>Khóa học: Javascript cơ bản</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../assets/css/Home/all.css">
@@ -63,38 +63,79 @@
                     <h3 style="font-size: 25px;">Bài 7: Toán tử số học</h3>
 
                     <ul class="list-inline"><li>Mục tiêu</li></ul>
-                    <p>Học viên có thể hiểu về khái niệm ngôn ngữ Javascript.</p>
-                    <ul class="list-inline"><li>Lý thuyết</li></ul>
-                    <h4><strong>JavaScript là gì</strong></h4>
-                    <p>JavaScript là ngôn ngữ kịch bản phía máy khách phổ biến nhất và được sử dụng rộng rãi. Kịch bản phía máy khách đề cập đến các tập lệnh chạy trong trình duyệt web của bạn. JavaScript được thiết kế để thêm hiệu ứng tương tác và động cho các trang web bằng cách thao tác nội dung được trả về từ máy chủ web.</p>
-                    <p>JavaScript là một ngôn ngữ hướng đối tượng và nó cũng có một số điểm tương đồng về cú pháp với ngôn ngữ lập trình Java. Nhưng, JavaScript không liên quan đến Java theo bất kỳ cách nào.</p>
-                    <h4><strong>Tại sao cần học JS</strong></h4>
-                    <p>JavaScript là 1 trong 3 ngôn ngữ mà tất cả các nhà phát triển website phải học:</p>
-                    <ol>
-                        <li><strong>HTML </strong>để xây dựng nội dung của website</li>
-                        <li><strong>CSS </strong>để chỉ định bố cục của các trang web</li>
-                        <li><strong>JavaScript </strong>để lập trình hành vi của các trang web </li>
-                    </ol>
-                    <p>Các trang web không phải là nơi duy nhất sử dụng JavaScript. Nhiều chương trình máy tính để bàn và máy chủ sử dụng JavaScript. Node.js là nổi tiếng nhất. Một số cơ sở dữ liệu, như MongoDB và CouchDB, cũng sử dụng JavaScript làm ngôn ngữ lập trình của họ.</p>
-                    <h4><strong>Bạn có thể làm gì với javascript</strong></h4>
-                    <p>Có rất nhiều điều bạn có thể làm với JavaScript.</p>
-                    <ul style="padding-left: 30px">
-                        <li>Bạn có thể sửa đổi nội dung của một trang web bằng cách thêm hoặc xóa các yếu tố.</li>
-                        <li>Bạn có thể thay đổi kiểu dáng và vị trí của các thành phần trên trang web.</li>
-                        <li>Bạn có thể theo dõi các sự kiện như nhấp chuột, di chuột, v.v. và phản ứng với nó.</li>
-                        <li>Bạn có thể thực hiện và kiểm soát chuyển tiếp và hình ảnh động.</li>
-                        <li>Bạn có thể tạo cửa sổ bật lên cảnh báo để hiển thị thông tin hoặc thông báo cảnh báo cho người dùng.</li>
-                        <li>Bạn có thể xác nhận đầu vào của người dùng trước khi gửi nó đến máy chủ.</li>
-                    </ul>
-                    <p>Danh sách không kết thúc ở đây, có nhiều điều thú vị khác mà bạn có thể làm với JavaScript. Bạn sẽ tìm hiểu về tất cả chúng một cách chi tiết trong các chương sắp tới.</p>
+                    <p>Học viên hiểu về hằng số và làm thế nào để khái báo hằng số</p>
+                    <ul class="list-inline"><li>Tổng quan</li></ul>
+                    <p>Hằng số trong các ngôn ngữ lập trình là một biến giá trị không thay đổi. Trong bài này, chúng ta sẽ học cú pháp để khai báo một hằng số trong Java script</p>
+                    <h4>Cú pháp</h4>
+                    <p>Một hằng số được khai báo với từ khóa <code>const</code>. Giá trị của hằng số sẽ ko thể nào thay đổi khi đã khởi tạo:</p>
+                    <div class="text-code">
+                        <p>
+                            const PI = 3.141592653589793; <br>
+                            PI = 3.14; <font>// This will give an error</font> <br>
+                            PI = PI + 10; <font>// This will also give an error</font> <br>
+                            var a = PI + 10; <font>// OK</font>
+                        </p> 
+                    </div>
+                    <p>Các biến const JavaScript phải được gán một giá trị khi chúng được khai báo:</p>
+                    <div class="text-code">
+                        <p>
+                            <font>// Incorrect</font> <br>
+                            const PI;  <br>   
+                            PI = 3.14159265359;   <br>
+                            
+                            <font>// Correct</font>   <br>
+                            const PI = 3.14159265359;</p> 
+                    </div>
+                    <h4>Hằng số Objects có thể thay đổi</h4>
+                    <p>Bạn có thể thay đổi các thuộc tính của một hằng số object:</p>
+                    <div class="text-code">
+                        <p>
+                            <font>// You can create a const object:</font>   <br>
+                            const car = {type:"Fiat", model:"500", color:"white"};   <br>
+
+                            <font>// You can change a property:</font>   <br>
+                            car.color = "red";   <br>
+
+                            <font>// You can add a property:</font>  <br>
+                            car.owner = "Johnson";   <br>
+                        </p>
+                    </div>
+                    <p>Nhưng bạn ko thể gán lại một hằng số object:</p>
+                    <div class="text-code">
+                        <p>
+                            const car = {type:"Fiat", model:"500", color:"white"}; <br>
+                            car = {type:"Volvo", model:"EX60", color:"red"};    <font>// ERROR</font>
+                        </p>
+                    </div>
+                    <h4>Hằng số mảng có thể thay đổi</h4>
+                    <p>Bạn có thể thay đổi các phần tử của hằng số mảng:</p>
+                    <div class="text-code">
+                        <p>
+                            <font>// You can create a constant array:</font> <br>
+                            const cars = ["Saab", "Volvo", "BMW"]; <br>
+
+                            <font>// You can change an element:</font> <br>
+                            cars[0] = "Toyota"; <br>
+
+                            <font>// You can add an element:</font> <br>
+                            cars.push("Audi");</p>
+                        </p>
+                    </div>
+                    <p>Nhưng cũng không thể gán lại hằng số mảng:</p>
+                    <div class="text-code">
+                        <p>
+                            const cars = ["Saab", "Volvo", "BMW"]; <br>
+                            cars = ["Toyota", "Volvo", "Audi"];    <font>// ERROR</font>
+                        </p>
+                    </div>
                     
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">
                         <ul class="list-inline"><li>Câu hỏi</li></ul>
-                        <p><span>Javascript là ngôn ngữ dùng để lập trình các sự kiện trên website?</span></p>
+                        <p><span>Hằng số có thể giá trị trong quá trình lập trình javascript không?</span></p>
 
-                        <div class="frame_input"><input type="radio" name="answer" value="A"> Đúng <br></div>
-                        <div class="frame_input"><input type="radio" name="answer" value="B"> Sai <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="A"> Có <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="B"> Không <br></div>
                         <input type="button" value="Trả lời" onclick="check()">
 
                         <script>
@@ -105,7 +146,7 @@
                                 var result_tt = document.getElementById('js-result-title');
                                 result.style.display = 'block';
                                 back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
-                                if (question1 == "A") {
+                                if (question1 == "B") {
                                     result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
                                 } else {
                                     result_tt.innerText = 'Câu trả lời chưa chính xác!';
