@@ -2,6 +2,7 @@
     width: 100%;
     min-height: 1200px;
     background-color: rgb(238, 238, 238);
+    animation: FadeIn ease .4s;
 }
 
 #main-content {
@@ -140,3 +141,16 @@ i {
     font-weight: bold;
     text-decoration: none;
 }
+
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

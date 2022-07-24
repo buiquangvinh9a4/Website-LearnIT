@@ -14,7 +14,7 @@
         <div class="header-box">
             <!-- Header - Logo -->
             <div class="logo">
-                <a href="../main/Khoahoc.html"><img class="logo-img" src="../../assets/images/logo/logo_IT_white.png" alt="Itclub"></a>
+                <a href="../main/training.html"><img class="logo-img" src="../../assets/images/logo/logo_IT_white.png" alt="Itclub"></a>
                 <h2>Luyện tập với IF ELSE và FOR</h2>
             </div>
 
@@ -55,6 +55,8 @@
 
                     </p>
                     <button id="start">Bắt đầu</button>
+                    <a id="js-back" href="../main/training.html">Quay trở lại</a>
+
                 </div>
                 
                 <div class="menu-question" id="js-menu-question">
@@ -173,7 +175,7 @@
                         </table>
                     </div>
                     <div class="return-quiz">
-                        <a href="">Làm lại</a>
+                        <a href="">Trở lại</a>
                     </div>
                 </div>
             </div>
@@ -197,6 +199,7 @@
     // các biến phục vụ đếm thời gian
     var bd = document.body;
     var btn_start = document.getElementById('start');
+    var btn_back = document.getElementById('js-back');
     var menu_ques = document.getElementById('js-menu-question');
     var minute = document.getElementById('minute');
     var second = document.getElementById('second');
@@ -308,6 +311,7 @@
       // Hàm sự kiện bấm vào nút Bắt đầu thì ẩn nút và hiện ra câu hỏi
       btn_start.onclick = function() {
           btn_start.style.display = 'none';
+          btn_back.style.display = 'none';
           menu_ques.style.display = 'block';
           start();
       }

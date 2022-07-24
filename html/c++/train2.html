@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/Home/all.css">
+    <link rel="stylesheet" href="../../assets/css/Khoahoc/learn.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+    <title>Kiểu dữ liệu mảng trong C++</title>
+</head>
+<body>
+    <div id="header">
+        <div class="header-box">
+            <!-- Header - Logo -->
+            <div class="logo">
+                <a href="../main/training.html"><img class="logo-img" src="../../assets/images/logo/logo_IT_white.png" alt="Itclub"></a>
+                <h2>Kiểu dữ liệu mảng trong C++</h2>
+            </div>
+
+            <!-- Header - User Account--> 
+            <div class="user" id="js-user">
+                <div class="user-show">
+                    <p class="name-account" id="js-user-name">vinhbq2001</p>
+                    <img src="" id="js-user-avatar" alt="">
+                </div>
+                <div class="user-hidden" id="js-user-hidden">
+                    <div class="account-info">
+                        <p id="js-user-fullname">Bùi Quang Vinh</p>
+                        <p>Học sinh</p>
+                    </div>
+                    <ul class="nav-account">
+                        <li>
+                            <a href="../main/info_account.html"><i class="fa-regular fa-user"></i>Tài khoản</a>
+                        </li>
+                        <li>
+                            <a href="../main/info_help.html"><i class="fa-regular fa-circle-question"></i>Trợ giúp</a>
+                        </li>
+                        <li><a href="../../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="main-left">
+            <div class="list-question">
+                <div class="info-question">
+                    <h1>Quiz: Luyện tập với IF ELSE và FOR</h1>
+                    <p>
+                        - Số lượng: <b>10 câu. </b>              <br>
+                        - Thời gian làm bài: <b>15 phút.</b>     <br>
+                        - Điểm tối đa: <b>100 điểm.</b>          <br>
+                        - Điểm đạt: <b>50 điểm.</b>              <br>
+
+                    </p>
+                    <button id="start">Bắt đầu</button>
+                    <a id="js-back" href="../main/training.html">Quay trở lại</a>
+
+                </div>
+                
+                <div class="menu-question" id="js-menu-question">
+
+                    <h3>Câu 1: Câu lệnh trong chương trình bên dưới khởi tạo các phần tử của mảng Diem như thế nào?</h3>
+                    <img src="img/2-1.png" alt="">
+                    <form action="" name="question">
+                        <div class="frame_input"><input type="checkbox" name="answer1" value="A"> A. Gán giá trị 10 cho các phần tử có chỉ số chẵn, giá trị 20 cho các phần tử có chỉ số lẻ</div>
+                        <div class="frame_input"><input type="checkbox" name="answer1" value="B"> B. Gán giá trị 10 cho tất cả các phần tử </div>
+                        <div class="frame_input"><input type="checkbox" name="answer1" value="C"> C. Gán giá trị 20 cho tất các phần tử</div>
+                        <div class="frame_input"><input type="checkbox" name="answer1" value="D"> D. Gán giá trị 10 cho các phần tử có chỉ số lẻ, giá trị 20 cho các phần tử có chỉ số chẵn.</div>
+                    </form>
+                    <h3>Câu 2: Cho biết giá trị được in ra màn hình của chương trình trong hình bên dưới</h3>
+                    <img src="img/2-2.png" alt="">
+                    <form action="" name="question">
+                        <div class="frame_input"><input type="checkbox" name="answer2" value="A"> A. 9</div>
+                        <div class="frame_input"><input type="checkbox" name="answer2" value="B"> B. 0</div>
+                        <div class="frame_input"><input type="checkbox" name="answer2" value="C"> C. 5</div>
+                        <div class="frame_input"><input type="checkbox" name="answer2" value="D"> D. 1</div>
+                    </form>
+                    <h3>Câu 3: Cho phần khai báo như trong hình, những phát biểu nào sau đây là đúng? (Chọn 2)</h3>
+                    <img src="img/2-3.png" alt="">
+                    <form action="" name="question">
+                        <div class="frame_input"><input type="checkbox" name="answer3" value="A"> A. Chỉ số phần tử lớn nhất của biến mảng Diem là 40</div>
+                        <div class="frame_input"><input type="checkbox" name="answer3" value="B"> B. Diem và KetQua là 2 mảng có cùng số lượng phần tử nhưng kiểu của các phần tử của hai mảng là khác nhau</div>
+                        <div class="frame_input"><input type="checkbox" name="answer3" value="C"> C. Diem và KetQua là 2 biến mảng có cùng số lượng phần tử, các phần tử của hai mảng đều cùng kiểu</div>
+                        <div class="frame_input"><input type="checkbox" name="answer3" value="D"> D. Chỉ số phần tử lớn nhất của biến mảng KetQua là 39</div>
+                    </form>
+                    <h3>Câu 4: Kết quả của đoạn lệnh sau?</h3>
+                    <img src="img/2-4.png" alt="">
+                    <form action="" name="question">
+                        <div class="frame_input"><input type="checkbox" name="answer4" value="A"> A. 1</div>
+                        <div class="frame_input"><input type="checkbox" name="answer4" value="B"> B. 2</div>
+                        <div class="frame_input"><input type="checkbox" name="answer4" value="C"> C. 3</div>
+                        <div class="frame_input"><input type="checkbox" name="answer4" value="D"> D. 4</div>
+                    </form>
+                    <h3>Câu 5: Cho mảng Diem[10] chứa các số thực là điểm của 10 các sinh viên.  Hãy sắp xếp các câu lệnh sau để được đoạn chương trình tính toán và hiển thị trung bình cộng điểm của các sinh viên.</h3>
+                    <img src="img/2-5.jpg" alt="">
+                    <form action="" name="question">
+                        <div class="frame_input"><input type="checkbox" name="answer5" value="A"> A. 1-2-3-4</div>
+                        <div class="frame_input"><input type="checkbox" name="answer5" value="B"> B. 3-2-1-4</div>
+                        <div class="frame_input"><input type="checkbox" name="answer5" value="C"> C. 3-2-4-1</div>
+                        <div class="frame_input"><input type="checkbox" name="answer5" value="D"> D. 1-2-4-3</div>
+                    </form>    
+                    <h3>Câu 6: Chọn khai báo mảng đúng bên dưới? (Chọn 2)</h3>
+                    <form action="" name="question">
+                        <div class="frame_input"><input type="checkbox" name="answer6" value="A"> A. float a[5]={ 1, 5, 10, 15, 20, 25};</div>
+                        <div class="frame_input"><input type="checkbox" name="answer6" value="B"> B. float a[]={1, 5, 10, 15, 20};</div>
+                        <div class="frame_input"><input type="checkbox" name="answer6" value="C"> C. float[5] a</div>
+                        <div class="frame_input"><input type="checkbox" name="answer6" value="D"> D. float a[5]={ 1, 5, 10};</div>
+                    </form>
+                    <h3>Câu 7: Hãy cho biết những khai báo mảng nào sau đây là SAI? (Chọn 3)</h3>
+                    <form action="" name="question">
+                        <div class="frame_input"><input type="checkbox" name="answer7" value="A"> A. int primeNum[99];</div>
+                        <div class="frame_input"><input type="checkbox" name="answer7" value="B"> B. int list100[0..99];</div>
+                        <div class="frame_input"><input type="checkbox" name="answer7" value="C"> C. double[50] gpa;</div>
+                        <div class="frame_input"><input type="checkbox" name="answer7" value="D"> D. const long SIZE = 100; int list[2 * SIZE];</div>
+                        <div class="frame_input"><input type="checkbox" name="answer7" value="E"> E. const double LENGTH = 26; double list[LENGTH - 1];</div>
+                        <div class="frame_input"><input type="checkbox" name="answer7" value="F"> F. int testScores[10];</div>  
+                        
+                    </form>
+                    <h3>Câu 8: Chỉ số của phần tử cuối cùng trong mảng gồm 9 phần tử là:</h3>
+                    <form action="" name="question">
+                        <div class="frame_input"><input type="checkbox" name="answer8" value="A"> A. 8</div>
+                        <div class="frame_input"><input type="checkbox" name="answer8" value="B"> B. 9</div>
+                        <div class="frame_input"><input type="checkbox" name="answer8" value="C"> C. 0</div>
+                        <div class="frame_input"><input type="checkbox" name="answer8" value="D"> D. Định nghĩa bởi người sử dụng</div>
+                    </form>
+                    <h3>Câu 9: Cho chương trình như hình bên dưới, kết quả in ra màn hình là</h3>
+                    <img src="img/2-9.png" alt="">
+                    <form action="" name="question">
+                        <div class="frame_input"><input type="checkbox" name="answer9" value="A"> A. 1 9 25 49 81</div>
+                        <div class="frame_input"><input type="checkbox" name="answer9" value="B"> B. 4 16 36 64</div>
+                        <div class="frame_input"><input type="checkbox" name="answer9" value="C"> C. 4 16 36</div>
+                        <div class="frame_input"><input type="checkbox" name="answer9" value="D"> D. 0 9 36 64</div>
+                    </form> 
+                    <h3>Câu 10: Cho biết kết quả nào được in ra màn hình của chương trình trong hình bên dưới.</h3>
+                    <img src="img/2-10.png" alt="">
+                    <form action="" name="question">
+                        <div class="frame_input"><input type="checkbox" name="answer10" value="A"> A. 0 1 2 3 4</div>
+                        <div class="frame_input"><input type="checkbox" name="answer10" value="B"> B. 1 5 2 10 9</div>
+                        <div class="frame_input"><input type="checkbox" name="answer10" value="C"> C. 10 9 5 2 1</div>
+                        <div class="frame_input"><input type="checkbox" name="answer10" value="D"> D. 1 2 5 9 10</div>
+                    </form>               
+                    <input type="button" value="Kiểm tra" onclick="stop()">
+                </div>
+                
+            </div> 
+        </div>
+        <div id="main-right">
+            <div class="main-right-quiz">
+                <div class="clock">
+                    <div class="clock-img">
+                        <img src="../../assets/images/khoahoc/clock.gif" width="100px" alt="">
+                    </div>
+                    <div class="clock-number">
+                        <span id="minute"></span>
+                        <span>:</span>
+                        <span id="second"></span>
+                    </div>
+                </div>
+                <div class="result-form" id="js-result-form">
+                    <div class="title">
+                        <h2>Kết quả của bạn</h2>
+                    </div>
+                    <div class="content">
+                        <table width="300px" cellspacing="20">
+                            <tr>
+                                <td>Điểm số:</td>
+                                <td id="js-result-score">1</td>
+                            </tr>
+                            <tr>
+                                <td>Thời gian:</td>
+                                <td id="js-result-time">11111</td>
+                            </tr>
+                            <tr>
+                                <td>Yêu cầu:</td>
+                                <td id="js-result-pass">Đạt</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="return-quiz">
+                        <a href="">Trở lại</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    // các biến phục vụ check câu trả lời
+    var question1 = document.getElementsByName('answer1');
+    var question2 = document.getElementsByName('answer2');
+    var question3 = document.getElementsByName('answer3');
+    var question4 = document.getElementsByName('answer4');
+    var question5 = document.getElementsByName('answer5');
+    var question6 = document.getElementsByName('answer6');
+    var question7 = document.getElementsByName('answer7');
+    var question8 = document.getElementsByName('answer8');
+    var question9 = document.getElementsByName('answer9');
+    var question10 = document.getElementsByName('answer10');
+
+    // các biến phục vụ đếm thời gian
+    var bd = document.body;
+    var btn_start = document.getElementById('start');
+    var btn_back = document.getElementById('js-back');
+    var menu_ques = document.getElementById('js-menu-question');
+    var minute = document.getElementById('minute');
+    var second = document.getElementById('second');
+    var m = 15;                   // thời gian mặc định
+    var s = 00;
+    var timeout = null;
+    var count_time = 0; // đếm thời gian
+
+    // các biến phục vụ in kết quả quiz
+    var result_form = document.getElementById('js-result-form');
+    var result_score = document.getElementById('js-result-score');
+    var result_time = document.getElementById('js-result-time');
+    var result_pass = document.getElementById('js-result-pass');
+
+  
+    // Hàm trả về số lượt người dùng chọn bao nhiêu đáp án
+    function count_checked(name) {
+      let count = 0;  // biến đếm lượt tích trong input 'name'
+      for (let i = 0; i < name.length; i++) {
+        if (name[i].checked) count++;
+      }
+      return count;
+    }
+
+    // Hàm kiểm tra và tính điểm trắc nghiệm
+    /*
+        question1[0]: Đáp án A
+        question1[1]: Đáp án B
+        question1[2]: Đáp án C
+        question1[3]: Đáp án D
+        checked: thuộc tính trả về giá trị boolean dựa vào ô checkbox đã được tích hay chưa
+    */
+    function check() {
+        let score = 0;  // điểm mặc định = 0
+        if (question1[0].checked == true && count_checked(question1) == 1) {
+            score += 10;    
+        }
+        if (question2[3].checked == true && count_checked(question2) == 1) {
+            score += 10;    
+        }
+        if (question3[1].checked == true && question3[3].checked == true && count_checked(question3) == 2) {
+            score += 10;    
+        }
+        if (question4[1].checked == true && count_checked(question4) == 1) {
+            score += 10;    
+        }
+        if (question5[1].checked == true && count_checked(question5) == 1) {
+            score += 10;    
+        }
+        if (question6[1].checked == true && question6[3].checked == true && count_checked(question6) == 2) {
+            score += 10;    
+        }
+        if (question7[1].checked == true && question7[2].checked == true && question7[4].checked == true && count_checked(question7) == 3) {
+            score += 10;    
+        }
+        if (question8[0].checked == true && count_checked(question8) == 1) {
+            score += 10;    
+        }
+        if (question9[1].checked == true && count_checked(question9) == 1) {
+            score += 10;    
+        }
+        if (question10[3].checked == true && count_checked(question10) == 1) {
+            score += 10;    
+        }
+        
+        menu_ques.style.display = 'none';
+        result_form.style.display = 'block';
+        result_score.innerText = score + " điểm";
+        result_time.innerText = count_time + " giây";
+        if (score >= 50) {
+            result_pass.innerText = "Đạt";
+        } else {
+            result_pass.innerText = "Không đạt";
+        }
+    }
+
+
+
+
+    // Các hàm đồng hồ đếm ngược
+    function start() { 
+        if (s == -1) {
+          m -= 1;
+          s = 59;
+        }
+        if (m == -1) {
+          clearTimeout(timeout);
+          check();
+          return false;
+        }
+        
+        // ghi thời gian ra màn hình
+        minute.innerText = m.toString();
+        second.innerText = s.toString();
+        timeout = setTimeout(function() {
+          s--;
+          start();
+          count_time++;
+        }, 1000);   // gọi lại hàm Start sau 1 giây
+      }
+      
+      function stop() {      // hàm dừng bộ đếm khi chưa hết thời gian
+        clearTimeout(timeout);
+        check();
+
+      }
+      
+      
+      // Hàm sự kiện bấm vào nút Bắt đầu thì ẩn nút và hiện ra câu hỏi
+      btn_start.onclick = function() {
+          btn_start.style.display = 'none';
+          btn_back.style.display = 'none';
+          menu_ques.style.display = 'block';
+          start();
+      }
+
+      
+  </script>
+  <script src="../../js/js-open-user.js"></script>
+  <script src="../../js/js-quiz-click.js"></script>
+  <script src="../../js/js-rename-user.js"></script>
+  <!-- <script src="../../js/js-clock.js"></script> -->
+</html>

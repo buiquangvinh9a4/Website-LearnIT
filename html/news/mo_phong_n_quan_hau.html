@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="/assets/css/Home/all.css">
+    <link rel="stylesheet" href="/assets/css/Home/header.css">
+    <link rel="stylesheet" href="/assets/css/Home/footer.css">
+    <link rel="stylesheet" href="/html/bangtin/css/style.css">
+    <title>IT CLUB</title>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <!-- Header - First -->
+        <div id="header-first">
+            <!-- Header - Logo -->
+            <div class="logo">
+                <a href="index.html"><img class="logo-img" src="/assets/images/logo/logo_IT_white.png" alt="Itclub"></a>
+            </div>
+            <!-- Header - Navigation -->
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Giới thiệu</a></li>
+                    <li>
+                        <a href="html/main/signIn.html">Khóa học</a>
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="html/main/signIn.html">Tin học văn phòng</a>
+                                <ul class="sub-nav">
+                                    <li><a href="html/main/signIn.html">Word</a></li>
+                                    <li><a href="html/main/signIn.html">Excel</a></li>
+                                    <li><a href="html/main/signIn.html">PowerPoint</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="html/main/signIn.html">Lập trình cơ bản</a>
+                                <ul class="sub-nav">
+                                    <li><a href="html/main/signIn.html">C++</a></li>
+                                    <li><a href="html/main/signIn.html">Python</a></li>
+                                    <li><a href="html/main/signIn.html">Lập trình Web</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="html/main/signIn.html">Kỹ năng sử dụng máy tính</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="html/main/signIn.html">Luyện tập</a>
+                        <ul class="sub-nav">
+                            <li><a href="html/main/signIn.html">Bài tập mẫu trên lớp</a></li>
+                            <li><a href="html/main/signIn.html">Quizz kiến thức</a></li>
+                            <li><a href="html/main/signIn.html">300 bài code thiếu nhi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Thông tin</a></li>
+                    <li><a href="html/main/info_help.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <!-- Header - User Account--> 
+            <div class="user">
+                <a class="user-btn" id="signIn" href="html/main/signIn.html">Đăng nhập</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+    </div>
+
+    <!-- Main -------------------------------- -->
+    <main>
+        <!-- phần bên trái nội dung -->
+        <div class="main-left">
+            <!-- tên tác giả và lượt xem -->
+            <div class="tacgia-luotxem">
+                <div class="tacgia">
+                    <span>Tác giả:   </span>
+                    <a href=""><span>vinhbq2001</span></a>
+                </div>
+                <div class="luotxem">
+                    <i class="ti-eye"></i> <span>23082</span>
+                </div>
+            </div>
+            <!-- Phần nội dung chính của trang web -->
+            <div class="noidungchinh">
+                <img src="/html/bangtin/images/n_quan_hau/1.jpg" alt="">
+                <h1>Mô Phỏng Thuật Toán N Quân Hậu</h1>
+                <p style = "font-weight: bold;">
+                    Nếu bạn là người chưa nghe qua thuật ngữ "Thuật toán N quân hậu", hoặc chưa biết thuật toán đó hoạt động như thế nào,
+                     thì hôm nay trong bài viết này mình sẽ chia sẻ cho các bạn hiểu về thuật toán này bằng một chương trình mô phỏng dễ hiểu</p>
+                <h2>Một số yêu cầu của vscode</h2>
+                <h2>Thuật toán N quân hậu là gì?</h2>
+                <p>Thuật toán N quân hậu là gì?</p>
+                <p>Như các bạn đã biết thì một quân hầu trên bàn cờ có thể di chuyển theo hàng ngang, cột dọc và 2 đường chéo.</p>  
+                <img src="/html/bangtin/images/n_quan_hau/2.png" alt="">
+                <p>Bài toán được đặt ra như sau: Cho một bàn cờ có kích thước NxN (N ≥ 1), 
+                    Bạn có thể đặt đúng N quân hậu lên bàn cờ (mỗi ô chỉ chứa tối đa một quân hậu), 
+                    hãy đưa ra cách đặt N quân hậu sao cho không có 2 quân hậu nào ăn được nhau, 
+                    nói cách khác là trên mỗi hàng, một cột, 
+                    mỗi đường chéo của bàn cờ chỉ chứa tối đa một quân hậu.
+                </p>
+                <p>Ví dụ với N = 4 thì có 2 cách đặt thỏa mãn như sau:</p>
+                <img src="/html/bangtin/images/n_quan_hau/3.png" alt="">
+                <h2>Thuật toán giải bài toán N quân hậu</h2>
+                <p>Nhận xét bài toán: Chúng ta cần đặt N quân hậu sau cho trên mỗi hàng, một cột, 
+                    mỗi đường chéo của bàn cờ chỉ chứa tối đa một quân hậu, 
+                    như vậy trên mỗi hàng sẽ có đúng 1 quân hậu được đặt, 
+                    ta sẽ đánh số quân hậu đặt trên hàng i là quân thậu thứ i.
+                </p>
+                <p>Như vậy chúng ta có thể làm như sau:</p>
+                <p>Xét tất cả các trường hợp đặt quân hậu của thứ nhất (có N trường hợp), 
+                    với mỗi trường hợp đặt quân hậu thứ nhất, 
+                    ta xét các cách đặt quân hậu thứ 2, 
+                    quận hậu thứ 2 cũng cũng có thể đặt ở N ví trị trên hàng thứ 2, 
+                    nhưng nó phải né tránh sau cho không bị quân hậu thứ nhất ăn được nó,... 
+                    với quân hậu thứ i nó cũng sẽ có N cách đặt, 
+                    và nó cũng phải né tránh những ô mà i - 1 quân hậu trước đó có thể ăn được nó. 
+                    Như vậy chúng ta có thể hình dùng là ta sẽ dùng N vòng for lồng nhau, 
+                    với mỗi vòng for sẽ tìm chỉ số cột của quân hậu đó, 
+                    để làm được việc này thì sử dụng đệ quy quay lui là hợp lý.
+                </p>
+                <p>Cách kiểm tra một ô vuông có nằm trong tầm ngắm của các quân hậu trước đó hay không:</p>
+                <ul style="margin-left: 40px ;">
+                    <li>Sử dụng mảng boolean c để đánh dấu các cột của bàn cờ (c[i] = true nếu trên cột i chưa đặt quân hậu nào)</li>
+                    <li>Sử dụng màng bool c1 để đánh dấu các đường chéo song song với đường chéo chính của bạn cờ (c[i - j + N -1] = true,
+                         nghĩa là đường chéo đi qua ô(i, j) và song song với đường chéo chính chưa được đặt quân hậu nào.</li>
+                    <li>Sử dụng màng bool c2 để đánh dấu các đường chéo song song với đường chéo phụ của bạn cờ (c[i + j - 2] = true,
+                         nghĩa là đường chéo đi qua ô(i, j) và song song với đường chéo phụ chưa được đặt quân hậu nào.</li>
+                </ul>
+                <p>Sau tìm xong vị trí của quân hậu thứ N thì ta lưu output đó lại.</p>
+                <p>Hàm đệ quy được viết như sau:</p>
+                <!-- ô chứa nội dung code -->
+                <div class="code">
+<pre>
+    bool check(int i, int j) {
+        if (c[j] == false || c1[i - j + N - 1] == false || c2[i + j - 2] ==  false)
+            return false;
+        return true;
+    }
+    
+    void NQueen(int i) {
+        for (int j = 1; j <= N; j++)
+            if (check(i, j)) {
+                x[i] = j;
+                c[j] = c1[i - j + N - 1] = c2[i + j - 2] = false;
+                if (i == N)
+                    a.push_back(x);
+                else
+                    NQueen(i + 1);
+                c[j] = c1[i - j + N - 1] = c2[i + j - 2] = true;
+            }
+    }
+</pre>
+                </div>
+                <p>Các bạn có thể xem full source code <a href="">tại đây.</a> </p>
+                <h2>Mô phỏng thuật toán N quân hậu</h2>
+                <p>Để mô phỏng thuật toán này mình đã sử dụng java swing, giao diện chính của phần này sẽ như thế này:</p>
+                <img src="/html/bangtin/images/n_quan_hau/4.png" alt="">
+                <p>Tại mỗi bước tìm vị trị của của các quân cờ ta sẽ cập nhật là bàn cờ, 
+                    nhưng quá trình cập nhật bàn cờ lien tục như thế sẽ rất mất thời gian nên mình 
+                    chỉ cập nhật những ô nào thay đổi sau mỗi bước, mình đã sử dụng lớp Timer 
+                    để dễ dừng lại khi cập nhật sau mỗi bước hơn.
+                </p>
+                <!-- ô chứa nội dung code -->
+                <div class="code">
+<pre>
+    timer = new Timer(delay, new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            if (k == K) {
+                Vector v = new Vector();
+                if (!st.empty())
+                    v = st.peek();
+                int I = (int)v.get(0);
+                int J = (int)v.get(1) + 1;
+                if (J > 1) {
+                    bt[I][J - 1].setBackground(Color.white);
+                    cl[I][J - 1] = 0;
+                    seticonSquar(I, J - 1);
+                    J--;
+                    if (Q[I][J] == 1) {
+                        c[J] = c1[I - J + N] = c2[I + J - 2] = true;
+                        Q[I][J] = 0;
+                        cl[I][J] = 0;
+                    }
+                    J++;
+                }
+                if (J == N + 1 ) {
+                    st.pop();
+                    if (st.empty())
+                        timer.stop();
+                } else {
+                    v.set(1, J);
+                    bt[I][J].setBackground(Color.green);
+                    if (check(I, J)) {
+                        Q[I][J] = cl[I][J] = 1;
+                        seticonSquar(I, J);
+                        c[J] = c1[I - J + N] = c2[I + J - 2] = false;
+                        Vector vv = new Vector();
+                        vv.add(I + 1);
+                        vv.add(0);
+                        st.pop();
+                        st.push(v);
+                        if (I == N) {
+                            Stack<Vector<Integer>> ST = st;
+                            tf.setText(tf.getText() + (count++) + ": " + getChess(ST) + "\n");
+                            k = 0;
+//								timer.stop();
+                        } else {
+                            st.push(vv);
+                        }
+                    } else {
+                        cl[I][J] = 2;
+                        seticonSquar(I, J);
+                    }
+                }
+            }
+            else k++;
+        }
+    });
+</pre>
+                </div>
+                <!-- ô chứa nội dung code -->
+                <div class="code">
+<pre>
+    public String getChess(Stack<Vector<Integer>> stt) {
+		Vector<Vector<Integer>> Vec = new Vector();
+		String s = "";
+		while (!stt.empty()) {
+			Vector v = stt.pop();
+			Vec.add(v);
+			int I = (int) v.get(0);
+			int J = (int) v.get(1);
+			s = " ("  + I + ", " + J + ") " + s;
+		}
+		for (int i = Vec.size() - 1; i >= 0; i--)
+			stt.add(Vec.elementAt(i));
+		return s;
+	}
+</pre>
+                </div>
+                <p>Các bạn có thể xem full source code <a href="">tại đây.</a> </p>
+                <!-- Các thẻ tag cuối trang và nút chia sẻ -->
+                <div class="tag-share">
+                    <div class="list-tag">
+                        <a href=""><div class="tag">tutorial</div></a>
+                        <a href=""><div class="tag">algorithml</div></a>
+                        <a href=""><div class="tag">nqueen</div></a>
+                    </div>
+                    <a href=""><div class="share">
+                        <i class="ti-facebook"></i> share
+                    </div></a>
+                </div>
+                <div class="sao-danhgia" style = "margin-top: 30px;">
+                    <i class="fa-solid fa-star" style="color: #ff9f00"></i>
+                    <i class="fa-solid fa-star" style="color: #ff9f00"></i>
+                    <i class="fa-solid fa-star" style="color: #ff9f00"></i>
+                    <i class="fa-solid fa-star" style="color: #ff9f00"></i>
+                    <i class="fa-solid fa-star" style="color: #ff9f00"></i>
+                    <span style = "color: #4c4c4c; font-style: italic;">5.0 (2102 đánh giá)</span>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Phần thông tin bên phải -->
+        <div class="main-right">
+            <!-- Thông tin tác giả và liên hệ -->
+            <div class="tacgia-lienhe">
+                <h4>TÁC GIẢ</h4>
+                <div class="img">
+                    <img src="/assets/images/avatar/vinh.png" alt="">
+                    <a href=""> vinhbq2001</a>
+                </div>
+                <span><a href="">25 bài viết</a> | 7403 người theo dõi</span>
+                
+                <a href="">
+                    <div class="theodoi">
+                        Theo dõi
+                    </div>
+                </a>
+                <p>
+                    <i class="ti-check-box" style="margin-right: 10px;" ></i>
+                    Giải nhất olympic sinh viên Việt Nam lần thứ XXIX (2020).
+                </p>
+                <p>
+                    <i class="ti-check-box" style="margin-right: 10px;"></i>
+                    Thủ khoa HSG tỉnh Quảng Ninh môn tin học (2018).
+                </p>
+                <p>
+                    <i class="ti-check-box" style="margin-right: 10px;"></i>
+                    Đã có người yêu :))
+                </p>
+                <h4>LIÊN HỆ</h4>
+                <div class="lienhe">
+                    <a href=""><div class="mxh">
+                        <i class="ti-facebook"></i>
+                    </div></a>
+                    <a href=""><div class="mxh">
+                        <i class="ti-twitter-alt"></i>
+                    </div></a>
+                    <a href=""><div class="mxh">
+                        <i class="ti-instagram"></i>
+                    </div></a>
+                </div>
+            </div>
+            <!-- Các bài viết cùng tác giả -->
+            <div class="bai-viet-cung-tac-gia">
+                <h4>BÀI VIẾT CÙNG TÁC GIẢ</h4>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <img src="https://codelearnstorage.s3.amazonaws.com/Upload/Blog/thu-lam-mot-calendar-xin-xo-63759620683.2775.jpg" alt="">
+                        <span>Thử Làm Một Calendar Xịn Xò</span>
+                    </div></a>
+                </div>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <img src="https://codelearnstorage.s3.amazonaws.com/Upload/Blog/lam-game-xep-hinh-bang-java-63759180193.2134.jpg" alt="">
+                        <span>Làm Game Xếp Hình Bằng Java</span>
+                    </div></a>
+                </div>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <img src="https://codelearnstorage.s3.amazonaws.com/Upload/Blog/lap-trinh-game-sudoku-bang-java-63755221956.5775.jpg" alt="">
+                        <span>Lập Trình Game Sudoku Bằng Java</span>
+                    </div></a>
+                </div>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <img src="https://codelearnstorage.s3.amazonaws.com/Upload/Blog/thuat-toan-chuoi-nhi-phan-do-dai-n-63752797017.7959.jpg" alt="">
+                        <span>Thuật Toán Đưa Ra Chuỗi Nhị Phân Độ Dài N</span>
+                    </div></a>
+                </div>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <img src="https://codelearnstorage.s3.amazonaws.com/Upload/Blog/can-bang-phuong-trinh-hoa-hoc-bang-cpp-63752466266.5863.jpg" alt="">
+                        <span>Cân Bằng Phương Trình Hóa Học Bằng C++</span>
+                    </div></a>
+                </div>
+            </div>
+            <!-- Các nội dung đọc nhiều -->
+            <div class="bai-viet-cung-tac-gia">
+                <h4>ĐỌC NHIỀU</h4>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <span>Kiến Thức Cơ Bản Cần Nắm Khi Bắt Đầu Học C++</span>
+                    </div></a>
+                </div>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <span>Hướng Dẫn Cài Đặt Visual Studio Code Lập Trình C++</span>
+                    </div></a>
+                </div>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <span>Thuật toán là gì? Học thuật toán làm quái gì?</span>
+                    </div></a>
+                </div>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <span>Độ Phức Tạp Của Thuật Toán Và Lựa Chọn Cách Giải Thuật</span>
+                    </div></a>
+                </div>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <span>Lộ Trình Học Cấu Trúc Dữ Liệu Và Giải Thuật (Phần 1)</span>
+                    </div></a>
+                </div>
+            </div>
+            <!-- Các tác giả hàng đầu -->
+            <div class="bai-viet-cung-tac-gia">
+                <h4>TÁC GIẢ HÀNG ĐẦU</h4>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <img src="/assets/images/avatar/vinh.png" alt="" style="width: 40px; height: 40px">
+                        <span style="margin: 10px;">vinhbq2001</span>
+                    </div></a>
+                </div>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <img src="/assets/images/avatar/dung.png" alt="" style="width: 40px; height: 40px">
+                        <span style="margin: 10px;">dungmd2002</span>
+                    </div></a>
+                </div>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <img src="/assets/images/avatar/default.png" alt="" style="width: 40px; height: 40px">
+                        <span style="margin: 10px;">ngocanh</span>
+                    </div></a>
+                </div>
+                <div class="danhsach-baiviet">
+                    <a href=""><div class="baiviet">
+                        <img src="/assets/images/avatar/default.png" alt="" style="width: 40px; height: 40px">
+                        <span style="margin: 10px;">huan rose</span>
+                    </div></a>
+                </div>
+            </div>
+            <!-- các thẻ hashtag -->
+            <div class="bai-viet-cung-tac-gia">
+                <h4>HASH TAG</h4>
+                <div class="list-tag">
+                    <a href=""><div class="tag">tutorial</div></a>
+                    <a href=""><div class="tag">algorithml</div></a>
+                    <a href=""><div class="tag">nqueen</div></a>
+                </div>
+            </div>
+
+            
+            
+            
+        </div>
+        
+
+    </main>
+
+    <!-- Footer ------------------------------- -->
+    <div id="footer">
+        <div id="footer-display">
+            <div class="footer-box">
+                <h5 class="title-box">Liên hệ</h5>
+                <ul class="list-box">
+                    <li><a href="http://ubhs.edu.vn/"><i class="ti-home"></i> &nbsp; Trường THPT Uông Bí - Quảng Ninh</a></li>
+                    <li><a href="index.html"><b><i class="ti-desktop"></i> &nbsp; CLB Tin học IT CLUB</b></a></li>
+                    <li><a href="#"><b><i class="ti-mobile"></i> &nbsp; Hotline:</b> (+84) 397 026 573</a></li>
+                    <li><a href="#"><b><i class="ti-map-alt"></i> &nbsp; Địa chỉ:</b> Đường Lựng Xanh, Phường Quang Trung, thành phố Uông Bí, tỉnh Quảng Ninh</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h5 class="title-box">Liên kết</h5>
+                <ul class="list-box">
+                    <li><a href="https://moet.gov.vn/Pages/home.aspx"><i class="ti-angle-right"></i> &nbsp;Bộ Giáo dục và Đào tạo</a></li>
+                    <li><a href="http://fit.hnue.edu.vn/"><i class="ti-angle-right"></i> &nbsp;Khoa Công Nghệ Thông Tin - Trường ĐH Sư phạm HN</a></li>
+                    <li><a href="http://ubhs.edu.vn/"><i class="ti-angle-right"></i> &nbsp;Trường THPT Uông Bí - Quảng Ninh</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9000.972342286546!2d106.76083972592605!3d21.041067033917148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a884c36badc41%3A0x6b8a3ce483588459!2zVHLGsOG7nW5nIFRIUFQgVcO0bmcgQsOt!5e1!3m2!1svi!2s!4v1656555494936!5m2!1svi!2s" width="300" height="250" style="border: 2px solid gray; border-radius: 10px; box-shadow: 0 5px 5px 0 #000;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Xử lý phần slide hoạt động -->
+<!-- <script>
+    var x1 = document.getElementById("js-101");
+    var x2 = document.getElementById("js-102");
+    var x3 = document.getElementById("js-103");
+    var x4 = document.getElementById("js-104");
+
+    var li1 = document.getElementById("js-li1");
+    var li2 = document.getElementById("js-li2");
+    var li3 = document.getElementById("js-li3");
+    var li4 = document.getElementById("js-li4");
+
+    var img = "img-show";
+    var content = "li-show-back";
+
+    function hiddenImg(a, b, c, name) {
+        a.classList.remove(name);
+        b.classList.remove(name);
+        c.classList.remove(name);
+    }
+    function showPicture1() {
+        hiddenImg(x2, x3, x4, img);
+        hiddenImg(li2, li3, li4, content);
+        x1.classList.add(img);
+        li1.classList.add(content);
+    }
+    function showPicture2() {
+        hiddenImg(x1, x3, x4, img);
+        hiddenImg(li1, li3, li4, content);
+        x2.classList.add(img);
+        li2.classList.add(content);
+
+    }
+    function showPicture3() {
+        hiddenImg(x1, x2, x4, img);
+        hiddenImg(li1, li2, li4, content);
+        x3.classList.add(img);
+        li3.classList.add(content);
+
+    }
+    function showPicture4() {
+        hiddenImg(x1, x2, x3, img);
+        hiddenImg(li1, li2, li3, content);
+        x4.classList.add(img);
+        li4.classList.add(content);
+
+    }
+</script>
+<script src="js/js-login.js"></script> -->
+
+</html>

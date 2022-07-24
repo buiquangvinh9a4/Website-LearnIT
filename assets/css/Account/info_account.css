@@ -8,6 +8,7 @@
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    animation: FadeIn ease .2s;
 }
 
 #body-left {
@@ -53,4 +54,16 @@
 
 #body-right ul li span {
     color:rgb(69, 69, 69);
+}
+
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

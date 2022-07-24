@@ -104,6 +104,7 @@ i.ti-search {
     border-radius: 10px;
     margin:15px 12px ;
     box-shadow: 0px 0px 20px rgba(106, 106, 106, 0.22);
+    animation: FadeIn ease .4s;
 
 }
 .rate-online{
@@ -345,4 +346,15 @@ footer p, footer li {
 .menu-footer ul li:hover a {
     color: rgb(17, 42, 180);
     text-decoration: underline;
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
