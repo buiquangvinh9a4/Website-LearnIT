@@ -14,7 +14,7 @@ var form_signUp_access = document.getElementById('js-signUp-access');
 
 
 var isSignUp = () => {
-    if (input_text.value != '' && input_email.value != '' && input_class.value != '' && input_school.value != '' ) {
+    if (input_text.value != '' && input_email.value != '' && input_class.value != '' && input_school.value != '' && input_email.value.includes('@')) {
         form_signUp.style.display = 'none';
         form_signUp_access.style.display = 'block';
     } else {
@@ -26,7 +26,11 @@ var isSignUp = () => {
         if (input_email.value == '') {
             error_email.innerText = 'Trường này không được để trống';
         } else {
-            error_email.innerText = '';
+            if (!input_email.value.includes('@')) {
+                error_email.innerText = 'Email bạn nhập không hợp lệ';
+            } else {
+                error_email.innerText = '';
+            }
         }
         if (input_class.value == '') {
             error_class.innerText = 'Trường này không được để trống';

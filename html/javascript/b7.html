@@ -36,11 +36,10 @@
                             <li>
                                 <a href="../main/info_help.html"><i class="fa-regular fa-circle-question"></i>Trợ giúp</a>
                             </li>
-                            <li><a href="../../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
+                            <li><a href="../../index.html" id="js-signout"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -63,79 +62,98 @@
                     <h3 style="font-size: 25px;">Bài 7: Toán tử số học</h3>
 
                     <ul class="list-inline"><li>Mục tiêu</li></ul>
-                    <p>Học viên hiểu về hằng số và làm thế nào để khái báo hằng số</p>
+                    <p>Học sinh hiểu về khái niệm toán tử số học và cách sử dụng nó trong các vấn đề thực tế.</p>
                     <ul class="list-inline"><li>Tổng quan</li></ul>
-                    <p>Hằng số trong các ngôn ngữ lập trình là một biến giá trị không thay đổi. Trong bài này, chúng ta sẽ học cú pháp để khai báo một hằng số trong Java script</p>
-                    <h4>Cú pháp</h4>
-                    <p>Một hằng số được khai báo với từ khóa <code>const</code>. Giá trị của hằng số sẽ ko thể nào thay đổi khi đã khởi tạo:</p>
+                    <p>Javascript cung cấp một tập hợp các toán tử phong phú để thao tác các biến. Chúng tôi có thể chia tất cả các toán tử thành các nhóm sau:</p>
+                    <ul style="margin-left: 30px" type="square">
+                        <li>Toán tử số học</li>
+                        <li>Toán tử quan hệ</li>
+                        <li>Toán tử logic</li>
+                        <li>Toán tử gán</li>
+                        <li>Toán tử typeof</li>
+                    </ul>
+                    <p>Trong phần này, chúng ta sẽ thảo luận về các toán tử số học được sử dụng trong các biểu thức toán học giống như cách chúng được sử dụng trong đại số.</p>
+                    <p>Toán tử số học được sử dụng để thực hiện các phép toán số học trên các toán hạng. Các toán tử sau được gọi là toán tử số học JavaScript.</p>
+                    <table border="1" width="500" height="400" style="margin-left: 30px;">
+                        <tr>
+                            <th>Toán tử </th>
+                            <th>Mô tả</th>
+                            <th>Ví dụ</th>
+                        </tr>
+                        <tr>
+                            <td align="center">+</td>
+                            <td>Phép cộng</td>
+                            <td>2 + 3 = 5</td>
+                        </tr>
+                        <tr>
+                            <td align="center">-</td>
+                            <td>Phép trừ</td>
+                            <td>10 - 2 = 8</td>
+                        </tr>
+                        <tr>
+                            <td align="center">*</td>
+                            <td>Phép nhân</td>
+                            <td>2 * 4 = 8</td>
+                        </tr>
+                        <tr>
+                            <td align="center">/</td>
+                            <td>Phéo chia</td>
+                            <td>50 / 5 = 10</td>
+                        </tr>
+                        <tr>
+                            <td align="center">%</td>
+                            <td>Phép chia lấy phần dư</td>
+                            <td>11 % 4 = 3</td>
+                        </tr>
+                        <tr>
+                            <td align="center">++</td>
+                            <td>tăng lên 1</td>
+                            <td>var a = 10; a++; Now a = 11</td>
+                        </tr>
+                        <tr>
+                            <td align="center">--</td>
+                            <td>giảm xuống 1</td>
+                            <td>var a = 10; a--; Now a = 9</td>
+                        </tr>
+                    </table>
+                    <h4>Ví dụ</h4>
                     <div class="text-code">
                         <p>
-                            const PI = 3.141592653589793; <br>
-                            PI = 3.14; <font>// This will give an error</font> <br>
-                            PI = PI + 10; <font>// This will also give an error</font> <br>
-                            var a = PI + 10; <font>// OK</font>
-                        </p> 
-                    </div>
-                    <p>Các biến const JavaScript phải được gán một giá trị khi chúng được khai báo:</p>
-                    <div class="text-code">
-                        <p>
-                            <font>// Incorrect</font> <br>
-                            const PI;  <br>   
-                            PI = 3.14159265359;   <br>
+                            var a = 3; <br>
+                            var b = 2;  <br>
+                            var x = a * b; <br>
                             
-                            <font>// Correct</font>   <br>
-                            const PI = 3.14159265359;</p> 
-                    </div>
-                    <h4>Hằng số Objects có thể thay đổi</h4>
-                    <p>Bạn có thể thay đổi các thuộc tính của một hằng số object:</p>
-                    <div class="text-code">
-                        <p>
-                            <font>// You can create a const object:</font>   <br>
-                            const car = {type:"Fiat", model:"500", color:"white"};   <br>
-
-                            <font>// You can change a property:</font>   <br>
-                            car.color = "red";   <br>
-
-                            <font>// You can add a property:</font>  <br>
-                            car.owner = "Johnson";   <br>
+                            console.log(x); <font>// output: 6</font> <br> <br>
+                            
+                            var c = 3; <br>
+                            x = (a * b) + c;  <br>
+                            
+                            console.log(x); <font>// output: 9</font> <br> <br>
+                            
+                            x = (a * b) % 5; <br>
+                            
+                            console.log(x); <font>// output: 1 </font>
                         </p>
                     </div>
-                    <p>Nhưng bạn ko thể gán lại một hằng số object:</p>
-                    <div class="text-code">
-                        <p>
-                            const car = {type:"Fiat", model:"500", color:"white"}; <br>
-                            car = {type:"Volvo", model:"EX60", color:"red"};    <font>// ERROR</font>
-                        </p>
-                    </div>
-                    <h4>Hằng số mảng có thể thay đổi</h4>
-                    <p>Bạn có thể thay đổi các phần tử của hằng số mảng:</p>
-                    <div class="text-code">
-                        <p>
-                            <font>// You can create a constant array:</font> <br>
-                            const cars = ["Saab", "Volvo", "BMW"]; <br>
+                    
 
-                            <font>// You can change an element:</font> <br>
-                            cars[0] = "Toyota"; <br>
-
-                            <font>// You can add an element:</font> <br>
-                            cars.push("Audi");</p>
-                        </p>
-                    </div>
-                    <p>Nhưng cũng không thể gán lại hằng số mảng:</p>
-                    <div class="text-code">
-                        <p>
-                            const cars = ["Saab", "Volvo", "BMW"]; <br>
-                            cars = ["Toyota", "Volvo", "Audi"];    <font>// ERROR</font>
-                        </p>
-                    </div>
                     
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">
                         <ul class="list-inline"><li>Câu hỏi</li></ul>
-                        <p><span>Hằng số có thể giá trị trong quá trình lập trình javascript không?</span></p>
+                        <p><span>Kết quả của biến x sau khi chạy đoạn lệnh dưới đây?</span></p>
+                        <div class="text-code">
+                            <p>
+                                var y = 2; <br>
+                                var x = ++y - y++ + y % 2;  <br>
+                                console.log(x);
+                            </p>
+                        </div>
 
-                        <div class="frame_input"><input type="radio" name="answer" value="A"> Có <br></div>
-                        <div class="frame_input"><input type="radio" name="answer" value="B"> Không <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="A"> 0 <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="B"> 1 <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="C"> 2 <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="D"> 3 <br></div>
                         <input type="button" value="Trả lời" onclick="check()">
 
                         <script>
@@ -146,7 +164,7 @@
                                 var result_tt = document.getElementById('js-result-title');
                                 result.style.display = 'block';
                                 back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
-                                if (question1 == "B") {
+                                if (question1 == "A") {
                                     result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
                                 } else {
                                     result_tt.innerText = 'Câu trả lời chưa chính xác!';
@@ -211,6 +229,8 @@
     <script src="../../js/js-open-user.js"></script>
     <script src="../../js/js-rename-user.js"></script>
     <script src="../../js/js-answer.js"></script>
+    <script src="../../js/js-quiz-click-learn.js"></script>
+
 
 
 

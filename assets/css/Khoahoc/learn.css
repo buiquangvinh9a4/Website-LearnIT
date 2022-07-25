@@ -321,8 +321,8 @@ form[name='question'] {
 
 }
 
-#start, #js-back{
-    width: 100px;
+#start, #js-back-quiz{
+    width: 150px;
     height: 50px;
     padding: 10px;
     font-size: 20px;
@@ -332,9 +332,10 @@ form[name='question'] {
     margin-top: 10px;
     cursor: pointer;
     text-decoration: none;
+    border: 0;
 }
 
-#js-back {
+#js-back-quiz {
     padding: 14px;
     background-color: #0f85b8;
 }
@@ -370,7 +371,7 @@ input[type="button"] {
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
-
+    border: 0;
 }
 
 .result {

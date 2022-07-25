@@ -36,7 +36,7 @@
                         <li>
                             <a href="../main/info_help.html"><i class="fa-regular fa-circle-question"></i>Trợ giúp</a>
                         </li>
-                        <li><a href="../../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
+                        <li><a href="../../index.html" id="js-signout"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,7 +55,7 @@
 
                     </p>
                     <button id="start">Bắt đầu</button>
-                    <a id="js-back" href="../main/training.html">Quay trở lại</a>
+                    <a id="js-back-quiz" href="../main/training.html">Quay trở lại</a>
 
                 </div>
                 
@@ -199,7 +199,7 @@
     // các biến phục vụ đếm thời gian
     var bd = document.body;
     var btn_start = document.getElementById('start');
-    var btn_back = document.getElementById('js-back');
+    var btn_back = document.getElementById('js-back-quiz');
     var menu_ques = document.getElementById('js-menu-question');
     var minute = document.getElementById('minute');
     var second = document.getElementById('second');

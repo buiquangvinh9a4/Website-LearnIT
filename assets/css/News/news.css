@@ -6,10 +6,11 @@ body{
     font-family: 'Muli',sans-serif;
 }
 main{
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: 0 auto 100px;
     display: flex;
+    justify-content: space-between;
 }
 a{
     color: #2c31cf;
@@ -66,7 +67,7 @@ li{
     
 }
 .xuhuong img, .bai-viet-moi img{
-    width: 320px;
+    width: 380px;
     height: 200px;
     margin-bottom: 10px;
 }
@@ -103,7 +104,7 @@ li{
 }
 /* Trang trái */
 .main-left{
-    
+    width: 80%;
     background-color: white;
 
 }
@@ -127,10 +128,16 @@ li{
 .noidungchinh p {
     text-indent: 25px;
     line-height: 1.6;
+    font-size: 18px;
+}
+
+.sao-danhgia {
+    margin: 10px 0;
 }
 
 .noidungchinh img{
     width: 100%;
+    padding: 20px 0;
 }
 .code{
     background-color: black;
@@ -158,6 +165,11 @@ li{
     color: #898989;
     background-color: #f5f5f5;
 }
+
+.noidungchinh ul li {
+    line-height: 1.6;
+}
+
 a:hover .tag{
     background-color: #3b3c54;
     color: #fff;
@@ -170,6 +182,7 @@ a:hover .tag{
 }
 /* Trang phải */
 .main-right{
+    width: 20%;
     margin-left: 50px;
     
 }
