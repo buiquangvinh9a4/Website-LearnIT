@@ -8,7 +8,7 @@ var error_email = document.getElementById('js-error-email');
 var error_class = document.getElementById('js-error-class');
 var error_school = document.getElementById('js-error-school');
 
-var btn = document.querySelector('a[class="input-submit"]');
+var btn = document.querySelector('input[class="input-submit"]');
 var form_signUp = document.getElementById('form-signup');
 var form_signUp_access = document.getElementById('js-signUp-access');
 
@@ -23,6 +23,7 @@ var isSignUp = () => {
         } else {
             error_text.innerText = '';
         }
+
         if (input_email.value == '') {
             error_email.innerText = 'Trường này không được để trống';
         } else {
@@ -42,7 +43,9 @@ var isSignUp = () => {
         } else {
             error_school.innerText = '';
         }
+        
     }
+    return false;
 }
 
 btn.addEventListener('click', isSignUp);

@@ -271,8 +271,8 @@ ul.sub-nav li {
 }
 
 .title-table {
-    height: 50px;
-    font-size: 23px;
+    height: 45px;
+    font-size: 20px;
 }
 
 #form-signup table tr:first-child {
@@ -290,12 +290,13 @@ ul.sub-nav li {
 }
 
 .input-submit {
-    display: block;
+    width: 350px;
     background-color: var(--main-color);
     color: #fff;
     font-size: 20px;
     font-weight: bold;
     padding: 15px 20px;
+    border: 0;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
@@ -310,7 +311,7 @@ ul.sub-nav li {
 
 tr td p {
     color: red;
-    font-size: 14px;
+    font-size: 13px;
     font-style: italic;
     padding: 5px 0;
 }

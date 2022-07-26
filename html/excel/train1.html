@@ -161,7 +161,7 @@
                             </tr>
                             <tr>
                                 <td>Thời gian:</td>
-                                <td id="js-result-time">11111</td>
+                                <td id="js-result-time"></td>
                             </tr>
                             <tr>
                                 <td>Yêu cầu:</td>
@@ -263,7 +263,8 @@
         menu_ques.style.display = 'none';
         result_form.style.display = 'block';
         result_score.innerText = score + " điểm";
-        result_time.innerText = count_time + " giây";
+        //result_time.innerText = count_time + " giây";
+        result_time.innerText = parseInt(count_time/60) + " phút " + count_time%60 + " giây";
         if (score >= 50) {
             result_pass.innerText = "Đạt";
         } else {
@@ -287,8 +288,17 @@
         }
         
         // ghi thời gian ra màn hình
-        minute.innerText = m.toString();
-        second.innerText = s.toString();
+        if (m >= 0 && m <= 9) {
+            minute.innerText = "0" + m.toString();
+        } else {
+            minute.innerText = m.toString(); 
+        }
+
+        if (s >= 0 && s <= 9) {
+            second.innerText = "0" + s.toString();
+        } else {
+            second.innerText = s.toString();
+        }
         timeout = setTimeout(function() {
           s--;
           start();
