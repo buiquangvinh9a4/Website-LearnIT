@@ -61,7 +61,11 @@ var isTrueAccount = () => {
 var isLogin = () => {
     var x = isTrueAccount();
     if (x != undefined) {
-        btn_submit.attributes[0].value = 'Khoahoc.html';
+        if (window.localStorage.getItem('remote') == 'khoahoc') {
+            btn_submit.attributes[0].value = 'Khoahoc.html';
+        } else {
+            btn_submit.attributes[0].value = 'training.html';
+        }
     } else if (username.value != '' && password.value != '') {
         error1.innerText = '';
         error2.innerText = '*Tên tài khoản hoặc mật khẩu chưa chính xác.';

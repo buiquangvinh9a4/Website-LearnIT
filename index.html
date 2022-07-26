@@ -25,32 +25,32 @@
                 <ul>
                     <li><a href="index.html">Giới thiệu</a></li>
                     <li>
-                        <a href="html/main/signIn.html">Khóa học</a>
+                        <a href="html/main/signIn.html" class="js-nav-khoahoc">Khóa học</a>
                         <ul class="sub-nav">
                             <li>
-                                <a href="html/main/signIn.html">Tin học văn phòng</a>
+                                <a href="html/main/signIn.html" class="js-nav-khoahoc">Tin học văn phòng</a>
                                 <ul class="sub-nav">
-                                    <li><a href="html/main/signIn.html">Word</a></li>
-                                    <li><a href="html/main/signIn.html">Excel</a></li>
-                                    <li><a href="html/main/signIn.html">PowerPoint</a></li>
+                                    <li><a href="html/main/signIn.html" class="js-nav-khoahoc">Word</a></li>
+                                    <li><a href="html/main/signIn.html" class="js-nav-khoahoc">Excel</a></li>
+                                    <li><a href="html/main/signIn.html" class="js-nav-khoahoc">PowerPoint</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="html/main/signIn.html">Lập trình cơ bản</a>
+                                <a href="html/main/signIn.html" class="js-nav-khoahoc">Lập trình cơ bản</a>
                                 <ul class="sub-nav">
-                                    <li><a href="html/main/signIn.html">C++</a></li>
-                                    <li><a href="html/main/signIn.html">Python</a></li>
-                                    <li><a href="html/main/signIn.html">Lập trình Web</a></li>
+                                    <li><a href="html/main/signIn.html" class="js-nav-khoahoc">C++</a></li>
+                                    <li><a href="html/main/signIn.html" class="js-nav-khoahoc">Python</a></li>
+                                    <li><a href="html/main/signIn.html" class="js-nav-khoahoc">Lập trình Web</a></li>
                                 </ul>
                             </li>
-                            <li><a href="html/main/signIn.html">Kỹ năng sử dụng máy tính</a></li>
+                            <li><a href="html/main/signIn.html" class="js-nav-khoahoc">Kỹ năng sử dụng máy tính</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="html/main/signIn.html">Luyện tập</a>
+                        <a href="html/main/signIn.html" class="js-nav-training">Luyện tập</a>
                         <ul class="sub-nav">
-                            <li><a href="html/main/signIn.html">Quizz kiến thức</a></li>
-                            <li><a href="html/main/signIn.html">300 bài code thiếu nhi</a></li>
+                            <li><a href="html/main/signIn.html" class="js-nav-training">Quizz kiến thức</a></li>
+                            <li><a href="html/main/signIn.html" class="js-nav-training">300 bài code thiếu nhi</a></li>
                         </ul>
                     </li>
                     <li><a href="html/main/news.html">Thông tin</a></li>
@@ -416,6 +416,27 @@
         li4.classList.add(content);
 
     }
+</script>
+<script>
+    var nav_khoahoc = document.getElementsByClassName('js-nav-khoahoc');
+    var nav_training = document.getElementsByClassName('js-nav-training');
+
+    for(let i = 0; i < nav_khoahoc.length; i++) {
+        nav_khoahoc[i].onclick = function() {
+            window.localStorage.setItem('remote', 'khoahoc');
+        }
+    }
+    
+    for (let i = 0; i < nav_training.length; i++) {
+        nav_training[i].onclick = function() {
+            window.localStorage.setItem('remote', 'training');    
+        }
+    }
+
+
+    
+
+    
 </script>
 <script src="js/js-login.js"></script>
 <script src="js/js-signUp.js"></script>

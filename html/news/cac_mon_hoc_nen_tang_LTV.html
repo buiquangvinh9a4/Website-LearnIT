@@ -60,9 +60,31 @@
                 </ul>
             </div>
             <!-- Header - User Account--> 
-            <div class="user">
-                <a class="user-btn" id="signIn" href="signIn.html">Đăng nhập</a>
+            <div class="user" id="js-user-khach">
+                <a class="user-btn" id="signIn" href="../main/signIn.html">Đăng nhập</a>
             </div>
+            <div class="user" id="js-user" style="display: none">
+                <div class="user-show" >
+                    <p class="name-account" id="js-user-name">username</p>
+                    <img src="" id="js-user-avatar" alt="">
+                </div>
+                <div class="user-hidden" id="js-user-hidden">
+                    <div class="account-info">
+                        <p id="js-user-fullname">Bùi Quang Vinh</p>
+                        <p>Học sinh</p>
+                    </div>
+                    <ul class="nav-account">
+                        <li>
+                            <a href="info_account.html"><i class="fa-regular fa-user"></i>Tài khoản</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-regular fa-circle-question"></i>Trợ giúp</a>
+                        </li>
+                        <li><a href="../../index.html" id="js-signout"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
         <div class="clear"></div>
 
