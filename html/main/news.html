@@ -24,35 +24,33 @@
             <!-- Header - Navigation -->
             <div class="nav">
                 <ul>
-                    <li><a href="../../index.html">Giới thiệu</a></li>
+                    <li onclick="window.localStorage.removeItem('flag');"><a href="../../index.html">Giới thiệu</a></li>
                     <li>
-                        <a href="signIn.html">Khóa học</a>
+                        <a href="signIn.html" class="js-nav-khoahoc">Khóa học</a>
                         <ul class="sub-nav">
                             <li>
-                                <a href="signIn.html">Tin học văn phòng</a>
+                                <a href="signIn.html" class="js-nav-khoahoc">Tin học văn phòng</a>
                                 <ul class="sub-nav">
-                                    <li><a href="signIn.html">Word</a></li>
-                                    <li><a href="signIn.html">Excel</a></li>
-                                    <li><a href="signIn.html">PowerPoint</a></li>
+                                    <li><a href="signIn.html" class="js-nav-khoahoc">Word</a></li>
+                                    <li><a href="signIn.html" class="js-nav-khoahoc">Excel</a></li>
+                                    <li><a href="signIn.html" class="js-nav-khoahoc">PowerPoint</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="signIn.html">Lập trình cơ bản</a>
+                                <a href="signIn.html" class="js-nav-khoahoc">Lập trình cơ bản</a>
                                 <ul class="sub-nav">
-                                    <li><a href="signIn.html">C++</a></li>
-                                    <li><a href="signIn.html">Python</a></li>
-                                    <li><a href="signIn.html">Lập trình Web</a></li>
+                                    <li><a href="signIn.html" class="js-nav-khoahoc">C++</a></li>
+                                    <li><a href="signIn.html" class="js-nav-khoahoc">Python</a></li>
+                                    <li><a href="signIn.html" class="js-nav-khoahoc">Lập trình Web</a></li>
                                 </ul>
                             </li>
-                            <li><a href="signIn.html">Kỹ năng sử dụng máy tính</a></li>
+                            <li><a href="signIn.html" class="js-nav-khoahoc">Kỹ năng sử dụng máy tính</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="signIn.html">Luyện tập</a>
+                        <a href="signIn.html" class="js-nav-training">Luyện tập</a>
                         <ul class="sub-nav">
-                            <li><a href="signIn.html">Bài tập mẫu trên lớp</a></li>
-                            <li><a href="signIn.html">Quizz kiến thức</a></li>
-                            <li><a href="signIn.html">300 bài code thiếu nhi</a></li>
+                            <li><a href="signIn.html" class="js-nav-training">Quizz kiến thức</a></li>
                         </ul>
                     </li>
                     <li><a href="">Thông tin</a></li>
@@ -66,7 +64,7 @@
             <div class="user" id="js-user" style="display: none">
                 <div class="user-show" >
                     <p class="name-account" id="js-user-name">username</p>
-                    <img src="" id="js-user-avatar" alt="">
+                    <img src="../../assets/images/avatar/default.png" id="js-user-avatar" alt="">
                 </div>
                 <div class="user-hidden" id="js-user-hidden">
                     <div class="account-info">
@@ -320,11 +318,33 @@
     </div>
 </body>
 
+<script>
+    var nav_khoahoc = document.getElementsByClassName('js-nav-khoahoc');
+    var nav_training = document.getElementsByClassName('js-nav-training');
+    for (let i = 0; i < nav_khoahoc.length; i++) {
+        nav_khoahoc[i].onclick = function () {
+            if (window.localStorage.getItem('flag') != null) {
+                nav_khoahoc[i].attributes['href'].value = 'Khoahoc.html';
+            } else {
+                nav_khoahoc[i].attributes['href'].value = 'signIn.html';
+            }
+        }
+        nav_training[i].onclick = function () {
+            if (window.localStorage.getItem('flag') != null) {
+                nav_training[i].attributes['href'].value = 'training.html';
+            } else {
+                nav_training[i].attributes['href'].value = 'signIn.html';
+            }
+        }
+    }
+    
+</script>
 
+<script src="../../js/js-rename-user.js"></script>
+<script src="../../js/js-show-account.js"></script>
+<script src="../../js/js-open-user.js"></script>
+
+<script src="../../js/js-signOut.js"></script>
 
 </html>
 
-<script src="../../js/js-open-user.js"></script>
-<script src="../../js/js-rename-user.js"></script>
-<script src="../../js/js-show-account.js"></script>
-<script src="../../js/js-signOut.js"></script>

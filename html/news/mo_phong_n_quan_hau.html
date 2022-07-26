@@ -24,7 +24,7 @@
             <!-- Header - Navigation -->
             <div class="nav">
                 <ul>
-                    <li><a href="../../index.html">Giới thiệu</a></li>
+<li onclick="window.localStorage.removeItem('flag');"><a href="../../index.html">Giới thiệu</a></li>
                     <li>
                         <a href="../main/signIn.html">Khóa học</a>
                         <ul class="sub-nav">
@@ -50,9 +50,9 @@
                     <li>
                         <a href="../main/signIn.html">Luyện tập</a>
                         <ul class="sub-nav">
-                            <li><a href="../main/signIn.html">Bài tập mẫu trên lớp</a></li>
+                            
                             <li><a href="../main/signIn.html">Quizz kiến thức</a></li>
-                            <li><a href="../main/signIn.html">300 bài code thiếu nhi</a></li>
+                            
                         </ul>
                     </li>
                     <li><a href="../main/news.html">Thông tin</a></li>
@@ -75,10 +75,10 @@
                     </div>
                     <ul class="nav-account">
                         <li>
-                            <a href="info_account.html"><i class="fa-regular fa-user"></i>Tài khoản</a>
+                            <a href="../main/info_account.html"><i class="fa-regular fa-user"></i>Tài khoản</a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-regular fa-circle-question"></i>Trợ giúp</a>
+                            <a href="../main/info_help.html"><i class="fa-regular fa-circle-question"></i>Trợ giúp</a>
                         </li>
                         <li><a href="../../index.html" id="js-signout"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
                     </ul>
@@ -413,3 +413,8 @@
 <script src="js/js-login.js"></script> -->
 
 </html>
+<script src="../../js/js-rename-user.js"></script>
+<script src="../../js/js-show-account.js"></script>
+<script src="../../js/js-open-user.js"></script>
+
+<script src="../../js/js-signOut.js"></script>

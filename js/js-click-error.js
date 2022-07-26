@@ -11,9 +11,13 @@ btn_sm.onclick = function() {
     var tb2 = document.getElementById('js-error-2');
     if (input1.value=='') {
         tb1.innerText = "Vui lòng nhập nội dung!";
+    } else {
+        tb1.innerText = "";
     }
     if (input2.value=='') {
         tb2.innerText = "Vui lòng nhập nội dung!";
+    } else {
+        tb2.innerText = "";
     }
     if (input1.value!='' && input2.value !='') {
         menu.style.display = 'none';

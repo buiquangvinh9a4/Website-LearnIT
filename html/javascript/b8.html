@@ -72,7 +72,7 @@
                             <th>Mô tả</th>
                             <th>Ví dụ</th>
                         </tr>
-                        <tr>
+                        <tr align="center">
                             <td>==</td>
                             <td>bằng với</td>
                             <td>
@@ -84,7 +84,7 @@
                                 </p>
                             </td>
                         </tr>
-                        <tr>
+                        <tr align="center">
                             <td>!=</td>
                             <td>Không bằng với</td>
                             <td>10!=20 = true</td>
@@ -106,16 +106,65 @@
                             console.log(true != true); <font>// output: false</font> <br>
                         </p>
                     </div>
+                    <h4>Toán tử quan hệ:  &#60;  &#62;  &#60;=  =&#62;   </h4>
+                    <table border="1" width="400" height="450" style="margin: 10px 0">
+                        <tr>
+                            <th>Toán tử</th>
+                            <th>Mô tả</th>
+                            <th>Ví dụ</th>
+                        </tr>
+                        <tr align="center">
+                            <td>&#62;</td>
+                            <td>Lớn hơn</td>
+                            <td>20 &#62; 10 = true</td>
+                        </tr>
+                        <tr align="center">
+                            <td>&#62;=</td>
+                            <td>Lớn hơn hoặc bằng</td>
+                            <td>20&#62;= 10 = true</td>
+                        </tr>
+                        <tr align="center">
+                            <td>&#60;</td>
+                            <td>Nhỏ hơn</td>
+                            <td>20 &#60; 10 = false</td>
+                        </tr>
+                        <tr align="center">
+                            <td>&#60;=</td>
+                            <td>Nhỏ hơn hoặc bằng</td>
+                            <td>20&#60;= 10 = false</td>
+                        </tr>
+                    </table>
+                    <p>Toán tử quan hệ chỉ có thể được sử dụng với các kiểu dữ liệu nguyên thủy:</p>
+                    <div class="text-code">
+                        <p>
+                            var i1 = 1; <br>
+                            var i2 = 2; <br>
+                            var i3 = 1; <br>
+                            console.log(i1 > i2);    <font>//prints: false</font> <br>
+                            console.log(i1 >= i2);   <font>//prints: false</font> <br>
+                            console.log(i1 >= i3);   <font>//prints: true</font>  <br>
+                            console.log(i1 < i2);    <font>//prints: true</font>  <br>
+                            console.log(i1 <= i2);   <font>//prints: true</font>  <br>
+                            console.log(i1 <= i3);   <font>//prints: true</font>  <br> <br>
 
-
+                            console.log('a' >= 'b');  <font>//prints: false</font> <br>
+                            console.log('a' <= 'b');  <font>//prints: true</font>  <br>
+                        </p>
+                    </div>
 
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">
                         <ul class="list-inline"><li>Câu hỏi</li></ul>
-                        <p><span>Javascript là ngôn ngữ dùng để lập trình các sự kiện trên website?</span></p>
-
-                        <div class="frame_input"><input type="radio" name="answer" value="A"> Đúng <br></div>
-                        <div class="frame_input"><input type="radio" name="answer" value="B"> Sai <br></div>
+                        <p><span>Kết quả của đoạn lệnh dưới đây?</span></p>
+                        <div class="text-code">
+                            <p>
+                                var i1 = 5; <br>
+                                var i2 = i1 % 2 + 1; <br> <br>
+                                console.log(i1 >= i2);
+                            </p>
+                        </div>
+                        <div class="frame_input"><input type="radio" name="answer" value="A"> True <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="B"> False <br></div>
                         <input type="button" value="Trả lời" onclick="check()">
 
                         <script>
@@ -190,7 +239,12 @@
     </body>
     <script src="../../js/js-open-user.js"></script>
     <script src="../../js/js-rename-user.js"></script>
+
+<script src="../../js/js-signOut.js"></script>
     <script src="../../js/js-answer.js"></script>
+    <script src="../../js/js-quiz-click-learn.js"></script>
+    <script src="../../js/js-quiz-click-learn.js"></script>
+
 
 
 
