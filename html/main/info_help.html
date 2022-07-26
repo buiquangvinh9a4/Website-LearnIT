@@ -25,36 +25,36 @@
             <ul>
                 <li onclick="window.localStorage.removeItem('flag');"><a href="../../index.html">Giới thiệu</a></li>
                 <li>
-                    <a href="Khoahoc.html">Khóa học</a>
+                    <a href="Khoahoc.html" class="js-nav-khoahoc">Khóa học</a>
                     <ul class="sub-nav">
                         <li>
-                            <a href="Khoahoc.html#tinhocvanphong">Tin học văn phòng</a>
+                            <a href="Khoahoc.html#tinhocvanphong" class="js-nav-khoahoc">Tin học văn phòng</a>
                             <ul class="sub-nav">
-                                <li><a href="../word/b1.html">Word</a></li>
-                                <li><a href="../excel/b1.html">Excel</a></li>
-                                <li><a href="../powerpoint/b1.html">PowerPoint</a></li>
+                                <li><a href="../word/b1.html" class="js-nav-khoahoc">Word</a></li>
+                                <li><a href="../excel/b1.html" class="js-nav-khoahoc">Excel</a></li>
+                                <li><a href="../powerpoint/b1.html" class="js-nav-khoahoc">PowerPoint</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="Khoahoc.html#laptrinhcoban">Lập trình cơ bản</a>
+                            <a href="Khoahoc.html#laptrinhcoban" class="js-nav-khoahoc">Lập trình cơ bản</a>
                             <ul class="sub-nav">
-                                <li><a href="../c++/b1.html">C++</a></li>
-                                <li><a href="../python/b1.html">Python</a></li>
-                                <li><a href="../html_css/b1.html">Lập trình Web</a></li>
+                                <li><a href="../c++/b1.html" class="js-nav-khoahoc">C++</a></li>
+                                <li><a href="../python/b1.html" class="js-nav-khoahoc">Python</a></li>
+                                <li><a href="../html_css/b1.html" class="js-nav-khoahoc">Lập trình Web</a></li>
                             </ul>
                         </li>
-                        <li><a href="Khoahoc.html#kythuatmaytinh">Kỹ năng sử dụng máy tính</a></li>
+                        <li><a href="Khoahoc.html#kythuatmaytinh" class="js-nav-khoahoc">Kỹ năng sử dụng máy tính</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="../main/training.html">Luyện tập</a>
+                    <a href="../main/training.html" class="js-nav-training">Luyện tập</a>
                     <ul class="sub-nav">
                         
-                        <li><a href="../main/training.html">Quizz kiến thức</a></li>
+                        <li><a href="../main/training.html" class="js-nav-training">Quizz kiến thức</a></li>
                         
                     </ul>
                 </li>
-                <li><a href="../main/news.html"">Thông tin</a></li>
+                <li><a href="../main/news.html">Thông tin</a></li>
                 <li><a href="info_help.html">Liên hệ</a></li>
             </ul>
         </div>
@@ -119,6 +119,27 @@
     </main>
     
 </body>
+<script>
+    var nav_khoahoc = document.getElementsByClassName('js-nav-khoahoc');
+    var nav_training = document.getElementsByClassName('js-nav-training');
+    for (let i = 0; i < nav_khoahoc.length; i++) {
+        nav_khoahoc[i].onclick = function () {
+            if (window.localStorage.getItem('flag') != null) {
+                nav_khoahoc[i].attributes['href'].value = 'Khoahoc.html';
+            } else {
+                nav_khoahoc[i].attributes['href'].value = 'signIn.html';
+            }
+        }
+        nav_training[i].onclick = function () {
+            if (window.localStorage.getItem('flag') != null) {
+                nav_training[i].attributes['href'].value = 'training.html';
+            } else {
+                nav_training[i].attributes['href'].value = 'signIn.html';
+            }
+        }
+    }
+    
+</script>
 <script src="../../js/js-rename-user.js"></script>
 <script src="../../js/js-show-account.js"></script>
 <script src="../../js/js-open-user.js"></script>

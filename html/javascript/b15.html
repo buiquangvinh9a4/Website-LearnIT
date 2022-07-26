@@ -59,39 +59,111 @@
 
                 <!-- Giao diện thông tin bài -->
                 <div class="lesson-left" id="js-back-opacity">
-
                     <h3 style="font-size: 25px;">Bài 15: Câu lệnh SWITCH...CASE</h3>
-
                     <ul class="list-inline"><li>Mục tiêu</li></ul>
-                    <p>Học viên có thể hiểu về khái niệm ngôn ngữ Javascript.</p>
-                    <ul class="list-inline"><li>Lý thuyết</li></ul>
-                    <h4><strong>JavaScript là gì</strong></h4>
-                    <p>JavaScript là ngôn ngữ kịch bản phía máy khách phổ biến nhất và được sử dụng rộng rãi. Kịch bản phía máy khách đề cập đến các tập lệnh chạy trong trình duyệt web của bạn. JavaScript được thiết kế để thêm hiệu ứng tương tác và động cho các trang web bằng cách thao tác nội dung được trả về từ máy chủ web.</p>
-                    <p>JavaScript là một ngôn ngữ hướng đối tượng và nó cũng có một số điểm tương đồng về cú pháp với ngôn ngữ lập trình Java. Nhưng, JavaScript không liên quan đến Java theo bất kỳ cách nào.</p>
-                    <h4><strong>Tại sao cần học JS</strong></h4>
-                    <p>JavaScript là 1 trong 3 ngôn ngữ mà tất cả các nhà phát triển website phải học:</p>
-                    <ol>
-                        <li><strong>HTML </strong>để xây dựng nội dung của website</li>
-                        <li><strong>CSS </strong>để chỉ định bố cục của các trang web</li>
-                        <li><strong>JavaScript </strong>để lập trình hành vi của các trang web </li>
-                    </ol>
-                    <p>Các trang web không phải là nơi duy nhất sử dụng JavaScript. Nhiều chương trình máy tính để bàn và máy chủ sử dụng JavaScript. Node.js là nổi tiếng nhất. Một số cơ sở dữ liệu, như MongoDB và CouchDB, cũng sử dụng JavaScript làm ngôn ngữ lập trình của họ.</p>
-                    <h4><strong>Bạn có thể làm gì với javascript</strong></h4>
-                    <p>Có rất nhiều điều bạn có thể làm với JavaScript.</p>
-                    <ul style="padding-left: 30px">
-                        <li>Bạn có thể sửa đổi nội dung của một trang web bằng cách thêm hoặc xóa các yếu tố.</li>
-                        <li>Bạn có thể thay đổi kiểu dáng và vị trí của các thành phần trên trang web.</li>
-                        <li>Bạn có thể theo dõi các sự kiện như nhấp chuột, di chuột, v.v. và phản ứng với nó.</li>
-                        <li>Bạn có thể thực hiện và kiểm soát chuyển tiếp và hình ảnh động.</li>
-                        <li>Bạn có thể tạo cửa sổ bật lên cảnh báo để hiển thị thông tin hoặc thông báo cảnh báo cho người dùng.</li>
-                        <li>Bạn có thể xác nhận đầu vào của người dùng trước khi gửi nó đến máy chủ.</li>
-                    </ul>
-                    <p>Danh sách không kết thúc ở đây, có nhiều điều thú vị khác mà bạn có thể làm với JavaScript. Bạn sẽ tìm hiểu về tất cả chúng một cách chi tiết trong các chương sắp tới.</p>
-                    
+                    <p>Sinh viên hiểu về lệnh <code>switch...case</code> và cách sử dụng nó trong bài tập thực tế.</p>
+                    <ul class="list-inline"><li>Tổng quát</li></ul>
+                    <p>
+                        Bạn có thể dùng nhiều lệnh <code>if...else…if</code> , như đã cung cấp ở phần trước, để thực hiện 1 nhánh với nhiều lối đi. 
+                        Tuy nhiên điều đó không phải là giải pháp tốt nhất, đặc biệt là khi tất cả các nhánh phụ thuộc vào giá trị của một biến duy nhất.
+                    </p>
+                    <div class="text-code">
+                        <p>
+                            if(x == 5){ <br>
+                                &nbsp;&nbsp;<font>//do something</font><br>
+                            } else if (x == 7) {<br>
+                                &nbsp;&nbsp;<font>//do something else</font> <br>
+                            } else if (x == 12) {<br>
+                                &nbsp;&nbsp;<font>//do something different</font> <br>
+                            } else if (x = 50) {<br>
+                                &nbsp;&nbsp;<font>//do something yet more different</font> <br>
+                            } else {<br>
+                                &nbsp;&nbsp;<font>//do something completely different</font> <br>
+                            }
+                        </p> 
+                    </div>
+                    <p>Tuy nhiên ở đây mỗi trường hợp xác định bằng một lệnh điều kiện, bạn có thể sử dụng lệnh switch...case, lệnh mà dễ đọc và hiểu hơn.</p>
+                    <h4>switch...case </h4>
+                    <p>Ví dụ lệnh trước có thể được rõ ràng hơn với lệnh switch như sau đây:</p>
+                    <div class="text-code">
+                        <p>
+                            switch(x){<br>
+                                case 5:<br>
+                                  &nbsp;&nbsp;<font>//do something</font><br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                case 7:<br>
+                                  &nbsp;&nbsp;<font>//do something else</font> <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                case 12:<br>
+                                  &nbsp;&nbsp;<font>//do something different</font> <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                case 50:<br>
+                                  &nbsp;&nbsp;<font>//do something yet more different</font> <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                default:<br>
+                                  &nbsp;&nbsp;<font>//do something completely different</font> <br>
+                              }
+                        </p>
+                    </div>
+                    <p>
+                        Kiểu của biểu thức là trả về giá trị của biến x có thể một trong các kiểu <code>char, byte, short, int, Character, Byte, Short, Integer, String hoặc enum</code>.  
+                        Hãy chú ý từ khóa <code>break</code> , nó buộc lệnh <code>switch...case</code> dừng lại. Nếu không có nó, việc này chỉ được chấp nhận khi <code>case</code> đó không có bất kỳ một lệnh nào, 
+                        ngược lại, lệnh <code>case</code> đó sẽ bị báo lỗi cú pháp. Chúng ta sẽ nói về lệnh <code>break</code> trong một khóa phía sau về các lệnh rẽ nhánh.
+                    </p>
+                    <p>Chúng ta hãy nhìn vào phương thức cho thấy lợi ích của lệnh <code>switch</code>:</p>
+                    <div class="text-code">
+                        <p>
+                            switch(n + 1){ <br>
+                                &nbsp;&nbsp;case 1:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log("case 1: " + n);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                &nbsp;&nbsp;case 2:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log("case 2: " + n);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                &nbsp;&nbsp;default:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log("default: " + n);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                            }
+                        </p>
+                    </div>
+                    <p>
+                        Và như mệnh đề <code>else</code> trong lệnh <code>if</code>, mệnh đề <code>default</code> không bắt buộc trong lệnh <code>switch</code> nếu nó không cần thiết cho logic chương trình: 
+                    </p>
+                    <div class="text-code">
+                        <p>
+                            switch(n + 1){ <br>
+                                &nbsp;&nbsp;case 1:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log("case 1: " + n);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                &nbsp;&nbsp;case 2:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log("case 2: " + n);<br>
+                              }
+                        </p>
+                    </div>
+                    <h4>Switch với nhiều trường hơp và có cũng cách sử lý</h4>
+                    <p>Có nhiều trường hợp một phạm vi không phải là giải pháp phù hợp, nhưng bạn cần áp dụng cùng một thực thi cho nhiều giá trị. Đây là nơi mà câu lệnh chuyển đổi có thể rất tiện dụng.</p>
+                    <p>Thay vì tạo một câu lệnh if lộn xộn với nhiều đánh giá biểu thức, bạn có thể 'xếp chồng' các trường hợp.</p>
+                    <p>Đây là một biến thể, tất cả đều rất đơn giản, trong ngày của ví dụ trong tuần. Ở đây tôi trình bày cách bạn có thể sử dụng câu lệnh chuyển đổi trong ứng dụng lịch.</p>
+                    <p>Vi dụ:</p>
+                    <div class="text-code">
+                        <p>
+                            switch (expr) { <br>
+                                &nbsp;&nbsp;case 'Oranges':<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log('Oranges are $0.59 a pound.');<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                &nbsp;&nbsp;case 'Apples':<br>
+                                &nbsp;&nbsp;case 'Papayas':<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log('Apples and Papayas are $2.79 a pound.');<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                &nbsp;&nbsp;default:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;console.log('Sorry, we are out of ' + expr + '.');<br>
+                              }
+                        </p>
+                    </div>
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">
                         <ul class="list-inline"><li>Câu hỏi</li></ul>
-                        <p><span>Javascript là ngôn ngữ dùng để lập trình các sự kiện trên website?</span></p>
+                        <p><span>Cấu trúc switch case chỉ cho phép kiểm tra dưới 5 điều kiện là đúng hay sai?</span></p>
 
                         <div class="frame_input"><input type="radio" name="answer" value="A"> Đúng <br></div>
                         <div class="frame_input"><input type="radio" name="answer" value="B"> Sai <br></div>
@@ -105,7 +177,7 @@
                                 var result_tt = document.getElementById('js-result-title');
                                 result.style.display = 'block';
                                 back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
-                                if (question1 == "A") {
+                                if (question1 == "B") {
                                     result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
                                 } else {
                                     result_tt.innerText = 'Câu trả lời chưa chính xác!';
@@ -169,8 +241,6 @@
     </body>
     <script src="../../js/js-open-user.js"></script>
     <script src="../../js/js-rename-user.js"></script>
-
-<script src="../../js/js-signOut.js"></script>
     <script src="../../js/js-answer.js"></script>
     <script src="../../js/js-quiz-click-learn.js"></script>
 

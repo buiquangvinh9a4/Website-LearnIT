@@ -63,35 +63,87 @@
                     <h3 style="font-size: 25px;">Bài 13: Câu lệnh IF</h3>
 
                     <ul class="list-inline"><li>Mục tiêu</li></ul>
-                    <p>Học viên có thể hiểu về khái niệm ngôn ngữ Javascript.</p>
-                    <ul class="list-inline"><li>Lý thuyết</li></ul>
-                    <h4><strong>JavaScript là gì</strong></h4>
-                    <p>JavaScript là ngôn ngữ kịch bản phía máy khách phổ biến nhất và được sử dụng rộng rãi. Kịch bản phía máy khách đề cập đến các tập lệnh chạy trong trình duyệt web của bạn. JavaScript được thiết kế để thêm hiệu ứng tương tác và động cho các trang web bằng cách thao tác nội dung được trả về từ máy chủ web.</p>
-                    <p>JavaScript là một ngôn ngữ hướng đối tượng và nó cũng có một số điểm tương đồng về cú pháp với ngôn ngữ lập trình Java. Nhưng, JavaScript không liên quan đến Java theo bất kỳ cách nào.</p>
-                    <h4><strong>Tại sao cần học JS</strong></h4>
-                    <p>JavaScript là 1 trong 3 ngôn ngữ mà tất cả các nhà phát triển website phải học:</p>
-                    <ol>
-                        <li><strong>HTML </strong>để xây dựng nội dung của website</li>
-                        <li><strong>CSS </strong>để chỉ định bố cục của các trang web</li>
-                        <li><strong>JavaScript </strong>để lập trình hành vi của các trang web </li>
-                    </ol>
-                    <p>Các trang web không phải là nơi duy nhất sử dụng JavaScript. Nhiều chương trình máy tính để bàn và máy chủ sử dụng JavaScript. Node.js là nổi tiếng nhất. Một số cơ sở dữ liệu, như MongoDB và CouchDB, cũng sử dụng JavaScript làm ngôn ngữ lập trình của họ.</p>
-                    <h4><strong>Bạn có thể làm gì với javascript</strong></h4>
-                    <p>Có rất nhiều điều bạn có thể làm với JavaScript.</p>
-                    <ul style="padding-left: 30px">
-                        <li>Bạn có thể sửa đổi nội dung của một trang web bằng cách thêm hoặc xóa các yếu tố.</li>
-                        <li>Bạn có thể thay đổi kiểu dáng và vị trí của các thành phần trên trang web.</li>
-                        <li>Bạn có thể theo dõi các sự kiện như nhấp chuột, di chuột, v.v. và phản ứng với nó.</li>
-                        <li>Bạn có thể thực hiện và kiểm soát chuyển tiếp và hình ảnh động.</li>
-                        <li>Bạn có thể tạo cửa sổ bật lên cảnh báo để hiển thị thông tin hoặc thông báo cảnh báo cho người dùng.</li>
-                        <li>Bạn có thể xác nhận đầu vào của người dùng trước khi gửi nó đến máy chủ.</li>
+                    <p>Học sinh hiểu về khái niệm if statement và cách sử dụng nó trong các vấn đề thực tế.</p>
+                    <ul class="list-inline"><li>Tổng quan</li></ul>
+                    <p>
+                        Các lệnh lựa chọn có 3 biến thể: <br>
+                        &nbsp;&nbsp; Lệnh <code> if </code>  <br>
+
+                        &nbsp;&nbsp; Lệnh <code> if...else</code>  <br>
+
+                        &nbsp;&nbsp; Lệnh <code>if...else if-...-else</code>   <br>
+                    </p>
+                    <h4>Lệnh IF </h4>
+                    <p>Câu lệnh <code>if</code>  đơn giản cho phép thực thi một câu lệnh nhất định hoặc một khối điều kiện, chỉ khi kết quả của biểu thức đánh giá được <code>thỏa mãn</code>:</p>
+                    <div class="text-code">
+                        <p>
+                            if (condition) { <br>
+                                <font>// Do something</font> <br>
+                            }
+                        </p>
+                    </div>
+                    <p>Ví dụ:</p>
+                    <div class="text-code">
+                        <p>
+                            if(true) console.log("true");    <br>
+                            if(false) console.log("false"); <br> <br>
+
+                            int x = 1, y = 5; <br>
+                            if(x > y) console.log("x > y");  <br>
+                            if(x &#60; y) console.log("x &#60; y");  <br><br>
+
+                            if((x + 5) > y) {			     <br>
+                            &nbsp;&nbsp; console.log("x + 5 > y");    <br>
+                            &nbsp;&nbsp; x = y;<br>
+                            }<br><br>
+
+                            if(x == y){ 			<br>		
+                             &nbsp;&nbsp; console.log("x == y");     <br>  
+                            }
+                        </p>
+                    </div>
+                    <p>
+                        Trường hợp 1 in <code>"true"</code>. Trường hợp 2 và 3 không in ra gì cả. Trường hợp 4 in <code>x &#60; y</code>. 
+                        Trường hợp 5 in <code>x+5>y</code>. Chúng ta đã sử dụng dấu ngoặc nhọn để tạo một khối lệnh bởi chúng ta muốn hiển thị <code>x=y </code>
+                        được thực thi chỉ khi mà biểu thức đánh giá là đúng. Trường hợp 6 in <code>x==y</code>. 
+                        Chúng ta có thể không sử dụng ngọặc nhọn trong trường hợp này bởi vì chỉ có duy nhất một câu lẹnh cần thực thi. Điều này có 2 lý do như sau:
+                    </p>
+                    <ul>
+                        <li>Để chứng minh rằng dấu ngoặc nhọn cũng có thể được sử dụng với một câu lệnh, do đó tạo thành một khối lệnh chỉ gồm một câu lệnh.</li>
+                        <li>Đó một cách thực hành tốt, nói chung, để có ngoặc nhọn sau if; điều này giúp cho việc đọc tôt hơn và giúp tránh những lỗi gây bực bội: bạn thêm một câu lệnh khác sau if, và nó sẽ được thực thi chỉ khi biểu thức trả về true:</li>
                     </ul>
-                    <p>Danh sách không kết thúc ở đây, có nhiều điều thú vị khác mà bạn có thể làm với JavaScript. Bạn sẽ tìm hiểu về tất cả chúng một cách chi tiết trong các chương sắp tới.</p>
-                    
+                    <div class="text-code">
+                        <p>
+                            if(x > y) console.log("x > y"); <br>
+                            x = y;
+                        </p>
+                    </div>
+                    <p>
+                        Nhưng, câu lệnh <code>x = y</code> trong đoạn code này được thực thi vô điều kiện. Nếu bạn nghĩ rằng một lỗi như vậy không xảy ra một cách thường xuyên, bạn sẽ phải ngạc nhiên. 
+                    </p>
+                    <div class="text-code">
+                        <p>Một bài học tốt là luôn luôn sử dụng dấu ngoặc nhọn {} với câu lệnh if.</p>
+                    </div>
+                    <p>Như chúng ta đã đề cập, bên trong câu lệnh điều kiện có thể bao gồm một câu lệnh điều kiện khác để tạo ra một logic chặt chẽ hơn cho luồng điều khiển:</p>
+                    <div class="text-code">
+                        <p>
+                            if(x > y){  <br>
+                               &nbsp;&nbsp; console.log("x > y");<br>
+                               &nbsp;&nbsp; if(x == 3){<br>
+                                &nbsp;&nbsp; &nbsp;&nbsp; console.log("x == 3");<br>
+                                &nbsp;&nbsp; }<br>
+                                &nbsp;&nbsp; if(y == 3){<br>
+                                    &nbsp;&nbsp; &nbsp;&nbsp; console.log("y == 3");<br>
+                                    &nbsp;&nbsp; &nbsp;&nbsp; console.log("x == " + x);<br>
+                                    &nbsp;&nbsp; }<br>
+                              }
+                        </p>
+                    </div>
+                    <p>Nó có thể chứa (lồng nhau) để thỏa mãn yêu cầu về mặt logic.</p>
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">
                         <ul class="list-inline"><li>Câu hỏi</li></ul>
-                        <p><span>Javascript là ngôn ngữ dùng để lập trình các sự kiện trên website?</span></p>
+                        <p><span>Cấu trúc if được viết như này là đúng hay sai? <br> if a > b: return</span></p>
 
                         <div class="frame_input"><input type="radio" name="answer" value="A"> Đúng <br></div>
                         <div class="frame_input"><input type="radio" name="answer" value="B"> Sai <br></div>
@@ -105,7 +157,7 @@
                                 var result_tt = document.getElementById('js-result-title');
                                 result.style.display = 'block';
                                 back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
-                                if (question1 == "A") {
+                                if (question1 == "B") {
                                     result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
                                 } else {
                                     result_tt.innerText = 'Câu trả lời chưa chính xác!';
@@ -169,8 +221,6 @@
     </body>
     <script src="../../js/js-open-user.js"></script>
     <script src="../../js/js-rename-user.js"></script>
-
-<script src="../../js/js-signOut.js"></script>
     <script src="../../js/js-answer.js"></script>
     <script src="../../js/js-quiz-click-learn.js"></script>
 

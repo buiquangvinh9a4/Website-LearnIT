@@ -63,38 +63,51 @@
                     <h3 style="font-size: 25px;">Bài 11: Tham số của hàm</h3>
 
                     <ul class="list-inline"><li>Mục tiêu</li></ul>
-                    <p>Học viên có thể hiểu về khái niệm ngôn ngữ Javascript.</p>
-                    <ul class="list-inline"><li>Lý thuyết</li></ul>
-                    <h4><strong>JavaScript là gì</strong></h4>
-                    <p>JavaScript là ngôn ngữ kịch bản phía máy khách phổ biến nhất và được sử dụng rộng rãi. Kịch bản phía máy khách đề cập đến các tập lệnh chạy trong trình duyệt web của bạn. JavaScript được thiết kế để thêm hiệu ứng tương tác và động cho các trang web bằng cách thao tác nội dung được trả về từ máy chủ web.</p>
-                    <p>JavaScript là một ngôn ngữ hướng đối tượng và nó cũng có một số điểm tương đồng về cú pháp với ngôn ngữ lập trình Java. Nhưng, JavaScript không liên quan đến Java theo bất kỳ cách nào.</p>
-                    <h4><strong>Tại sao cần học JS</strong></h4>
-                    <p>JavaScript là 1 trong 3 ngôn ngữ mà tất cả các nhà phát triển website phải học:</p>
-                    <ol>
-                        <li><strong>HTML </strong>để xây dựng nội dung của website</li>
-                        <li><strong>CSS </strong>để chỉ định bố cục của các trang web</li>
-                        <li><strong>JavaScript </strong>để lập trình hành vi của các trang web </li>
-                    </ol>
-                    <p>Các trang web không phải là nơi duy nhất sử dụng JavaScript. Nhiều chương trình máy tính để bàn và máy chủ sử dụng JavaScript. Node.js là nổi tiếng nhất. Một số cơ sở dữ liệu, như MongoDB và CouchDB, cũng sử dụng JavaScript làm ngôn ngữ lập trình của họ.</p>
-                    <h4><strong>Bạn có thể làm gì với javascript</strong></h4>
-                    <p>Có rất nhiều điều bạn có thể làm với JavaScript.</p>
-                    <ul style="padding-left: 30px">
-                        <li>Bạn có thể sửa đổi nội dung của một trang web bằng cách thêm hoặc xóa các yếu tố.</li>
-                        <li>Bạn có thể thay đổi kiểu dáng và vị trí của các thành phần trên trang web.</li>
-                        <li>Bạn có thể theo dõi các sự kiện như nhấp chuột, di chuột, v.v. và phản ứng với nó.</li>
-                        <li>Bạn có thể thực hiện và kiểm soát chuyển tiếp và hình ảnh động.</li>
-                        <li>Bạn có thể tạo cửa sổ bật lên cảnh báo để hiển thị thông tin hoặc thông báo cảnh báo cho người dùng.</li>
-                        <li>Bạn có thể xác nhận đầu vào của người dùng trước khi gửi nó đến máy chủ.</li>
-                    </ul>
-                    <p>Danh sách không kết thúc ở đây, có nhiều điều thú vị khác mà bạn có thể làm với JavaScript. Bạn sẽ tìm hiểu về tất cả chúng một cách chi tiết trong các chương sắp tới.</p>
-                    
+                    <p>Sinh viên hiểu về việc thêm tham số vào funcion</p>
+                    <ul class="list-inline"><li>Tổng quan</li></ul>
+                    <p>Bạn có thể chỉ định tham số khi bạn khai báo function của mình để nhận giá trị đầu vào trong thời gian chạy. Các tham số hoạt động như các biến giữ chỗ trong một function; chúng được thay thế vào thời gian chạy bằng các giá trị (được gọi là đối số) được cung cấp cho function tại thời điểm gọi.</p>
+                    <p>Các tham số được đặt trên dòng đầu tiên của hàm bên trong bộ dấu ngoặc đơn, như thế này:</p>
+                    <div class="text-code">
+                        <p>
+                            function functionName(parameter1, parameter2, parameter3) { <br>
+                               <font>// Code to be executed</font> <br>
+                            }
+                        </p>
+                    </div>
+                    <p>Function <code>displaySum()</code>  trong ví dụ sau lấy hai số làm đối số, chỉ cần thêm chúng vào và sau đó chúng sẽ hiển thị kết quả.</p>
+                    <div class="text-code">
+                        <p>
+                        <font>// Defining function</font> <br>
+                        function displaySum(num1, num2) { <br>
+                            &nbsp;&nbsp; var total = num1 + num2; <br>
+                            &nbsp;&nbsp; console.log(total); <br>
+                        } <br> <br>
+                        
+                        <font>// Calling function</font> <br>
+                        displaySum(6, 20); // 0utputs: 26 <br>
+                        displaySum(-5, 17); // 0utputs: 12 <br>
+                        </p>
+                    </div>
+                    <p>Bạn có thể định nghĩa bao nhiêu tham số tùy thích. Tuy nhiên, đối với mỗi tham số bạn chỉ định, một đối số tương ứng cần được truyền cho hàm khi nó được gọi, nếu không giá trị của nó sẽ không được xác định undefined. Hãy xem xét ví dụ sau:</p>
+                    <div class="text-code">
+                        <p>
+                            <font>// Defining function</font> <br>
+                            function showFullname(firstName, lastName) { <br>
+                                &nbsp;&nbsp; console.log(firstName + " " + lastName); <br>
+                            } <br><br>
+                            
+                            <font>// Calling function</font> <br>
+                            showFullname("Tuan", "Phong"); // 0utputs: Tuan Phong <br>
+                            showFullname("Vuong"); // 0utputs: Vuong undefined <br>
+                        </p>
+                    </div>
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">
                         <ul class="list-inline"><li>Câu hỏi</li></ul>
-                        <p><span>Javascript là ngôn ngữ dùng để lập trình các sự kiện trên website?</span></p>
+                        <p><span>Đâu là 1 hàm có tham số trong JavaScript?</span></p>
 
-                        <div class="frame_input"><input type="radio" name="answer" value="A"> Đúng <br></div>
-                        <div class="frame_input"><input type="radio" name="answer" value="B"> Sai <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="A"> function Sum(value1, value2){} <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="B"> function Sum(){} <br></div>
                         <input type="button" value="Trả lời" onclick="check()">
 
                         <script>
@@ -169,8 +182,6 @@
     </body>
     <script src="../../js/js-open-user.js"></script>
     <script src="../../js/js-rename-user.js"></script>
-
-<script src="../../js/js-signOut.js"></script>
     <script src="../../js/js-answer.js"></script>
     <script src="../../js/js-quiz-click-learn.js"></script>
 

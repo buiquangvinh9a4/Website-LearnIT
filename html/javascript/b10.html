@@ -63,38 +63,45 @@
                     <h3 style="font-size: 25px;">Bài 10: Function (Hàm) là gì?</h3>
 
                     <ul class="list-inline"><li>Mục tiêu</li></ul>
-                    <p>Học viên có thể hiểu về khái niệm ngôn ngữ Javascript.</p>
+                    <p>Sinh viên hiểu về khái niệm function (Hàm) và cách sử dụng nó trong các vấn đề thực tế.</p>
                     <ul class="list-inline"><li>Lý thuyết</li></ul>
-                    <h4><strong>JavaScript là gì</strong></h4>
-                    <p>JavaScript là ngôn ngữ kịch bản phía máy khách phổ biến nhất và được sử dụng rộng rãi. Kịch bản phía máy khách đề cập đến các tập lệnh chạy trong trình duyệt web của bạn. JavaScript được thiết kế để thêm hiệu ứng tương tác và động cho các trang web bằng cách thao tác nội dung được trả về từ máy chủ web.</p>
-                    <p>JavaScript là một ngôn ngữ hướng đối tượng và nó cũng có một số điểm tương đồng về cú pháp với ngôn ngữ lập trình Java. Nhưng, JavaScript không liên quan đến Java theo bất kỳ cách nào.</p>
-                    <h4><strong>Tại sao cần học JS</strong></h4>
-                    <p>JavaScript là 1 trong 3 ngôn ngữ mà tất cả các nhà phát triển website phải học:</p>
+                    <h4><strong>Function (hàm) là gì ?</strong></h4>
+                    <p>Function (Hàm) là một nhóm các câu lệnh thực hiện các nhiệm vụ cụ thể và có thể được giữ và duy trì riêng biệt tạo thành chương trình chính. 
+                        Các hàm cung cấp một cách để tạo các gói code(mã) có thể tái sử dụng, dễ mang theo hơn và dễ gỡ lỗi hơn. 
+                        Dưới đây là một số lợi thế của việc sử dụng function:
+                    </p>
                     <ol>
-                        <li><strong>HTML </strong>để xây dựng nội dung của website</li>
-                        <li><strong>CSS </strong>để chỉ định bố cục của các trang web</li>
-                        <li><strong>JavaScript </strong>để lập trình hành vi của các trang web </li>
+                        <li> <strong> Functions giảm sự lặp lại code trong chương trình</strong> — Function cho phép bạn trích xuất khối lệnh thường được sử dụng thành một thành phần duy nhất. Bây giờ bạn có thể thực hiện cùng một tác vụ bằng cách gọi hàm này bất cứ nơi nào bạn muốn trong tập lệnh của mình mà không phải sao chép và dán cùng một khối lệnh nhiều lần</li>
+                        <li><strong>Giúp các dòng code dễ bảo trì hơn</strong>  — Do một function được tạo một lần có thể được sử dụng nhiều lần, do đó, mọi thay đổi được thực hiện bên trong một function sẽ tự động được thực hiện tại tất cả các vị trí mà không cần thay đổi ở nhiều nơi.</li>
+                        <li> <strong> Functions giúp dễ dàng hơn để loại bỏ các lỗi</strong> — Khi chương trình được chia thành các function, nếu có lỗi xảy ra, bạn biết chính xác function nào gây ra lỗi và tìm nó ở đâu. Do đó, sửa lỗi trở nên dễ dàng hơn nhiều.</li>
                     </ol>
-                    <p>Các trang web không phải là nơi duy nhất sử dụng JavaScript. Nhiều chương trình máy tính để bàn và máy chủ sử dụng JavaScript. Node.js là nổi tiếng nhất. Một số cơ sở dữ liệu, như MongoDB và CouchDB, cũng sử dụng JavaScript làm ngôn ngữ lập trình của họ.</p>
-                    <h4><strong>Bạn có thể làm gì với javascript</strong></h4>
-                    <p>Có rất nhiều điều bạn có thể làm với JavaScript.</p>
-                    <ul style="padding-left: 30px">
-                        <li>Bạn có thể sửa đổi nội dung của một trang web bằng cách thêm hoặc xóa các yếu tố.</li>
-                        <li>Bạn có thể thay đổi kiểu dáng và vị trí của các thành phần trên trang web.</li>
-                        <li>Bạn có thể theo dõi các sự kiện như nhấp chuột, di chuột, v.v. và phản ứng với nó.</li>
-                        <li>Bạn có thể thực hiện và kiểm soát chuyển tiếp và hình ảnh động.</li>
-                        <li>Bạn có thể tạo cửa sổ bật lên cảnh báo để hiển thị thông tin hoặc thông báo cảnh báo cho người dùng.</li>
-                        <li>Bạn có thể xác nhận đầu vào của người dùng trước khi gửi nó đến máy chủ.</li>
-                    </ul>
-                    <p>Danh sách không kết thúc ở đây, có nhiều điều thú vị khác mà bạn có thể làm với JavaScript. Bạn sẽ tìm hiểu về tất cả chúng một cách chi tiết trong các chương sắp tới.</p>
-                    
+                    <h4>Khai báo và gọi 1 function</h4>
+                    <p>Khởi tạo 1 function bắt đầu với từ khóa <code> function </code>, tiếp theo đó là tên mà function mà bạn muốn tạo, tiếp theo là ngoặc đơn <code>()</code> và cuối cùng là nơi cách lệnh của function giữa các dấu ngoặc nhọn <code>{}</code>.</p>
+                    <p>Đây là cú pháp cơ bản để khai báo hàm:</p>
+                    <div class="text-code">
+                        <p>
+                            function functionName() { <br>
+                                <font>// Code to be executed</font> <br>
+                            }
+                        </p>
+                        
+                    </div>
+                    <p>Ví dụ: </p>
+                    <div class="text-code">
+                        <p>
+                            function sayHello() { <br>
+                                &nbsp;&nbsp; console.log("Hello"); <br>
+                            } <br>
+                            sayHello();<font>// 0utputs: Hello</font> 
+                        </p>
+                    </div>
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">
                         <ul class="list-inline"><li>Câu hỏi</li></ul>
-                        <p><span>Javascript là ngôn ngữ dùng để lập trình các sự kiện trên website?</span></p>
+                        <p><span>Đâu là cách viết 1 hàm đúng trong JavaScript?</span></p>
 
-                        <div class="frame_input"><input type="radio" name="answer" value="A"> Đúng <br></div>
-                        <div class="frame_input"><input type="radio" name="answer" value="B"> Sai <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="A"> function:Hello(){} <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="B"> function Hello(){} <br></div>
                         <input type="button" value="Trả lời" onclick="check()">
 
                         <script>
@@ -105,7 +112,7 @@
                                 var result_tt = document.getElementById('js-result-title');
                                 result.style.display = 'block';
                                 back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
-                                if (question1 == "A") {
+                                if (question1 == "B") {
                                     result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
                                 } else {
                                     result_tt.innerText = 'Câu trả lời chưa chính xác!';
@@ -169,8 +176,6 @@
     </body>
     <script src="../../js/js-open-user.js"></script>
     <script src="../../js/js-rename-user.js"></script>
-
-<script src="../../js/js-signOut.js"></script>
     <script src="../../js/js-answer.js"></script>
     <script src="../../js/js-quiz-click-learn.js"></script>
 

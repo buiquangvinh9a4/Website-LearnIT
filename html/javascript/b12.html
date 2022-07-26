@@ -63,38 +63,72 @@
                     <h3 style="font-size: 25px;">Bài 12: Giá trị trả về của một hàm</h3>
 
                     <ul class="list-inline"><li>Mục tiêu</li></ul>
-                    <p>Học viên có thể hiểu về khái niệm ngôn ngữ Javascript.</p>
-                    <ul class="list-inline"><li>Lý thuyết</li></ul>
-                    <h4><strong>JavaScript là gì</strong></h4>
-                    <p>JavaScript là ngôn ngữ kịch bản phía máy khách phổ biến nhất và được sử dụng rộng rãi. Kịch bản phía máy khách đề cập đến các tập lệnh chạy trong trình duyệt web của bạn. JavaScript được thiết kế để thêm hiệu ứng tương tác và động cho các trang web bằng cách thao tác nội dung được trả về từ máy chủ web.</p>
-                    <p>JavaScript là một ngôn ngữ hướng đối tượng và nó cũng có một số điểm tương đồng về cú pháp với ngôn ngữ lập trình Java. Nhưng, JavaScript không liên quan đến Java theo bất kỳ cách nào.</p>
-                    <h4><strong>Tại sao cần học JS</strong></h4>
-                    <p>JavaScript là 1 trong 3 ngôn ngữ mà tất cả các nhà phát triển website phải học:</p>
-                    <ol>
-                        <li><strong>HTML </strong>để xây dựng nội dung của website</li>
-                        <li><strong>CSS </strong>để chỉ định bố cục của các trang web</li>
-                        <li><strong>JavaScript </strong>để lập trình hành vi của các trang web </li>
-                    </ol>
-                    <p>Các trang web không phải là nơi duy nhất sử dụng JavaScript. Nhiều chương trình máy tính để bàn và máy chủ sử dụng JavaScript. Node.js là nổi tiếng nhất. Một số cơ sở dữ liệu, như MongoDB và CouchDB, cũng sử dụng JavaScript làm ngôn ngữ lập trình của họ.</p>
-                    <h4><strong>Bạn có thể làm gì với javascript</strong></h4>
-                    <p>Có rất nhiều điều bạn có thể làm với JavaScript.</p>
-                    <ul style="padding-left: 30px">
-                        <li>Bạn có thể sửa đổi nội dung của một trang web bằng cách thêm hoặc xóa các yếu tố.</li>
-                        <li>Bạn có thể thay đổi kiểu dáng và vị trí của các thành phần trên trang web.</li>
-                        <li>Bạn có thể theo dõi các sự kiện như nhấp chuột, di chuột, v.v. và phản ứng với nó.</li>
-                        <li>Bạn có thể thực hiện và kiểm soát chuyển tiếp và hình ảnh động.</li>
-                        <li>Bạn có thể tạo cửa sổ bật lên cảnh báo để hiển thị thông tin hoặc thông báo cảnh báo cho người dùng.</li>
-                        <li>Bạn có thể xác nhận đầu vào của người dùng trước khi gửi nó đến máy chủ.</li>
-                    </ul>
-                    <p>Danh sách không kết thúc ở đây, có nhiều điều thú vị khác mà bạn có thể làm với JavaScript. Bạn sẽ tìm hiểu về tất cả chúng một cách chi tiết trong các chương sắp tới.</p>
-                    
+                    <p>Sinh viên hiểu về việc 1 function trả về 1 giá trị như thế nào.</p>
+                    <ul class="list-inline"><li>Tổng quan</li></ul>
+                    <p>Một function có thể trả về một giá trị cho tập lệnh gọi function là kết quả bằng cách sử dụng câu lệnh return. Giá trị có thể thuộc bất kỳ loại nào, bao gồm mảng và đối tượng</p>
+                    <p> <codE>Lệnh return</codE>  thường được đặt là dòng cuối cùng của hàm trước dấu ngoặc nhọn đóng và kết thúc nó bằng dấu chấm phẩy, như trong ví dụ sau.</p>
+                    <div class="text-code">
+                        <p>
+                            <font>// Defining function</font> <br>
+                            function getSum(num1, num2) { <br>
+                                &nbsp;&nbsp; var total = num1 + num2; <br>
+                                &nbsp;&nbsp; return total; <br>
+                            } <br> <br>
+                            
+                            <font>// Displaying returned value</font> <br>
+                            console.log(getSum(6, 20)); // 0utputs: 26 <br>
+                            console.log(getSum(-5, 17)); // 0utputs: 12 <br>
+                        </p>
+                    </div>
+                    <p>
+                        Function không thể trả về nhiều giá trị. Tuy nhiên, bạn có thể thu được kết quả tương tự bằng cách trả về một mảng các giá trị, như được minh họa trong ví dụ sau..
+                    </p>
+                    <div class="text-code">
+                        <p>
+                            <font>// Defining function</font> <br>
+                            function get_name(){ <br>
+                                &nbsp;&nbsp; var name1 = "Tuan"; <br>
+                                &nbsp;&nbsp; var name2 = "Phong"; <br>
+                                &nbsp;&nbsp; var name3 = "Vuong"; <br>
+                                &nbsp;&nbsp; var arr = [name1, name2, name3]; <br>
+                                &nbsp;&nbsp; return arr; <br>
+                            } <br> <br>
+                            
+                            <font>// Store returned value in a variable</font>  <br>
+                            var all = get_name(); <br> <br>
+                            
+                            <font>// Displaying individual values</font>  <br>
+                            console.log(all[0]); // 0utput: Tuan  <br>
+                            console.log(all[1]); // 0utput: Phong <br>
+                            console.log(all[2]); // 0utput: Vuong
+                        </p>
+                    </div>
+                    <p>Và nếu một function trả về một giá trị, nó sẽ dừng việc thực thi của function đó. Nó có nghĩa là phần còn lại của mã sẽ không được thực thi</p>
+                    <div class="text-code">
+                        <p>
+                            <font>// Defining function</font> <br>
+                            function print_numbers(x){ <br>
+                                &nbsp;&nbsp; if (x == 1) { <br>
+                                    &nbsp;&nbsp; &nbsp;&nbsp; console.log(1); <br>
+                                    &nbsp;&nbsp; &nbsp;&nbsp; return; <font>// a function can return nothing</font> <br>
+                                    &nbsp;&nbsp; } <br>
+                                    &nbsp;&nbsp; console.log(2); <br>
+                                    &nbsp;&nbsp; return; <font>// a function can return nothing</font> <br>
+                                    &nbsp;&nbsp; console.log(3); <br>
+                            } <br> <br>
+                            
+                            <font>// Displaying individual values</font> <br>
+                            console.log(print_numbers(0)); // 0utput: 2 <br>
+                            console.log(print_numbers(1)); // 0utput: 1
+                        </p>
+                    </div>
                     <!-- Câu hỏi trắc nghiệm cuối bài học -->
                     <form action="" name="question">
                         <ul class="list-inline"><li>Câu hỏi</li></ul>
-                        <p><span>Javascript là ngôn ngữ dùng để lập trình các sự kiện trên website?</span></p>
+                        <p><span>Đâu là hàm có giá trị trả về?</span></p>
 
-                        <div class="frame_input"><input type="radio" name="answer" value="A"> Đúng <br></div>
-                        <div class="frame_input"><input type="radio" name="answer" value="B"> Sai <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="A"> function Sum(){} <br></div>
+                        <div class="frame_input"><input type="radio" name="answer" value="B"> function Sum(){ return 1+1} <br></div>
                         <input type="button" value="Trả lời" onclick="check()">
 
                         <script>
@@ -105,7 +139,7 @@
                                 var result_tt = document.getElementById('js-result-title');
                                 result.style.display = 'block';
                                 back_opacity.style.backgroundColor = 'rgba(23, 23, 23, 0.554)';
-                                if (question1 == "A") {
+                                if (question1 == "B") {
                                     result_tt.innerText = 'Bạn trả lời đúng rồi!!!';
                                 } else {
                                     result_tt.innerText = 'Câu trả lời chưa chính xác!';
@@ -169,8 +203,6 @@
     </body>
     <script src="../../js/js-open-user.js"></script>
     <script src="../../js/js-rename-user.js"></script>
-
-<script src="../../js/js-signOut.js"></script>
     <script src="../../js/js-answer.js"></script>
     <script src="../../js/js-quiz-click-learn.js"></script>
 
