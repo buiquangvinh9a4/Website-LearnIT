@@ -23,7 +23,7 @@
         <!-- Header - Navigation -->
         <div class="nav">
             <ul>
-                <li onclick="window.localStorage.removeItem('flag');"><a href="../../index.html">Giới thiệu</a></li>
+                <li onclick="window.localStorage.removeItem('flag');"><a href="../../index.html" id="js-gioithieu">Giới thiệu</a></li>
                 <li>
                     <a href="Khoahoc.html" class="js-nav-khoahoc">Khóa học</a>
                     <ul class="sub-nav">
@@ -119,6 +119,14 @@
     </main>
     
 </body>
+
+<script>
+    var nav_gioithieu = document.getElementById("js-gioithieu");
+    if (window.localStorage.getItem('flag') != null) {
+        nav_gioithieu.innerText = '';
+    }
+</script>
+
 <script>
     var nav_khoahoc = document.getElementsByClassName('js-nav-khoahoc');
     var nav_training = document.getElementsByClassName('js-nav-training');

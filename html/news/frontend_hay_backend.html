@@ -24,7 +24,7 @@
             <!-- Header - Navigation -->
             <div class="nav">
                 <ul>
-<li onclick="window.localStorage.removeItem('flag');"><a href="../../index.html">Giới thiệu</a></li>
+<li onclick="window.localStorage.removeItem('flag');"><a href="../../index.html" id="js-gioithieu">Giới thiệu</a></li>
                     <li>
                         <a href="../main/signIn.html">Khóa học</a>
                         <ul class="sub-nav">
@@ -339,6 +339,12 @@
 <script src="js/js-login.js"></script> -->
 
 </html>
+<script>
+    var nav_gioithieu = document.getElementById("js-gioithieu");
+    if (window.localStorage.getItem('flag') != null) {
+        nav_gioithieu.innerText = '';
+    }
+</script>
 <script src="../../js/js-rename-user.js"></script>
 <script src="../../js/js-show-account.js"></script>
 <script src="../../js/js-open-user.js"></script>

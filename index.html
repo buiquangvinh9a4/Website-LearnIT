@@ -23,7 +23,7 @@
             <!-- Header - Navigation -->
             <div class="nav">
                 <ul>
-                    <li><a href="index.html">Giới thiệu</a></li>
+                    <li style="border-bottom: 3px solid yellow; padding-bottom: 15px;"><a href="index.html">Giới thiệu</a></li>
                     <li>
                         <a href="html/main/signIn.html" class="js-nav-khoahoc">Khóa học</a>
                         <ul class="sub-nav">
@@ -504,12 +504,13 @@
             window.localStorage.setItem('remote', 'training');    
         }
     }
-
-
     
-
-    
+    var bd = document.body;
+    bd.onload = function() {
+        window.localStorage.removeItem('flag');
+    }
 </script>
+
 <script src="js/js-login.js"></script>
 <script src="js/js-signUp.js"></script>
 <script src="js/js-signUp-access.js"></script>

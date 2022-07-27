@@ -11,6 +11,7 @@ main{
     margin: 0 auto 100px;
     display: flex;
     justify-content: space-between;
+    animation: FadeIn ease .2s;
 }
 a{
     color: #2c31cf;
@@ -264,4 +265,17 @@ a:hover .tag{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     
+}
+
+/* Hiệu ứng FadeIn Animation */
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

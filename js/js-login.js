@@ -66,6 +66,7 @@ var isLogin = () => {
         } else {
             btn_submit.attributes[0].value = 'training.html';
         }
+        alert('Đăng nhập thành công');
     } else if (username.value != '' && password.value != '') {
         error1.innerText = '';
         error2.innerText = '*Tên tài khoản hoặc mật khẩu chưa chính xác.';
