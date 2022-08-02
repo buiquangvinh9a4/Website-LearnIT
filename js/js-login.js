@@ -72,6 +72,7 @@ var isLogin = () => {
         error2.innerText = '*Tên tài khoản hoặc mật khẩu chưa chính xác.';
     }
 }
+
 btn_submit.addEventListener('click', isLogin);
 
 

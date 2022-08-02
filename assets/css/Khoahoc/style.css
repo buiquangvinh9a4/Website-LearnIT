@@ -1,6 +1,6 @@
 
 /* -----------------------------------main----------------------------------- */
-@keyframes FadeIn {
+@keyframes FadeIn2 {
     from {
         opacity: 0;
         transform: translateX(-30px);
@@ -104,7 +104,7 @@ i.ti-search {
     border-radius: 10px;
     margin:15px 12px ;
     box-shadow: 0px 0px 20px rgba(106, 106, 106, 0.22);
-    animation: FadeIn ease .4s;
+    animation: FadeIn2 ease .4s;
 
 }
 .rate-online{
@@ -210,7 +210,7 @@ h3{
     border-radius: 5px;
     padding: 25px;
     box-shadow: 0px 0px 20px rgba(106, 106, 106, 0.22);
-    animation: FadeIn ease .2s ;
+    animation: FadeIn2 ease .2s ;
 }
 
 .tablehidden_last {
@@ -348,7 +348,7 @@ footer p, footer li {
     text-decoration: underline;
 }
 
-@keyframes FadeIn {
+@keyframes FadeIn1 {
     from {
         opacity: 0;
         transform: translateY(-50px);

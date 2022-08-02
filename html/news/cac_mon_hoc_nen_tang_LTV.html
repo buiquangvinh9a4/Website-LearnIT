@@ -100,7 +100,7 @@
                 <span>Tác giả: vinhbq2001   </span>
                 </div>
                 <div class="luotxem">
-                    <i class="ti-eye"></i> <span>847251</span>
+                    <i class="ti-eye"></i> <span class="js-view0"></span>
                 </div>
             </div>
             <!-- Phần nội dung chính của trang web -->
@@ -355,6 +355,7 @@
 <script src="js/js-login.js"></script> -->
 
 </html>
+
 <script>
     var nav_gioithieu = document.getElementById("js-gioithieu");
     if (window.localStorage.getItem('flag') != null) {
@@ -366,3 +367,17 @@
 <script src="../../js/js-open-user.js"></script>
 
 <script src="../../js/js-signOut.js"></script>
+
+<script>
+    // Xử lý riêng phần view cho bài viết
+    var body = document.body;
+    var view = document.getElementsByClassName('js-view0');
+    
+    body.onload = function() {
+        let count_view = parseInt(localStorage.getItem('view0'));
+        count_view+=1;
+        localStorage.setItem('view0', count_view);
+        view[0].innerText = localStorage.getItem('view0');
+    }  
+
+</script>

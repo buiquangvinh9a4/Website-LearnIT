@@ -1,7 +1,20 @@
 var bd = document.body;
 var user_khach = document.getElementById('js-user-khach');
 var user = document.getElementById('js-user');
+
+// Xử lú phần view cho riêng bài viết
+var view = document.getElementsByClassName('js-view');
+var body = document.body;
+var s_key = 'view';
+
+
+
+
 bd.onload = function () {
+    for (let i = 0; i < view.length; i++) {
+        let tmp = s_key + i;
+        view[i].innerText = localStorage.getItem(tmp);
+    }
     if (window.localStorage.getItem('flag') != null) {
         user_khach.style.display = 'none';
         user.style.display = 'block';

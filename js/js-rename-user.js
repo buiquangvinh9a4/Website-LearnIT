@@ -44,7 +44,14 @@ var info_avatar = document.getElementById('js-info-avatar');
 
 
 
+// for (let i = 0; i < view.length; i++) {
+//     let tmp = s_key + i;
+//     localStorage.setItem(tmp, 0);
+// }
+
 html_body.onload = function() {
+
+
     let location = parseInt(window.localStorage.getItem('flag'));
     fullname_user.innerText = list_users[location].fullname;
     name_user.innerText = list_users[location].username;
@@ -55,7 +62,12 @@ html_body.onload = function() {
     info_class.innerText = list_users[location].clas;
     info_school.innerText = list_users[location].school;
     info_avatar.attributes[0].value = "../../assets/images/avatar/" + list_users[location].avatar;
+
+
 }
+
+
+
 
 
 
